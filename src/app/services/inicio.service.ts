@@ -205,18 +205,18 @@ export class InicioService {
     url:'assets/images/hotel/comentariosInicio.jpg',
     data:[
       {
-        parrafo: " It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. ",
-        nombre: "Ing. Ronald Chavez R.",
+        parrafo: "Muy recomendado por la gran vista frente al mar y la cercania al centro de Mancora",
+        nombre: "Ronald Chavez",
         imgUrl: "assets/images/client/01.jpg",
       },
       {
-        parrafo: "According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero in 45 BC. Allegedly, a Latin scholar established the origin of the text by compiling all the instances of the unusual word 'consectetur' he could find",
-        nombre: "Ing. Alex Ramos I.",
+        parrafo: "El hotel posee gran variedad de servicios de muy buena calidad, con una piscina que esta frente al mar, una gran experiencia en Mancora",
+        nombre: "Alex Ramos",
         imgUrl: "assets/images/client/04.jpg",
       },
       {
-        parrafo: "It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. One may speculate that over the course of time certain letters were added or deleted at various positions within the text. ",
-        nombre: "Ing. Jorge Eugenio",
+        parrafo: "Super recomendado para compartir unas vacaciones con amigos en los lindos ambientes que posee el hotel",
+        nombre: "Jorge Eugenio",
         imgUrl: "assets/images/client/06.jpg",
       }
     ]
