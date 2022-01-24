@@ -1,0 +1,16 @@
+<app-header 
+    [navClass]="addclass" 
+    [buttonList]="buttonShow" 
+    [sliderTopbar]="TopbarShow" 
+    [isdeveloper]="developerPage" 
+    [shopPages]="shopPages">
+</app-header>
+
+<app-switcher></app-switcher><!-- colores y horientacion -->
+
+<router-outlet (activate)="onActivate($event)"></router-outlet>
+
+<app-footer 
+    [footerVariant]="footerClass" 
+    [hideFooter]="hideFooter">
+</app-footer> 

@@ -1,0 +1,76 @@
+  <div class="col-lg-12">
+    <form class="p-4 shadow bg-white rounded"
+    autocomplete="off"
+    [formGroup]="checkDisponibilidadForm"
+    (ngSubmit)="buscarDisponibilidad()"
+  >
+    <h3 class="mb-3">Prepare su reserva</h3>
+    <div class="row text-start">
+      <div  ngClass="col-lg-3 col-md-3">
+        <div class="mb-6 mb-lg-0">
+          <label class="form-label"> Check in - Check out : </label>
+          <input class="form-control" style="text-align: center;"
+                type="text" 
+                formControlName="picker" 
+                id="checkin" 
+                placeholder="Fecha de Ingreso - Fecha de salida :"
+                mwlFlatpickr [convertModelValue]="true"
+                mode="range"
+                minDate ="today"
+                >
+          
+        </div>
+      </div>
+      <!--end col-->
+
+      <div  ngClass="col-lg-3 col-md-3">
+        <div class="mb-3 mb-lg-0">
+          <label class="form-label">Adultos :</label>
+          <input class="form-control" style="text-align: center;"
+                min="0" 
+                autocomplete="off" 
+                type="number"
+                id="adult" 
+                formControlName="numAdultos"
+                placeholder="Numero de adultos :"
+                min="0"
+                max="15"
+                >
+          <div class="col text-danger" style="text-align: center;">
+            <p *ngIf="campoNoValido('numAdultos')">la cantidad de adultos es obligatorio</p>
+          </div>
+        </div>
+      </div>
+      <!--end col-->
+      <div  ngClass="col-lg-3 col-md-3">
+        <div class="mb-3 mb-lg-0">
+          <label class="form-label">Niños : </label>
+          <input class="form-control" style="text-align: center;"
+                min="0" 
+                autocomplete="off" 
+                type="number"
+                id="ninos" 
+                formControlName="numNinios"
+                placeholder="Numero de niños :"
+                min="0"
+                max="10"
+                >
+        </div>
+      </div>
+      <!--end col-->
+    
+      <div ngClass="col-md-3">
+        <div class="row align-items-center">
+      
+          <div ngClass="col-md-12 mt-lg-4 pt-2 pt-lg-1">
+            <div class="d-grid">
+              <input type="submit" id="search" name="search" class="searchbtn btn btn-blue" value="Buscar disponibilidad">
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+      </div>
+    </div>
+
+  </form>
+</div>

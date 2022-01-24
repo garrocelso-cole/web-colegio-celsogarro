@@ -1,0 +1,31 @@
+<section class="section">
+    <div class="container pb-lg-4 mb-md-5 mb-4">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title mb-4 pb-2">
+            <h2>Servicios que ofrecemos</h2>
+            <p class="text-muted para-desc mb-0 mx-auto" style="font-size: x-large;">Disfruta en <span
+              class="text-primary fw-bold">Buena Vista Máncora</span> servicios de calidad.</p>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+      <div class="row">
+        <div class="col-md-4 col-12 mt-5" *ngFor="let data of servicesData">
+            <div class="features features text-center">
+                <div class="image position-relative d-inline-block">
+                    <i class="{{data.icon}}"></i>
+                </div>
+    
+                <div class="content mt-4">
+                    <h5>{{data.title}}</h5>
+                    <p class="text-muted mb-0">{{data.description}}</p>
+                </div>
+            </div>
+        </div>
+        <!--end col-->
+    </div>
+    </div>
+    <!--end container-->
+  </section>

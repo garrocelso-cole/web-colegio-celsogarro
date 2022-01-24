@@ -1,0 +1,109 @@
+<!-- Hero Start -->
+<section class="bg-half bg-light d-table w-100" id="home" style="background: url('assets/images/hotel/portadaHabitaciones.jpg'); background-size: 100% 100%;">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+                <div class="page-next-level title-heading">
+                    <h1 class="display-4 title-dark text-white fw-bold mb-3 text-white title-dark title"> Habitaciones </h1>
+                    <h3 class="text-white para-desc mb-0 mx-auto" style="font-size: x-large;">Disfruta de la gama de habitaciones con la que contamos para su estadia.</h3>
+                    <div class="page-next">
+                        <nav aria-label="breadcrumb" class="d-inline-block">
+                            <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                <li class="breadcrumb-item"><a routerLink="/inicio">Inicio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Habitaciones</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
+</section>
+<!--end section-->
+<!-- Hero End -->
+
+<!-- Shape Start -->
+<div class="position-relative">
+    <div class="shape overflow-hidden text-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+<!--Shape End-->
+
+<!-- Work Start -->
+<section class="section">
+    <div class="container"><!-- Filtrado de las categorias de las habitaciones -->
+        <div class="row">
+            <ul class="col container-filter list-unstyled categories-filter text-center" id="filter">
+                <li class="list-inline-item categories-name border text-dark rounded" 
+                    (click)="activeCategory('todo')" [ngClass]="{'active': galleryFilter ==='todo'}" style="font-size: x-large;">
+                    Todo
+                </li>
+                <li class="list-inline-item categories-name border text-dark rounded ms-2"
+                    (click)="activeCategory('Bungalow(Habitación de lujo)')" [ngClass]="{'active': galleryFilter ==='Bungalow(Habitación de lujo)'}" style="font-size: x-large;">
+                    Bungalow
+                </li>
+                <li class="list-inline-item categories-name border text-dark rounded ms-2"
+                    (click)="activeCategory('Habitacion Standard')" [ngClass]="{'active': galleryFilter ==='Habitacion Standard'}" style="font-size: x-large;">
+                    Standard
+                </li>
+                <li class="list-inline-item categories-name border text-dark rounded ms-2"
+                    (click)="activeCategory('Habitación Kitchenette')" [ngClass]="{'active': galleryFilter ==='Habitación Kitchenette'}" style="font-size: x-large;">
+                    Kitchenette
+                </li>
+                <li class="list-inline-item categories-name border text-dark rounded ms-2"
+                    (click)="activeCategory('Habitación Suite Standard')" [ngClass]="{'active': galleryFilter ==='Habitación Suite Standard'}" style="font-size: x-large;">
+                    Suite
+                </li>
+                <li class="list-inline-item categories-name border text-dark rounded ms-2"
+                    (click)="activeCategory('Habitación Standard Simple')" [ngClass]="{'active': galleryFilter ==='Habitación Standard Simple'}" style="font-size: x-large;">
+                    Simple
+                </li>
+            </ul>
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
+
+    <div class="container"> 
+
+        <app-room-card
+        [roomCardData]="filterredImages"
+        (roomCardEvent)="habitacionSeleccionada($event)"
+        ></app-room-card>
+
+        <!-- PAGINATION START -->
+        <!-- <div class="row">
+            <div class="col-12 mt-4 pt-2">
+                <ul class="pagination justify-content-center mb-0">
+                    <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Previous">Prev</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Next">Next</a></li>
+                </ul>
+            </div>
+        </div> -->
+        <!--end row-->
+        <!-- PAGINATION END -->
+
+    </div>
+    <!--end container-->
+
+</section>
+<!--end section-->
+<!-- Work End -->
+
+
+<!-- Back to top -->
+<a href="javascript: void(0);" class="btn btn-icon btn-primary back-to-top" id="back-to-top" [ngxScrollTo]="'#home'">
+    <i-feather name="arrow-up" class="icons"></i-feather>
+</a>
+<!-- Back to top -->

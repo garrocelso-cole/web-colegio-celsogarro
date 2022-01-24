@@ -1,0 +1,341 @@
+<!-- Hero Start -->
+<section class="main-slider" id="home">
+    <ngb-carousel class="slides" [showNavigationArrows]="showNavigationArrows"
+      [showNavigationIndicators]="showNavigationIndicators">
+      <ng-template ngbSlide>
+        <li class="bg-home bg-animation-left d-flex align-items-center"
+          style="background-image:url('{{ carruselData[0].urlImage }}'); ">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-7 col-md-7">
+                <div class="title-heading position-relative mt-4" style="z-index: 1;">
+                  <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark">{{ carruselData[0].h1 }}<p>{{ carruselData[0].h1Parrafo }}</p></h1>
+                  <h3 class="para-desc">{{ carruselData[0].h4 }}</h3>
+                  <div class="watch-video mt-4 pt-2">
+                    <a (click)="openWindowCustomClass(content)" href="javascript:void(0);" data-type="youtube"
+                      data-id="yba7hPeTSjk" class="btn btn-icon btn-pills btn-primary">
+                      <i-feather name="video" class="icons"></i-feather>
+                    </a><span class="fw-bold text-uppercase small align-middle ms-2">{{ carruselData[0].span }}</span>
+                    <ng-template #content let-modal>
+                      <div class="modal-header">
+                        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- <youtube-player [videoId]="'yba7hPeTSjk'" height="450" width="780">
+                        </youtube-player> -->
+                        <iframe  
+
+                          style="width: 780px; height: 450px;"
+                          src="https://www.youtube.com/embed/v66TvVNxN6s" 
+                          title="YouTube video player" 
+                          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                          allowfullscreen
+                          ></iframe>
+                      </div>
+                    </ng-template>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ng-template>
+      <ng-template ngbSlide>
+        <li class="bg-home  d-flex align-items-center"
+          style="background-image:url('{{ carruselData[1].urlImage }}')">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-7 col-md-7">
+                <div class="title-heading position-relative mt-4" style="z-index: 1;">
+                  <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark" style="color: white;">Buena Vista Máncora, la mejor elección para sus vacaciones</h1>
+                  <h3 class="para-desc text-white">{{ carruselData[1].h4 }}</h3>
+                  <div class="watch-video mt-4 pt-2">
+                    <a routerLink="nosotros" class="btn btn-primary"><i class="uil uil-heart-alt"></i>{{ carruselData[1].link }}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ng-template>
+      <ng-template ngbSlide>
+        <li class="bg-home bg-animation-left d-flex align-items-center"
+          style="background-image:url('{{ carruselData[2].urlImage }}')">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-7 col-md-7">
+                <div class="title-heading position-relative mt-4" style="z-index: 1;">
+                  <h1 class="heading mb-3">{{ carruselData[2].h1 }} <br>{{ carruselData[2].h1Parrafo }}</h1>
+                  <h3 class="para-desc">{{ carruselData[2].h4 }}</h3>
+                  <div class="mt-4 pt-2">
+                    <a [ngxScrollTo]="'#bookroom'" class="btn btn-primary"><i class="uil uil-home fw-bold"></i> Reservar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ng-template>
+    </ngb-carousel>
+</section>
+  <!--end section-->
+  <!-- Hero End -->
+
+<!-- Reserva Start -->
+<section class="section-two bg-light" id="bookroom">
+  <div class="container">
+    <div class="row justify-content-center">
+      <app-reserva-inicio id="#reserva"
+      (obtenerDatosReserva)="obtenerDatosReserva($event)"
+    ></app-reserva-inicio>
+    </div>
+  </div>
+
+  <div class="container mt-100 mt-60">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <div class="section-title mb-4 pb-2">
+          <h2>Habitaciones & Suites</h2>
+          <p class="text-muted para-desc mb-0 mx-auto" style="font-size: x-large;">En <span
+            class="text-primary fw-bold">Buena Vista Máncora</span> disfruta del mejor alojamiento.</p>
+        </div>
+      </div>
+      <!--end col-->
+    </div>
+    <!--end row-->
+    <div class="row">
+      <div class="col-12">
+        <ul ngbNav #nav="ngbNav" [activeId]="showNgbNav(showRoomList)"
+          class="nav nav-pills shadow flex-column flex-sm-row d-md-inline-flex mb-0 p-1 bg-white rounded position-relative overflow-hidden"
+          id="pills-tab" role="tablist">
+          <li [ngbNavItem]="1" class="nav-item m-1 ">
+            <a ngbNavLink class="nav-link py-2 px-5 rounded">
+              <div class="text-center">
+                <h6 class="mb-0">Categorias</h6>
+              </div>
+            </a>
+            <ng-template ngbNavContent>
+              <div class="row">
+                      <!-- componente 1 -->      
+                        <app-room-card
+                        [roomCardData]="categorias" 
+                        (roomCardEvent)="envioFiltro($event)"
+                      ></app-room-card>
+                      <!-- End componente 1 -->
+              </div>
+            </ng-template>
+          </li>
+
+          <li [ngbNavItem]="2" class="nav-item m-1">
+            <a ngbNavLink class="nav-link py-2 px-5 rounded">
+              <div class="text-center">
+                <h6 class="mb-0">Habitaciones</h6>
+              </div>
+            </a>
+            <ng-template ngbNavContent >
+              <div class="row" *ngIf="!showRoomList" [ngxScrollTo]="'#bookroom'">
+                <h1 style="text-align: center;"><p>Haga su reserva yaa!!</p></h1>
+              </div>
+              <div class="row" *ngIf="showRoomList">
+                <!-- componente 2 -->      
+                  <app-room-list 
+                  [roomListData]="habitaciones"
+                  (roomListDataValor)="habitacionSeleccionada($event)"
+                  [totalCoincidencias]="habitaciones.length"
+                ></app-room-list>
+                <!-- End componente 2 -->  
+              </div>
+            </ng-template>
+          </li>
+
+
+        </ul>
+        <div [ngbNavOutlet]="nav" class="col-12 tab-content mt-5"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- CTA Start -->
+  <section class="section bg-cta" style="background: url('assets/images/hotel/bonitaFoto.jpg') center center; background-size: 100% 200%;" id="cta">
+    <div class="bg-overlay"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h2 class="text-white">Tour por Buena Vista Máncora</h2>
+            <p class="text-light para-dark para-desc mx-auto" style="font-size: x-large;">Disfruta de lo mejor de nuetros ambientes frente al mar.</p>
+            <a (click)="openModal(contentmodal)" href="javascript:void(0);"
+              class="play-btn border border-light mt-4 video-play-icon">
+              <i-feather name="play" class="fea icon-ex-md text-white title-dark"></i-feather>
+            </a>
+            <ng-template #contentmodal let-modal>
+              <div class="modal-header">
+                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- <iframe src="https://player.vimeo.com/video/287684225" height="450" width="780" frameborder="0"
+                  allowfullscreen allow="autoplay; encrypted-media"></iframe> -->
+                <iframe height="450" width="780" src="https://www.youtube.com/embed/-IId0QTRBtg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </section>
+  <!--end section-->
+  <!-- CTA End -->
+  
+<!-- Services Start -->
+  <app-services 
+    [servicesData]="servicesData"
+  ></app-services>
+<!--end section-->
+  <div class="position-relative">
+    <div class="shape overflow-hidden text-light">
+      <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+  <!-- End services -->
+  
+  <!-- News Start -->
+    <app-cartillas 
+      [cartillaData]="cartillaData"
+    ></app-cartillas>
+  <!--end section-->
+  <!-- Blog End -->
+
+  <app-comentarios
+    [customOptions]="customOptions"
+    [comentariosData]="comentariosData"
+  ></app-comentarios>
+  
+  <!-- Contact Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-6 p-0 ps-md-3 pr-md-3">
+          <div class="card map map-height-two rounded map-gray border-0">
+            <!-- <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
+              style="border:0" class="rounded" allowfullscreen></iframe> -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.587686131091!2d-81.05472639999999!3d-4.1039796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9036914a63d87ed9%3A0x457ce3f368dea032!2sBuena%20Vista%20M%C3%A1ncora%20Hotel!5e0!3m2!1sen!2spe!4v1633813915125!5m2!1sen!2spe" width="600" height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+        <!--end col-->
+  
+        <div class="col-lg-4 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <div class="card rounded shadow border-0">
+            <div class="card-body py-5">
+              <h4 class="card-title">Contáctenos !</h4>
+  
+              <div class="custom-form mt-4">
+                <div id="message"></div>
+                <form class="p-4 shadow bg-white rounded"
+                      autocomplete="off"
+                      [formGroup]="contactenosForm"
+                      (ngSubmit)="enviarContacto()"
+                >
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="mb-3">
+                        <label class="form-label" style="font-size: large;">Nombre <span class="text-danger">*</span></label>
+                        <div class="form-icon position-relative">
+                          <i-feather name="user" class="fea icon-sm icons"></i-feather>
+                          <input 
+                          class="form-control ps-5" 
+                          type="text"
+                          formControlName="nombre"
+                          id="nombre"
+                          placeholder="Su nombre :"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!--end col-->
+                    <div class="col-md-12">
+                      <div class="mb-3">
+                        <label class="form-label" style="font-size: large;">Email <span class="text-danger">*</span></label>
+                        <div class="form-icon position-relative">
+                          <i-feather name="email" class="fea icon-sm icons"></i-feather>
+                          <input 
+                          class="form-control ps-5" 
+                          type="text"
+                          formControlName="email"
+                          id="email"
+                          placeholder="Su email :"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!--end col-->
+                    <div class="col-md-12">
+                      <div class="mb-3">
+                        <label class="form-label" style="font-size: large;">Comentarios</label>
+                        <div class="form-icon position-relative">
+                          <i-feather name="message-circle" class="fea icon-sm icons"></i-feather>
+                          <textarea 
+                          class="form-control ps-5"
+                          type="text"
+                          formControlName="comentarios"
+                          id="comentarios"
+                          placeholder="Sus Comentarios :"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end row-->
+                  <div class="row">
+                    <div class="col-sm-12 text-center">
+                      <div class="d-grid">
+                        <input 
+                          class="submitBnt btn btn-primary"
+                          type="submit"
+                          id="search"
+                          name="search"
+                          value="Enviar Mensaje">
+                      </div>
+                    </div>
+                    <!--end col-->
+                  </div>
+                  <!--end row-->
+                </form>
+                <!--end form-->
+              </div>
+              <!--end custom-form-->
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+    <!-- Contact End -->
+  </section>
+  <!--end section-->
+  <!-- News End -->
+  
+  <!-- Back to top -->
+  <a href="javascript: void(0);" class="btn btn-icon btn-primary back-to-top" id="back-to-top" [ngxScrollTo]="'#home'">
+    <i-feather name="arrow-up" class="icons"></i-feather>
+  </a>
+  <!-- Back to top -->
