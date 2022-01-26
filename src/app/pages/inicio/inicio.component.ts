@@ -6,10 +6,11 @@ import { InicioService } from 'src/app/services/inicio.service';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { SwiperOptions } from 'swiper';
-const url_base_backend =environment.url_base_backend
 // import { ReservaService } from 'src/app/services/reserva.service';
 import { _Habitacion } from 'src/app/interfaces/habitacion.interface';
 import { FormBuilder, Validators } from '@angular/forms';
+import Swal from 'sweetalert2'
+const url_base_backend =environment.url_base_backend
 
 interface _prereserva{
   habitaciones: _Habitacion[],
@@ -56,9 +57,9 @@ export class InicioComponent implements OnInit {
   showRoomList : boolean = false
   prereserva: {}
   public contactenosForm = this.fb.group({
-    nombre: ['', Validators.required],
-    email: ['', [Validators.required, Validators.email ]],
-    comentarios: ['', Validators.required]
+    nombre: ['jorgeluis', Validators.required],
+    email: ['er.jorgeluis@gmail.com', [Validators.required, Validators.email ]],
+    comentarios: ['mas infoo', Validators.required]
   }) 
   ngOnInit() {
     this.servicesData = this.inicioService.servicesData
@@ -82,12 +83,24 @@ export class InicioComponent implements OnInit {
     if ( this.contactenosForm.invalid ) {
       return
     }
-    // console.log('---------------------------------------');
+    Swal.fire({
+      title: 'Datos de contacto',
+      html:
+      'Sus comentarios han sido enviados, '+
+      /* `<b>informacion@buenavistamancora.com</b>`+ */
+      'pronto nos pondremos en contacto con Ud.'
+      ,
+      icon: 'success',
+      confirmButtonText: 'ok',
+      /* footer: 'Revise su correo' */
+    })
+    console.log('---------------------------------------');
     // console.log(`this.http.post(${url_base_backend}/contactenos/,this.contactenosForm.value)`);    
-    // console.log('---------------------------------------');
-    // console.log(this.contactenosForm.value);
+    console.log('this.http.post');
+    console.log(`${url_base_backend}/contactenos/`);    
+    console.log(this.contactenosForm.value);
     this.contactenosForm.reset()
-    // console.log('---------------------------------------');
+    console.log('---------------------------------------');
     
 
   }
