@@ -20,7 +20,7 @@ export class CartillasComponent implements OnInit {
   constructor(private _lightbox: Lightbox) { 
     for (let i = 1; i <= 6; i++) {
       const src = '../../../assets/images/personal/' + i + '.jpg';
-      const caption = 'Image ' + i + ' caption here';
+      const caption = '';
       const thumb = '../../../assets/images/personal/' + i + '-thumb.jpg';
       const album = {
          src: src,
