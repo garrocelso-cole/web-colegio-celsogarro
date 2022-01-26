@@ -149,10 +149,15 @@ export class ReservaDetalleComponent implements OnInit {
     this.http.post<any>(`${url_root_backend}/reservas-mancora/reservar/`,this.busquedaDisponibilidad)
     .subscribe(
       (reservaFinal:_Reservafinal)=>{
+        console.log(reservaFinal);
+        console.log(this.busquedaDisponibilidad);
+        console.log('http://localhost:8000/reservas-mancora/detalle_reserva/'+`${reservaFinal.linkSeguro}`);
+        
         if (reservaFinal.ok) {
           //window.location.href = `${reservaFinal.linkSeguro}`;
           //window.location.href = `http://localhost:8000/reservas-mancora/detalle_reserva/'+${reservaFinal.linkSeguro}`;
-          window.location.href='http://reserva.buenavistamancora.com/reservas-mancora/detalle_reserva/'+`${reservaFinal.linkSeguro}`;
+          //window.location.href='http://reserva.buenavistamancora.com/reservas-mancora/detalle_reserva/'+`${reservaFinal.linkSeguro}`;
+          window.location.href='http://localhost:8000/reservas-mancora/detalle_reserva/'+`${reservaFinal.linkSeguro}`;
           //this.router.navigateByUrl(environment.url_pago)
         }else{
             this.busquedaDisponibilidad = {}
