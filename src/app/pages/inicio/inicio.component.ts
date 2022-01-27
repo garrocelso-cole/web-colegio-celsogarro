@@ -57,9 +57,9 @@ export class InicioComponent implements OnInit {
   showRoomList : boolean = false
   prereserva: {}
   public contactenosForm = this.fb.group({
-    nombre: ['jorgeluis', Validators.required],
-    email: ['er.jorgeluis@gmail.com', [Validators.required, Validators.email ]],
-    comentarios: ['mas infoo', Validators.required]
+    nombre: ['', Validators.required],
+    email: ['', [Validators.required, Validators.email ]],
+    comentarios: ['', Validators.required]
   }) 
   ngOnInit() {
     
