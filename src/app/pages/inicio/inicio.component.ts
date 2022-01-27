@@ -62,6 +62,7 @@ export class InicioComponent implements OnInit {
     comentarios: ['mas infoo', Validators.required]
   }) 
   ngOnInit() {
+    
     this.servicesData = this.inicioService.servicesData
     this.blogData = this.inicioService.blogData
     this.cartillaData = this.inicioService.cartillaData
@@ -111,7 +112,6 @@ export class InicioComponent implements OnInit {
     }else{
       n = 1
     }
-
     return n
   }
   envioFiltro(valor: _Habitacion){
@@ -123,7 +123,7 @@ export class InicioComponent implements OnInit {
   }
 
   habitacionSeleccionada(valor: _Habitacion){
-    if (localStorage.getItem('habitacion')) {
+    if (localStorage.getItem('habitacion')) { 
       localStorage.removeItem('habitacion')
     }
     localStorage.setItem('habitacion', JSON.stringify(valor))

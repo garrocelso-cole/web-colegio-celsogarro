@@ -29,7 +29,7 @@ interface _Reservafinal{
 export class ReservaDetalleComponent implements OnInit {
   
   @Input() habitacion: _Habitacion
-  @Input() prereserva: _Prereserva = this.inicioService.prereserva //precarga un archivo vacio en caso de no recibir data
+  @Input() prereserva: _Prereserva = this.inicioService.prereserva //precarga un archivo vacio en caso de null
   @Input() picker: {}
   @Output() obtenerDatosReserva: EventEmitter<any> = new EventEmitter()
   
@@ -52,9 +52,11 @@ export class ReservaDetalleComponent implements OnInit {
   showMensajeError: boolean = false
   busquedaDisponibilidad : {}
   ngOnInit() {
-  //  console.log(this.prereserva);
-  //  console.log(this.habitacion);
-  //  console.log(this.checkDisponibilidadForm.value);
+    console.log(this.habitacion);
+    console.log(this.prereserva);
+
+    
+    
   }
   ngOnDestroy(){
     this.prereserva = this.inicioService.prereserva
@@ -106,7 +108,7 @@ export class ReservaDetalleComponent implements OnInit {
     }
 
     //completando el formulario
-     this. busquedaDisponibilidad = {
+    this.busquedaDisponibilidad = {
       picker: this.checkDisponibilidadForm.value.picker,
       fechaInicio: fechaInicio,
       fechaFin: fechaFinal,
@@ -117,16 +119,10 @@ export class ReservaDetalleComponent implements OnInit {
     }
     this.http.post<any>(`${url_base_backend}/habitaciones-libres/`,this.busquedaDisponibilidad )
     .subscribe(
-      (resp:any) =>{         
+      (resp:any) =>{ 
+             
         this.habitaciones = resp
-        if (this.habitaciones.length > 0) {
-          // console.log('-------------- Inicio: peticion a la ruta ------------------------');
-          // console.log(`this.http.post<any>(${url_base_backend}/habitaciones-libres/,busquedaDisponibilidad` );
-          // console.log('Donde busquedaDisponibilidad es:');
-          // console.log(this.busquedaDisponibilidad);
-          // console.log(this.habitaciones);
-          // console.log('----------------- Fin: ---------------------');
-
+        if (this.habitaciones.length > 0) { 
           this.habilitarBtnReserva = true
         }else{
           this.habilitarBtnReserva = false
@@ -142,7 +138,7 @@ export class ReservaDetalleComponent implements OnInit {
         console.log(error)
       }
     )  
-    this.obtenerDatosReserva.emit(this.busquedaDisponibilidad)
+    //this.obtenerDatosReserva.emit(this.busquedaDisponibilidad)
   }
   reservar(){
     
