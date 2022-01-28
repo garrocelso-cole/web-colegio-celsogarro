@@ -307,7 +307,7 @@
           <!-- <a pageScroll [routerLink]="['Home']" href="#myanchor">Go there</a> -->
 
         </ng-template>
-        
+
       </div>
     </span>
     <!--end login button-->
@@ -325,7 +325,14 @@
         <!-- End mobile menu toggle-->
       </div>
     </div>
-
+    <div id="navigation">
+      <div class="dropdown">
+        <ul>
+          <li><a href="">EN</a></li>
+          <li><a href="">ES</a></li>
+        </ul>
+      </div>
+    </div>
     <div id="navigation">
       <!-- Navigation Menu-->
       <ul class="navigation-menu" [class]="navClass">
@@ -335,95 +342,6 @@
         <li><a class="nav-link-ref" routerLink="servicios" style="font-family: 'Dancing Script', cursive;">Servicios</a></li>
         <li><a class="nav-link-ref" routerLink="eventos" style="font-family: 'Dancing Script', cursive;">Eventos</a></li>
         <li><a class="nav-link-ref" routerLink="contacto" style="font-family: 'Dancing Script', cursive;">Contacto</a></li>
-        <!-- <li class="has-submenu">
-          <a href="javascript:void(0)" (click)="onMenuClick($event)">Landing</a><span class="menu-arrow"></span>
-          <ul class="submenu megamenu">
-            <li>
-              <ul>
-                <li><a class="nav-link-ref" routerLink="/index-saas">Saas</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-classic-saas">Classic Saas</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-agency">Agency</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-apps">Application</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-classic-app">Classic Application</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-studio">Studio</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-marketing">Marketing</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-enterprise">Enterprise</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-services">Service</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-payments">Payments</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-crypto">Cryptocurrency</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <ul>
-                <li><a class="nav-link-ref" routerLink="/index-it-solution">IT Solution </a></li>
-                <li><a class="nav-link-ref" routerLink="/index-business">Business</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-modern-business">Modern Business</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-corporate">Corporate Business</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-hotel">Hotel</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-construction">Construction</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-real-estate">Real Estate</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-developer">Developer</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-seo-agency">SEO Agency</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-hospital">Hospital</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-hosting">Hosting & Domain</a></li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li><a class="nav-link-ref" routerLink="/index-finance">Finance <i
-                      class="mdi mdi-star align-middle text-warning"></i></a></li>
-                <li><a class="nav-link-ref" routerLink="/index-videocall">Video Conference <i
-                      class="mdi mdi-star align-middle text-warning"></i></a></li>
-                <li><a class="nav-link-ref" routerLink="/index-it-solution-two">IT Solution Two <i
-                      class="mdi mdi-star align-middle text-warning"></i></a></li>
-                <li><a class="nav-link-ref" routerLink="/index-freelancer">Freelance <i
-                      class="mdi mdi-star align-middle text-warning"></i></a></li>
-                <li><a class="nav-link-ref" routerLink="/index-blockchain">Blockchain <i
-                      class="mdi mdi-star align-middle text-warning"></i></a></li>
-                <li><a class="nav-link-ref" routerLink="/index-crypto-two">Cryptocurrency Two <i
-                      class="mdi mdi-star align-middle text-warning"></i></a></li>
-                <li><a class="nav-link-ref" routerLink="/index-integration">Integration</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-task-management">Task Management</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-email-inbox">Email Inbox </a></li>
-                <li><a class="nav-link-ref" routerLink="/index-travel">Travel </a></li>
-                <li><a class="nav-link-ref" routerLink="/index-blog">Blog </a></li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li><a class="nav-link-ref" routerLink="/index-landing-one">Landing One</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-landing-two">Landing Two </a></li>
-                <li><a class="nav-link-ref" routerLink="/index-landing-three">Landing Three</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-landing-four">Landing Four</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-shop">Shop</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-insurance">Insurance</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-online-learning">Online Learning</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-personal">Personal</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-coworking">Coworking</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-course">Course</a></li>
-                <li><a class="nav-link-ref" routerLink="/forums">Forums</a></li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li><a class="nav-link-ref" routerLink="/index-event">Event</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-single-product">Product</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-portfolio">Portfolio</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-job">Job</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-social-marketing">Social Media</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-digital-agency">Digital Agency</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-car-riding">Car Ride</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-customer">Customer</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-software">Software</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-ebook">E-Book</a></li>
-                <li><a class="nav-link-ref" routerLink="/index-onepage">Saas <span
-                      class="badge badge-pill bg-warning ms-2">Onepage</span></a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li> -->
         <!-- <li class="has-submenu">
           <a href="javascript:void(0)" (click)="onMenuClick($event)">Pages</a><span class="menu-arrow"></span>
           <ul class="submenu">
@@ -569,6 +487,7 @@
         <!-- <li class="has-submenu">
           <a href="javascript:void(0)" (click)="onMenuClick($event)">Portfolio</a><span class="menu-arrow"></span>
           <ul class="submenu megamenu">
+            
             <li>
               <ul>
                 <li class="megamenu-head">Modern Portfolio</li>
@@ -632,9 +551,6 @@
         </li> -->
       </ul>
       <!--end navigation menu-->
-      <div class="buy-menu-btn d-none">
-        <a href="javascript: void(0);" target="_blank" class="btn btn-primary">Buy Now</a>
-      </div>
       <!--end login button-->
       <!--end login button-->
     </div>

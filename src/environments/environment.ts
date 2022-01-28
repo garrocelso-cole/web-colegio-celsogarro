@@ -8,7 +8,7 @@ export const environment = {
   url_root_backend: 'http://localhost:8000',
   url_root_frontend: 'http://localhost:4200',
   url_pago:'http://localhost:9100',
-  key_acceso_backend: 'kACogZ9f.92aPNFbv4QoEbRifYN6jkzdrUsdgy3RE'
+  key_acceso_backend: 'YSmvonfP.5eWg6zg6SrjanqKM2091shWqO3Jm2diy'
 };
 
 /*

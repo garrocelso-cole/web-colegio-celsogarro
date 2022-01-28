@@ -66,6 +66,8 @@ export class CalendarioComponent implements OnInit {
         data['fechas'].forEach( (e: _dataReservaBackend) => {
           // console.log(e.check_in);
           // console.log(this.cambiarFormatoFecha(e.check_in));
+          console.log(data);
+          
           var hab = {
             title: 'Reservado',
             start: this.cambiarFormatoFecha1(e.check_in),
@@ -76,17 +78,20 @@ export class CalendarioComponent implements OnInit {
           }
 
           this.reservas.push(hab)
+          
         }
         );
+        console.log(this.reservas);
         this.calendarOptions.events =  this.reservas
     })
   }
 
   cambiarFormatoFecha1(fecha: string){
-    return `${(new Date(fecha)).getUTCFullYear()}-${(new Date(fecha)).getMonth() + 1 }-${((new Date(fecha)).getDate() < 10 ? '0' + ((new Date(fecha)).getDate() ) : (new Date(fecha).getDate()))}`
+    return `${fecha.substring(0,4)}-${fecha.substring(5,7)}-${fecha.substring(8,10)}`
   }
   cambiarFormatoFecha2(fecha: string){
-    return `${(new Date(fecha)).getUTCFullYear()}-${(new Date(fecha)).getMonth() + 1 }-${((new Date(fecha)).getDate() < 10 ? '0' + ((new Date(fecha)).getDate() + 1) : (new Date(fecha).getDate()) + 1)}`
+    var dia = ( (Number(fecha.substring(8,10)) < 10 ? '0'+ (Number(fecha.substring(8,10)) + 1 ): (Number(fecha.substring(8,10)) + 1 ) ))
+    return `${fecha.substring(0,4)}-${fecha.substring(5,7)}-${dia}`
   }
   handleDateClick(arg) {
     alert('date click! ' + arg.dateStr)

@@ -52,10 +52,6 @@ export class ReservaDetalleComponent implements OnInit {
   showMensajeError: boolean = false
   busquedaDisponibilidad : {}
   ngOnInit() {
-    console.log(this.habitacion);
-    console.log(this.prereserva);
-
-    
     
   }
   ngOnDestroy(){
@@ -120,6 +116,11 @@ export class ReservaDetalleComponent implements OnInit {
     this.http.post<any>(`${url_base_backend}/habitaciones-libres/`,this.busquedaDisponibilidad )
     .subscribe(
       (resp:any) =>{ 
+             console.log(`${url_base_backend}/habitaciones-libres/`);
+             console.log(this.busquedaDisponibilidad);
+             console.log(resp);
+             
+             
              
         this.habitaciones = resp
         if (this.habitaciones.length > 0) { 
@@ -145,6 +146,8 @@ export class ReservaDetalleComponent implements OnInit {
     this.http.post<any>(`${url_root_backend}/reservas-mancora/reservar/`,this.busquedaDisponibilidad)
     .subscribe(
       (reservaFinal:_Reservafinal)=>{
+        console.log(`${url_root_backend}/reservas-mancora/reservar/`);
+        
         console.log(reservaFinal);
         console.log(this.busquedaDisponibilidad);
         console.log('http://localhost:8000/reservas-mancora/detalle_reserva/'+`${reservaFinal.linkSeguro}`);
