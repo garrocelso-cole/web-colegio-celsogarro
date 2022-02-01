@@ -34,7 +34,7 @@ export class SwitcherComponent implements OnInit {
    * Set dark theme
    */
   setDark() {
-    document.getElementById('theme-opt').setAttribute('href', './assets/css/style-dark.min.css');
+    window.location.href='http://en.buenavistamancora.com/';
   }
 
   /**
@@ -60,7 +60,7 @@ export class SwitcherComponent implements OnInit {
    * Set rtl theme
    */
   setRtl() {
-    document.getElementById('theme-opt').setAttribute('href', './assets/css/style-rtl.min.css');
+    window.location.href='http://www.buenavistamancora.com/';
   }
   /**
    * Set light theme
