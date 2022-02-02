@@ -6,5 +6,5 @@ export const environment = {
   // url_base_backend: 'http://localhost:8000/api',
   // url_root_backend: 'http://localhost:8000',
   // url_root_frontend: 'http://localhost:4200',
-  key_acceso_backend: 'mpfhKCBF.JQ08Bw1ctfX3OmdJ6vEgQXR93IJ4f5qO'
+  key_acceso_backend: 'ZxC4QQud.8SyPBZ2nMmzQYzZOGoJKRYvFuGy6QosX'
 };

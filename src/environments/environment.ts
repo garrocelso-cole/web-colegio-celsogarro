@@ -9,7 +9,7 @@ export const environment = {
   url_root_frontend: 'http://localhost:4200',
   url_pago:'http://localhost:9100',
 
-  key_acceso_backend: 'mpfhKCBF.JQ08Bw1ctfX3OmdJ6vEgQXR93IJ4f5qO'
+  key_acceso_backend: 'dRit0lBS.LLUn39vQI0TvU2mMSVnQbQduoh5kr1Eq'
 
 };
 
