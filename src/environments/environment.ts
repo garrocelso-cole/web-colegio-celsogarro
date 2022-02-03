@@ -4,9 +4,12 @@
 
 export const environment = {
   production: false,
-  url_base_backend: 'http://localhost:8000/api',
-  url_root_backend: 'http://localhost:8000',
-  url_root_frontend: 'http://localhost:4200',
+  // url_base_backend: 'http://localhost:8000/api',
+  // url_root_backend: 'http://localhost:8000',
+  // url_root_frontend: 'http://localhost:4200',
+  url_base_backend: 'http://reserva.buenavistamancora.com/api',
+  url_root_backend: 'http://reserva.buenavistamancora.com',
+  url_root_frontend: 'http://www.buenavistamancora.com',
   url_pago:'http://localhost:9100',
   key_acceso_backend: 'dRit0lBS.LLUn39vQI0TvU2mMSVnQbQduoh5kr1Eq'
 
