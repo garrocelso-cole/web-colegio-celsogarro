@@ -68,6 +68,14 @@ export class ReservaDetalleComponent implements OnInit {
       confirmButtonText: 'ok'
     })
   }
+  alertaHabitacionNoDisponible(){
+    Swal.fire({
+      title: 'Habitacion no disponible para esta fecha',
+      text: 'Revise la disponibilidad en el calendario',
+      icon: 'warning',
+      confirmButtonText: 'ok'
+    })
+  }
   changeFecha(event :any){
     this.habilitarBtnReserva = false
   }
@@ -116,20 +124,15 @@ export class ReservaDetalleComponent implements OnInit {
     this.http.post<any>(`${url_base_backend}/habitaciones-libres/`,this.busquedaDisponibilidad )
     .subscribe(
       (resp:any) =>{ 
-        //  console.log(`${url_base_backend}/habitaciones-libres/`);
-        //  console.log(this.busquedaDisponibilidad);
-        //  console.log(resp);
+         console.log(`${url_base_backend}/habitaciones-libres/`);
+         console.log(this.busquedaDisponibilidad);
+         console.log(resp);
         this.habitaciones = resp
         if (this.habitaciones.length > 0) { 
           this.habilitarBtnReserva = true
         }else{
           this.habilitarBtnReserva = false
-          Swal.fire({
-            title: 'Habitacion no disponible para esta fecha',
-            text: 'Revise la disponibilidad en el calendario',
-            icon: 'warning',
-            confirmButtonText: 'ok'
-          })
+          this.alertaHabitacionNoDisponible()
         }
       },
       (error)=>{
@@ -150,7 +153,7 @@ export class ReservaDetalleComponent implements OnInit {
           //window.location.href = `${reservaFinal.linkSeguro}`;
           //window.location.href = `http://localhost:8000/reservas-mancora/detalle_reserva/'+${reservaFinal.linkSeguro}`;
           //window.location.href='http://reserva.buenavistamancora.com/reservas-mancora/detalle_reserva/'+`${reservaFinal.linkSeguro}`;
-          window.location.href=`${url_root_backend}/reservas-mancora/detalle_reserva/${reservaFinal.linkSeguro}`;
+          //window.location.href=`${url_root_backend}/reservas-mancora/detalle_reserva/${reservaFinal.linkSeguro}`;
           //this.router.navigateByUrl(environment.url_pago)
         }else{
             this.busquedaDisponibilidad = {}
