@@ -116,12 +116,9 @@ export class ReservaDetalleComponent implements OnInit {
     this.http.post<any>(`${url_base_backend}/habitaciones-libres/`,this.busquedaDisponibilidad )
     .subscribe(
       (resp:any) =>{ 
-             console.log(`${url_base_backend}/habitaciones-libres/`);
-             console.log(this.busquedaDisponibilidad);
-             console.log(resp);
-             
-             
-             
+        //  console.log(`${url_base_backend}/habitaciones-libres/`);
+        //  console.log(this.busquedaDisponibilidad);
+        //  console.log(resp);
         this.habitaciones = resp
         if (this.habitaciones.length > 0) { 
           this.habilitarBtnReserva = true
