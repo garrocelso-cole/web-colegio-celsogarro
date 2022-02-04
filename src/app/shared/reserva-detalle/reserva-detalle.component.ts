@@ -79,7 +79,7 @@ export class ReservaDetalleComponent implements OnInit {
   changeFecha(event :any){
     this.habilitarBtnReserva = false
   }
-  buscarDisponibilidad(){
+  buscarDisponibilidadHabitacion(){
     //control de errores de llenado de formulario
     //console.log(this.checkDisponibilidadForm.value);
     this.habilitarBtnReserva = false
@@ -124,15 +124,17 @@ export class ReservaDetalleComponent implements OnInit {
     this.http.post<any>(`${url_base_backend}/habitaciones-libres/`,this.busquedaDisponibilidad )
     .subscribe(
       (resp:any) =>{ 
-         console.log(`${url_base_backend}/habitaciones-libres/`);
-         console.log(this.busquedaDisponibilidad);
-         console.log(resp);
+       // console.log(`${url_base_backend}/habitaciones-libres/`);
+       // console.log(this.busquedaDisponibilidad);
+       // console.log(resp);
         this.habitaciones = resp
         if (this.habitaciones.length > 0) { 
           this.habilitarBtnReserva = true
+	// console.log("disponibilidad pase por if leng>0",this.habitaciones.length)
         }else{
           this.habilitarBtnReserva = false
           this.alertaHabitacionNoDisponible()
+	 // console.log("pase por else", this.habitaciones.length)
         }
       },
       (error)=>{
@@ -145,15 +147,15 @@ export class ReservaDetalleComponent implements OnInit {
     this.http.post<any>(`${url_root_backend}/reservas-mancora/reservar/`,this.busquedaDisponibilidad)
     .subscribe(
       (reservaFinal:_Reservafinal)=>{
-        // console.log(`${url_root_backend}/reservas-mancora/reservar/`);
-        // console.log(reservaFinal);
-        // console.log(this.busquedaDisponibilidad);
-        // console.log(`${url_root_backend}/reservas-mancora/detalle_reserva//reservas-mancora/detalle_reserva/${reservaFinal.linkSeguro}`);
+        //console.log(`${url_root_backend}/reservas-mancora/reservar/`);
+        //console.log(reservaFinal);
+        //console.log(this.busquedaDisponibilidad);
+        //console.log(`${url_root_backend}/reservas-mancora/detalle_reserva//reservas-mancora/detalle_reserva/${reservaFinal.linkSeguro}`);
         if (reservaFinal.ok) {
           //window.location.href = `${reservaFinal.linkSeguro}`;
           //window.location.href = `http://localhost:8000/reservas-mancora/detalle_reserva/'+${reservaFinal.linkSeguro}`;
-          window.location.href='http://reserva.buenavistamancora.com/reservas-mancora/detalle_reserva/'+`${reservaFinal.linkSeguro}`;
-          //window.location.href=`${url_root_backend}/reservas-mancora/detalle_reserva/${reservaFinal.linkSeguro}`;
+          //window.location.href='http://reserva.buenavistamancora.com/reservas-mancora/detalle_reserva/'+`${reservaFinal.linkSeguro}`;
+          window.location.href=`${url_root_backend}/reservas-mancora/detalle_reserva/${reservaFinal.linkSeguro}`;
           //this.router.navigateByUrl(environment.url_pago)
         }else{
             this.busquedaDisponibilidad = {}

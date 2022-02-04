@@ -11,7 +11,7 @@ export const environment = {
   url_root_backend: 'http://reserva.buenavistamancora.com',
   url_root_frontend: 'http://www.buenavistamancora.com',
   url_pago:'http://localhost:9100',
-  key_acceso_backend: 'dRit0lBS.LLUn39vQI0TvU2mMSVnQbQduoh5kr1Eq'
+  key_acceso_backend: 'Rdt6uToQ.10xQDsISuxkIHMGvs4ZOFRt18Is8GEta'
 
 };
 

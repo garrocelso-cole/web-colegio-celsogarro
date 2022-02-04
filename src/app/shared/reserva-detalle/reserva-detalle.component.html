@@ -2,7 +2,7 @@
     <form class="p-4 shadow bg-white rounded"
     autocomplete="off"
     [formGroup]="checkDisponibilidadForm"
-    (ngSubmit)="buscarDisponibilidad()"
+    (ngSubmit)="buscarDisponibilidadHabitacion()"
   >
     <h3 class="mb-3">Prepare su reserva</h3>
     <div class="row text-start">
@@ -26,12 +26,18 @@
       <div ngClass="col-md-12">
         <div class="row align-items-center">
       
-          <div ngClass="col-md-6 mt-lg-4 pt-2 pt-lg-1">
+          <div ngClass="col-md-12 mt-lg-4 pt-2 pt-lg-1">
             <div class="d-grid">
               <input type="submit" id="search" name="search" class="searchbtn btn btn-blue" value="Buscar">
             </div>
-          </div>
-          <div class="col-md-6 mt-lg-4 pt-2 pt-lg-1" *ngIf="habilitarBtnReserva">
+          </div> 
+          <!--end col-->
+        </div>
+      </div>
+    </div>
+
+  </form>
+	<div class="col-md-12 mt-lg-4 pt-2 pt-lg-1" *ngIf="habilitarBtnReserva">
             <div class="d-grid">
               <button  
               class="searchbtn btn btn-primary"
@@ -39,10 +45,4 @@
               >Reservar</button>
             </div>
           </div>
-          <!--end col-->
-        </div>
-      </div>
-    </div>
-
-  </form>
 </div>
