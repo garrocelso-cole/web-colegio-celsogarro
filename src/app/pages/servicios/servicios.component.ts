@@ -20,7 +20,7 @@ export class ServiciosComponent implements OnInit {
    servicesData = [
     {
       icon: "uil uil-wifi h1 text-primary",
-      title: "WIFI Gratis",
+      title: "Wi-Fi Gratis",
       description: "Contamos con el servicio de Wifi 24x7 "
     },
     {

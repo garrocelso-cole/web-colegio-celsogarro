@@ -12,7 +12,7 @@ export class InicioService {
   servicesData = [
     {
       icon: "uil uil-wifi h1 text-primary",
-      title: "WIFI Gratis",
+      title: "Wi-Fi Gratis",
       description: "Contamos con el servicio de Wifi 24x7 "
     },
     {
@@ -160,7 +160,7 @@ export class InicioService {
     {
       h1: 'Bienvenidos al paradisíaco ',
       h1Parrafo: 'Buena Vista Máncora',
-      h4: 'Reserva de las habitaciones que tenemos para ti.',
+      h4: 'Reserva las habitaciones que tenemos para ti.',
       span: '',
       src: '',
       urlImage: 'assets/images/hotel/portada3.jpg',

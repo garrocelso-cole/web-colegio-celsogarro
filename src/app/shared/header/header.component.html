@@ -1,52 +1,50 @@
 <!-- TAGLINE START-->
 <div class="tagline bg-light" *ngIf="sliderTopbar == true">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <div class="text-slider">
-          <ul class="list-inline mb-0 move-text">
-            <li class="list-inline-item px-2 mb-0"><b>EOG</b> $ 55.88 <span class="text-success">+$ 4.62 ( +9.01%
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-slider">
+                    <ul class="list-inline mb-0 move-text">
+                        <li class="list-inline-item px-2 mb-0"><b>EOG</b> $ 55.88 <span class="text-success">+$ 4.62 ( +9.01%
                 )</span></li>
-            <li class="list-inline-item px-2 mb-0"><b>CHKP</b> $ 120.03 <span class="text-danger">-$ 14.07 ( -10.49%
+                        <li class="list-inline-item px-2 mb-0"><b>CHKP</b> $ 120.03 <span class="text-danger">-$ 14.07 ( -10.49%
                 )</span></li>
-            <li class="list-inline-item px-2 mb-0"><b>FANG</b> $ 63.58 <span class="text-success">+$ 5.17 ( +8.84%
+                        <li class="list-inline-item px-2 mb-0"><b>FANG</b> $ 63.58 <span class="text-success">+$ 5.17 ( +8.84%
                 )</span></li>
-            <li class="list-inline-item px-2 mb-0"><b>M</b> $ 14.75 <span class="text-success">+$ 1.05 ( +7.66% )</span>
-            </li>
-            <li class="list-inline-item px-2 mb-0"><b>PKI</b> $ 139.72 <span class="text-danger">-$ 11.41 ( -7.55%
+                        <li class="list-inline-item px-2 mb-0"><b>M</b> $ 14.75 <span class="text-success">+$ 1.05 ( +7.66% )</span>
+                        </li>
+                        <li class="list-inline-item px-2 mb-0"><b>PKI</b> $ 139.72 <span class="text-danger">-$ 11.41 ( -7.55%
                 )</span></li>
-            <li class="list-inline-item px-2 mb-0"><b>ABMD</b> $ 326.23 <span class="text-danger">-$ 21.61 ( -6.21%
+                        <li class="list-inline-item px-2 mb-0"><b>ABMD</b> $ 326.23 <span class="text-danger">-$ 21.61 ( -6.21%
                 )</span></li>
-            <li class="list-inline-item px-2 mb-0"><b>BITCOIN</b> $ 37,471.47 <span class="text-danger">+$ 492.60 (
+                        <li class="list-inline-item px-2 mb-0"><b>BITCOIN</b> $ 37,471.47 <span class="text-danger">+$ 492.60 (
                 +1.33% )</span></li>
-            <li class="list-inline-item px-2 mb-0"><b>XRP</b> <span> $ 0.39</span><span class="text-muted"> UNCH</span>
-            </li>
-            <li class="list-inline-item px-2 mb-0"><b>LITECOIN</b> <span> $ 148.67</span><span class="text-danger">-$
+                        <li class="list-inline-item px-2 mb-0"><b>XRP</b> <span> $ 0.39</span><span class="text-muted"> UNCH</span>
+                        </li>
+                        <li class="list-inline-item px-2 mb-0"><b>LITECOIN</b> <span> $ 148.67</span><span class="text-danger">-$
                 5.58 ( -3.62% )</span></li>
-            <li class="list-inline-item px-2 mb-0"><b>BITCOIN CASH</b> <span> $ 427.37</span><span
-                class="text-danger">-$ 15.98 ( -3.60% )</span></li>
-            <li class="list-inline-item px-2 mb-0"><b>ETHEREUM</b> $ 1,647.87 <span class="text-danger">+$ 14.51 (
+                        <li class="list-inline-item px-2 mb-0"><b>BITCOIN CASH</b> <span> $ 427.37</span><span class="text-danger">-$ 15.98 ( -3.60% )</span></li>
+                        <li class="list-inline-item px-2 mb-0"><b>ETHEREUM</b> $ 1,647.87 <span class="text-danger">+$ 14.51 (
                 +0.89% )</span></li>
-          </ul>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
 <!-- TAGLINE END-->
 
 <!-- Navbar STart -->
-<header id="topnav" class="defaultscroll sticky" (window:scroll)="windowScroll()" [class]="navClass"
-  [ngClass]="{'tagline-height': sliderTopbar == true}">
-  <div class="container">
-    <!-- Logo container-->
-    <div>
-      <a class="logo"  *ngIf="navClass !== 'nav-light'">
-        <img src="assets/images/logo/logo-dark-bvm.png" class="l-dark logo-light-mode" height="42" alt="">
-        <img src="assets/images/logo/logo-light-bvm.png" class="logo-dark-mode" height="42" alt="">
-      </a>
+<header id="topnav" class="defaultscroll sticky" (window:scroll)="windowScroll()" [class]="navClass" [ngClass]="{'tagline-height': sliderTopbar == true}">
+    <div class="container" style="margin-top: 5px;">
+        <!-- Logo container-->
+        <div>
+            <a class="logo" *ngIf="navClass !== 'nav-light'">
+                <img src="assets/images/logo/logo-dark-bvm.png" class="l-dark logo-light-mode" height="55" alt="" style="margin-right: -90px; margin-left: -90px; margin-top: 8px; margin-bottom: 8px;">
+                <img src="assets/images/logo/logo-light-bvm.png" class="logo-dark-mode" height="55" alt="">
+            </a>
 
-      <!-- <ul class="buy-button list-inline mb-0" *ngIf="shopPages == true">
+            <!-- <ul class="buy-button list-inline mb-0" *ngIf="shopPages == true">
         <li class="list-inline-item mb-0">
           <div class="dropdown" ngbDropdown>
             <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2" ngbDropdownToggle
@@ -155,148 +153,138 @@
         </li>
       </ul> -->
 
-      <ul class="buy-button list-inline mb-0" *ngIf="buttonList == true">
-        <li class="list-inline-item mb-0 ms-1">
-          <div class="dropdown">
-            <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2"
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <ul class="buy-button list-inline mb-0" *ngIf="buttonList == true">
+                <li class="list-inline-item mb-0 ms-1">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="uil uil-search text-muted"></i>
             </button>
-            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0"
-              style="width: 300px;">
-              <form>
-                <input type="text" id="text" name="name" class="form-control border bg-white" placeholder="Search...">
-              </form>
-            </div>
-          </div>
-        </li>
-        <li class="list-inline-item mb-0 ms-1">
-          <a href="javascript:void(0)" class="btn btn-icon btn-primary"><i class="uil uil-facebook-f icons"></i></a>
-        </li>
-        <li class="list-inline-item mb-0 ms-1">
-          <a href="javascript:void(0)" class="btn btn-icon btn-primary"><i class="uil uil-github icons"></i></a>
-        </li>
-        <li class="list-inline-item mb-0 ms-1">
-          <a href="javascript:void(0)" class="btn btn-icon btn-primary"><i class="uil uil-twitter icons"></i></a>
-        </li>
-        <li class="list-inline-item mb-0 ms-1">
-          <a href="javascript:void(0)" class="btn btn-icon btn-primary"><i class="uil uil-linkedin-alt icons"></i></a>
-        </li>
-      </ul>
-
-      <ul class="buy-button list-inline mb-0" *ngIf="isdeveloper == true">
-        <li class="list-inline-item mb-0">
-          <div class="dropdown">
-            <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2"
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="uil uil-search text-muted"></i>
-            </button>
-            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0"
-              style="width: 300px;">
-              <form>
-                <input type="text" id="text2" name="name" class="form-control border bg-white" placeholder="Search...">
-              </form>
-            </div>
-          </div>
-        </li>
-        <li class="list-inline-item mb-0 pe-1">
-          <a href="#" class="btn btn-icon btn-soft-primary"><i class="uil uil-github icons"></i></a>
-        </li>
-        <li class="list-inline-item mb-0 pe-1">
-          <a href="#" class="btn btn-icon btn-soft-primary"><i class="mdi mdi-stack-overflow mdi-18px icons"></i></a>
-        </li>
-        <li class="list-inline-item mb-0">
-          <a href="javascript:void(0)" class="btn btn-icon btn-soft-primary" (click)="developerModal(content)"
-            data-bs-toggle="modal" data-bs-target="#loginform"><i class="uil uil-user icons"></i></a>
-        </li>
-        <ng-template #content let-modal>
-          <div class="modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content rounded shadow-lg border-0 overflow-hidden position-relative">
-              <button type="button" class="btn-close position-absolute top-0 end-0 mt-2 me-2"
-                (click)="modal.dismiss('Cross click')" style="z-index: 1" data-bs-dismiss="modal"
-                aria-label="Close"></button>
-              <div class="modal-body p-0">
-                <div class="container-fluid px-0">
-                  <div class="row align-items-center g-0">
-                    <div class="col-lg-6 col-md-5">
-                      <img src="assets/images/course/online/ab02.jpg" class="img-fluid" alt="">
-                    </div>
-                    <!--end col-->
-
-                    <div class="col-lg-6 col-md-7">
-                      <form class="login-form p-4">
-                        <div class="row">
-                          <div class="col-lg-12">
-                            <div class="mb-3">
-                              <label class="form-label">Your Email <span class="text-danger">*</span></label>
-                              <div class="form-icon position-relative">
-                                <i-feather name="user" class="fea icon-sm icons"></i-feather>
-                                <input type="email" class="form-control ps-5" placeholder="Email" name="email"
-                                  required="">
-                              </div>
-                            </div>
-                          </div>
-                          <!--end col-->
-
-                          <div class="col-lg-12">
-                            <div class="mb-3">
-                              <label class="form-label">Password <span class="text-danger">*</span></label>
-                              <div class="form-icon position-relative">
-                                <i-feather name="key" class="fea icon-sm icons"></i-feather>
-                                <input type="password" class="form-control ps-5" placeholder="Password" required="">
-                              </div>
-                            </div>
-                          </div>
-                          <!--end col-->
-
-                          <div class="col-lg-12">
-                            <div class="d-flex justify-content-between">
-                              <div class="mb-3">
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                  <label class="custom-control-label ms-1" for="customCheck1">Remember me</label>
-                                </div>
-                              </div>
-                              <p class="forgot-pass mb-0"><a routerLink="/auth-re-password"
-                                  class="text-dark fw-bold">Forgot password ?</a></p>
-                            </div>
-                          </div>
-                          <!--end col-->
-
-                          <div class="col-lg-12 mb-0">
-                            <div class="d-grid">
-                              <button class="btn btn-primary">Sign in</button>
-                            </div>
-                          </div>
-                          <!--end col-->
-
-                          <div class="col-12 text-center">
-                            <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a
-                                routerLink="/auth-signup" class="text-dark fw-bold">Sign Up</a></p>
-                          </div>
-                          <!--end col-->
+                        <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0" style="width: 300px;">
+                            <form>
+                                <input type="text" id="text" name="name" class="form-control border bg-white" placeholder="Search...">
+                            </form>
                         </div>
-                        <!--end row-->
-                      </form>
                     </div>
-                    <!--end col-->
-                  </div>
-                  <!--end row-->
-                </div>
-                <!--end container-->
-              </div>
-            </div>
-          </div>
-        </ng-template>
-      </ul>
+                </li>
+                <li class="list-inline-item mb-0 ms-1">
+                    <a href="javascript:void(0)" class="btn btn-icon btn-primary"><i class="uil uil-facebook-f icons"></i></a>
+                </li>
+                <li class="list-inline-item mb-0 ms-1">
+                    <a href="javascript:void(0)" class="btn btn-icon btn-primary"><i class="uil uil-github icons"></i></a>
+                </li>
+                <li class="list-inline-item mb-0 ms-1">
+                    <a href="javascript:void(0)" class="btn btn-icon btn-primary"><i class="uil uil-twitter icons"></i></a>
+                </li>
+                <li class="list-inline-item mb-0 ms-1">
+                    <a href="javascript:void(0)" class="btn btn-icon btn-primary"><i class="uil uil-linkedin-alt icons"></i></a>
+                </li>
+            </ul>
 
-      <a class="logo" routerLink="" *ngIf="navClass === 'nav-light'">
-        <img src="assets/images/logo/logo-dark-bvm.png" class="l-dark" height="42" alt="">
-        <img src="assets/images/logo/logo-light-bvm.png" class="l-light" height="42" alt="">
-      </a>
-    </div>
+            <ul class="buy-button list-inline mb-0" *ngIf="isdeveloper == true">
+                <li class="list-inline-item mb-0">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="uil uil-search text-muted"></i>
+            </button>
+                        <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0" style="width: 300px;">
+                            <form>
+                                <input type="text" id="text2" name="name" class="form-control border bg-white" placeholder="Search...">
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-inline-item mb-0 pe-1">
+                    <a href="#" class="btn btn-icon btn-soft-primary"><i class="uil uil-github icons"></i></a>
+                </li>
+                <li class="list-inline-item mb-0 pe-1">
+                    <a href="#" class="btn btn-icon btn-soft-primary"><i class="mdi mdi-stack-overflow mdi-18px icons"></i></a>
+                </li>
+                <li class="list-inline-item mb-0">
+                    <a href="javascript:void(0)" class="btn btn-icon btn-soft-primary" (click)="developerModal(content)" data-bs-toggle="modal" data-bs-target="#loginform"><i class="uil uil-user icons"></i></a>
+                </li>
+                <ng-template #content let-modal>
+                    <div class="modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content rounded shadow-lg border-0 overflow-hidden position-relative">
+                            <button type="button" class="btn-close position-absolute top-0 end-0 mt-2 me-2" (click)="modal.dismiss('Cross click')" style="z-index: 1" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body p-0">
+                                <div class="container-fluid px-0">
+                                    <div class="row align-items-center g-0">
+                                        <div class="col-lg-6 col-md-5">
+                                            <img src="assets/images/course/online/ab02.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <!--end col-->
 
-    <span *ngIf="!buttonList && !isdeveloper && !shopPages">
+                                        <div class="col-lg-6 col-md-7">
+                                            <form class="login-form p-4">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                                            <div class="form-icon position-relative">
+                                                                <i-feather name="user" class="fea icon-sm icons"></i-feather>
+                                                                <input type="email" class="form-control ps-5" placeholder="Email" name="email" required="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+
+                                                    <div class="col-lg-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Password <span class="text-danger">*</span></label>
+                                                            <div class="form-icon position-relative">
+                                                                <i-feather name="key" class="fea icon-sm icons"></i-feather>
+                                                                <input type="password" class="form-control ps-5" placeholder="Password" required="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+
+                                                    <div class="col-lg-12">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="mb-3">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                                    <label class="custom-control-label ms-1" for="customCheck1">Remember me</label>
+                                                                </div>
+                                                            </div>
+                                                            <p class="forgot-pass mb-0"><a routerLink="/auth-re-password" class="text-dark fw-bold">Forgot password ?</a></p>
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+
+                                                    <div class="col-lg-12 mb-0">
+                                                        <div class="d-grid">
+                                                            <button class="btn btn-primary">Sign in</button>
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+
+                                                    <div class="col-12 text-center">
+                                                        <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a routerLink="/auth-signup" class="text-dark fw-bold">Sign Up</a></p>
+                                                    </div>
+                                                    <!--end col-->
+                                                </div>
+                                                <!--end row-->
+                                            </form>
+                                        </div>
+                                        <!--end col-->
+                                    </div>
+                                    <!--end row-->
+                                </div>
+                                <!--end container-->
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ul>
+
+            <a class="logo" routerLink="" *ngIf="navClass === 'nav-light'">
+                <img src="assets/images/logo/logo-dark-bvm.png" class="l-dark" height="55" alt="" style="margin-right: -90px; margin-left: -90px; margin-top: 8px; margin-bottom: 8px;">
+                <img src="assets/images/logo/logo-light-bvm.png" class="l-light" height="55" alt="" style="margin-right: -90px; margin-left: -90px; margin-top: 8px; margin-bottom: 8px;">
+            </a>
+        </div>
+
+        <span *ngIf="!buttonList && !isdeveloper && !shopPages">
       <div class="buy-button">
         <ng-template [ngIf]="navClass === 'nav-light'">
           <a routerLink="/" [ngxScrollTo]="'#bookroom'" class="btn btn-primary login-btn-primary">Reservar</a>
@@ -310,31 +298,31 @@
 
       </div>
     </span>
-    <!--end login button-->
+        <!--end login button-->
 
-    <div class="menu-extras">
-      <div class="menu-item">
-        <!-- Mobile menu toggle-->
-        <a class="navbar-toggle" id="isToggle" (click)="toggleMenu()" [ngClass]="{'open': isCondensed === true}">
-          <div class="lines">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </a>
-        <!-- End mobile menu toggle-->
-      </div>
-    </div>
-    <div id="navigation">
-      <!-- Navigation Menu-->
-      <ul class="navigation-menu" [class]="navClass">
-        <li><a class="nav-link-ref" routerLink="" style="font-family: 'Dancing Script', cursive;">Inicio</a></li>
-        <li><a class="nav-link-ref" routerLink="nosotros" style="font-family: 'Dancing Script', cursive;">Nosotros</a></li>
-        <li><a class="nav-link-ref" routerLink="habitaciones" style="font-family: 'Dancing Script', cursive;">Habitaciones</a></li>
-        <li><a class="nav-link-ref" routerLink="servicios" style="font-family: 'Dancing Script', cursive;">Servicios</a></li>
-        <li><a class="nav-link-ref" routerLink="eventos" style="font-family: 'Dancing Script', cursive;">Eventos</a></li>
-        <li><a class="nav-link-ref" routerLink="contacto" style="font-family: 'Dancing Script', cursive;">Contacto</a></li>
-        <!-- <li class="has-submenu">
+        <div class="menu-extras">
+            <div class="menu-item">
+                <!-- Mobile menu toggle-->
+                <a class="navbar-toggle" id="isToggle" (click)="toggleMenu()" [ngClass]="{'open': isCondensed === true}">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+                <!-- End mobile menu toggle-->
+            </div>
+        </div>
+        <div id="navigation">
+            <!-- Navigation Menu-->
+            <ul class="navigation-menu" [class]="navClass">
+                <li><a class="nav-link-ref" routerLink="" style="font-family: 'Dancing Script', cursive; font-size: medium; margin-left: -4px;">Inicio</a></li>
+                <li><a class="nav-link-ref" routerLink="nosotros" style="font-family: 'Dancing Script', cursive; font-size: medium;">Nosotros</a></li>
+                <li><a class="nav-link-ref" routerLink="habitaciones" style="font-family: 'Dancing Script', cursive; font-size: medium;">Habitaciones</a></li>
+                <li><a class="nav-link-ref" routerLink="servicios" style="font-family: 'Dancing Script', cursive; font-size: medium;">Servicios</a></li>
+                <li><a class="nav-link-ref" routerLink="eventos" style="font-family: 'Dancing Script', cursive; font-size: medium;">Eventos</a></li>
+                <li><a class="nav-link-ref" routerLink="contacto" style="font-family: 'Dancing Script', cursive; font-size: medium; margin-right: -31px;">Contacto</a></li>
+                <!-- <li class="has-submenu">
           <a href="javascript:void(0)" (click)="onMenuClick($event)">Pages</a><span class="menu-arrow"></span>
           <ul class="submenu">
             <li class="has-submenu"><a href="javascript:void(0)" (click)="onMenuClick($event)"> Company </a><span
@@ -476,7 +464,7 @@
             </li>
           </ul>
         </li> -->
-        <!-- <li class="has-submenu">
+                <!-- <li class="has-submenu">
           <a href="javascript:void(0)" (click)="onMenuClick($event)">Portfolio</a><span class="menu-arrow"></span>
           <ul class="submenu megamenu">
             
@@ -532,7 +520,7 @@
             </li>
           </ul>
         </li> -->
-        <!-- <li class="has-submenu">
+                <!-- <li class="has-submenu">
           <a href="javascript:void(0)" (click)="onMenuClick($event)">Docs</a><span class="menu-arrow"></span>
           <ul class="submenu">
             <li><a class="nav-link-ref" routerLink="/documentation">Documentation</a></li>
@@ -541,14 +529,14 @@
             <li><a class="nav-link-ref" routerLink="/widget">Widget</a></li>
           </ul>
         </li> -->
-      </ul>
-      <!--end navigation menu-->
-      <!--end login button-->
-      <!--end login button-->
+            </ul>
+            <!--end navigation menu-->
+            <!--end login button-->
+            <!--end login button-->
+        </div>
+        <!--end navigation-->
     </div>
-    <!--end navigation-->
-  </div>
-  <!--end container-->
+    <!--end container-->
 </header>
 <!--end header-->
 <!-- Navbar End -->

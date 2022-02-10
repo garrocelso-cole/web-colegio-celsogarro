@@ -70,8 +70,8 @@ export class ReservaDetalleComponent implements OnInit {
   }
   alertaHabitacionNoDisponible(){
     Swal.fire({
-      title: 'Habitacion no disponible para esta fecha',
-      text: 'Revise la disponibilidad en el calendario',
+      title: 'Habitacion no disponible para esta fecha. Precios por temporada.',
+      text: 'Por favor revise la disponibilidad en el calendario, para reservar fuera de temporada comunicarse por whatsapp al (+51) 951 298 174.',
       icon: 'warning',
       confirmButtonText: 'ok'
     })

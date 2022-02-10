@@ -12,6 +12,7 @@ export const environment = {
   url_root_frontend: '//www.buenavistamancora.com',
   url_pago:'http://localhost:9100',
   key_acceso_backend: 'Rdt6uToQ.10xQDsISuxkIHMGvs4ZOFRt18Is8GEta'
+  // key_acceso_backend: '1KsNX853.fuxE5SoFwVmRowb3gnrx5tyzHTL8R59h'
 
 };
 
