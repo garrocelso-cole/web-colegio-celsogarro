@@ -137,9 +137,9 @@ export class InicioService {
 
   carruselData = [
     {
-      h1: 'La mejor vista al mar, solo en ',
-      h1Parrafo: 'Buena Vista Máncora',
-      h4: 'Disfruta de las mejores vacaciones frente a la mejor vista.',
+      h1: 'Colegio 86253 - Celso Garro Valderrama, ',
+       h1Parrafo: 'EDUCACION DE CALIDAD',
+      h4: 'La mejor educacion en nuestras manos',
       span: 'Mirar Ahora',
       src:'https://www.youtube.com/embed/v66TvVNxN6s',
       urlImage: 'assets/images/hotel/portada1.jpg',
@@ -147,7 +147,7 @@ export class InicioService {
       link: '',
     },
     {
-      h1: 'Buena Vista Máncora, la mejor elección para sus vacaciones',
+      h1: 'Celso Garro Valderrama, la mejor elección para sus vacaciones',
       h1Parrafo: '',
       h4: 'Contempla de un alba único, acompañado del sonido del mar.',
       span: '',
@@ -158,9 +158,9 @@ export class InicioService {
 
     },
     {
-      h1: 'Bienvenidos al paradisíaco ',
-      h1Parrafo: 'Buena Vista Máncora',
-      h4: 'Reserva las habitaciones que tenemos para ti.',
+      h1: 'Bienvenidos, Colegio 86253  ',
+       h1Parrafo: 'EDUCACION DE CALIDAD',
+      h4: 'Reserva las habitacionesque tenemos para ti.',
       span: '',
       src: '',
       urlImage: 'assets/images/hotel/portada3.jpg',
@@ -168,8 +168,8 @@ export class InicioService {
       link: '',
     },
     {
-      h1: 'Bienvenidos al paradisíaco ',
-      h1Parrafo: 'Buena Vista Máncora',
+      h1: 'Bienvenidos, Colegio 86253  ',
+       h1Parrafo: 'EDUCACION DE CALIDAD',
       h4: 'Launch your campaign and benefit from our expertise on designing.',
       span: '',
       src: '',

@@ -2304,7 +2304,7 @@ EventosComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1_
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "HabitacionesComponent": function() { return /* binding */ HabitacionesComponent; }
+/* harmony export */   "habitacionesComponent": function() { return /* binding */ habitacionesComponent; }
 /* harmony export */ });
 /* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/environments/environment */ 92340);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 37716);
@@ -2326,7 +2326,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const _c0 = function (a0) { return { "active": a0 }; };
 const url_base_backend = src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.url_base_backend;
-class HabitacionesComponent {
+class habitacionesComponent {
     constructor(router, http, inicioService) {
         this.router = router;
         this.http = http;
@@ -2344,7 +2344,7 @@ class HabitacionesComponent {
         }
         this.http.get(`${url_base_backend}/habitaciones`)
             .subscribe((data) => {
-            this.habitaciones = data;
+            this.habitaciones= data;
             this.filterredImages = this.habitaciones;
             this.activeCategory(this.habitacion.tipohabitacion.nombretipo);
         });
@@ -2363,8 +2363,8 @@ class HabitacionesComponent {
         }
     }
 }
-HabitacionesComponent.ɵfac = function HabitacionesComponent_Factory(t) { return new (t || HabitacionesComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpClient), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](src_app_services_inicio_service__WEBPACK_IMPORTED_MODULE_1__.InicioService)); };
-HabitacionesComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: HabitacionesComponent, selectors: [["app-habitaciones"]], decls: 42, vars: 20, consts: [["id", "home", 1, "bg-half", "bg-light", "d-table", "w-100", 2, "background", "url('assets/images/hotel/portadaHabitaciones.jpg')", "background-size", "100% 100%"], [1, "bg-overlay"], [1, "container"], [1, "row", "justify-content-center"], [1, "col-lg-12", "text-center"], [1, "page-next-level", "title-heading"], [1, "display-4", "title-dark", "text-white", "fw-bold", "mb-3", "text-white", "title-dark", "title"], [1, "text-white", "para-desc", "mb-0", "mx-auto", 2, "font-size", "x-large"], [1, "page-next"], ["aria-label", "breadcrumb", 1, "d-inline-block"], [1, "breadcrumb", "bg-white", "rounded", "shadow", "mb-0"], [1, "breadcrumb-item"], ["routerLink", "/inicio"], ["aria-current", "page", 1, "breadcrumb-item", "active"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-white"], ["viewBox", "0 0 2880 48", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z", "fill", "currentColor"], [1, "section"], [1, "row"], ["id", "filter", 1, "col", "container-filter", "list-unstyled", "categories-filter", "text-center"], [1, "list-inline-item", "categories-name", "border", "text-dark", "rounded", 2, "font-size", "x-large", 3, "ngClass", "click"], [1, "list-inline-item", "categories-name", "border", "text-dark", "rounded", "ms-2", 2, "font-size", "x-large", 3, "ngClass", "click"], [3, "roomCardData", "roomCardEvent"], ["href", "javascript: void(0);", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"]], template: function HabitacionesComponent_Template(rf, ctx) { if (rf & 1) {
+habitacionesComponent.ɵfac = function habitacionesComponent_Factory(t) { return new (t || habitacionesComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpClient), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](src_app_services_inicio_service__WEBPACK_IMPORTED_MODULE_1__.InicioService)); };
+habitacionesComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: habitacionesComponent, selectors: [["app-habitaciones"]], decls: 42, vars: 20, consts: [["id", "home", 1, "bg-half", "bg-light", "d-table", "w-100", 2, "background", "url('assets/images/hotel/portadahabitaciones.jpg')", "background-size", "100% 100%"], [1, "bg-overlay"], [1, "container"], [1, "row", "justify-content-center"], [1, "col-lg-12", "text-center"], [1, "page-next-level", "title-heading"], [1, "display-4", "title-dark", "text-white", "fw-bold", "mb-3", "text-white", "title-dark", "title"], [1, "text-white", "para-desc", "mb-0", "mx-auto", 2, "font-size", "x-large"], [1, "page-next"], ["aria-label", "breadcrumb", 1, "d-inline-block"], [1, "breadcrumb", "bg-white", "rounded", "shadow", "mb-0"], [1, "breadcrumb-item"], ["routerLink", "/inicio"], ["aria-current", "page", 1, "breadcrumb-item", "active"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-white"], ["viewBox", "0 0 2880 48", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z", "fill", "currentColor"], [1, "section"], [1, "row"], ["id", "filter", 1, "col", "container-filter", "list-unstyled", "categories-filter", "text-center"], [1, "list-inline-item", "categories-name", "border", "text-dark", "rounded", 2, "font-size", "x-large", 3, "ngClass", "click"], [1, "list-inline-item", "categories-name", "border", "text-dark", "rounded", "ms-2", 2, "font-size", "x-large", 3, "ngClass", "click"], [3, "roomCardData", "roomCardEvent"], ["href", "javascript: void(0);", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"]], template: function habitacionesComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "section", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](2, "div", 2);
@@ -2372,10 +2372,10 @@ HabitacionesComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODU
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "div", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](5, "div", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](6, "h1", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](7, " Habitaciones ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](7, " habitaciones");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](8, "h3", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](9, "Disfruta de la gama de habitaciones con la que contamos para su estadia.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](9, "Disfruta de la gama de habitacionescon la que contamos para su estadia.");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](10, "div", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](11, "nav", 9);
@@ -2386,7 +2386,7 @@ HabitacionesComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODU
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](16, "li", 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](17, "Habitaciones");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](17, "habitaciones");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
@@ -2410,27 +2410,27 @@ HabitacionesComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODU
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](24, "div", 19);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](25, "ul", 20);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](26, "li", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function HabitacionesComponent_Template_li_click_26_listener() { return ctx.activeCategory("todo"); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function habitacionesComponent_Template_li_click_26_listener() { return ctx.activeCategory("todo"); });
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](27, " Todo ");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](28, "li", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function HabitacionesComponent_Template_li_click_28_listener() { return ctx.activeCategory("Bungalow(Habitaci\u00F3n de lujo)"); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function habitacionesComponent_Template_li_click_28_listener() { return ctx.activeCategory("Bungalow(Habitaci\u00F3n de lujo)"); });
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](29, " Bungalow ");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](30, "li", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function HabitacionesComponent_Template_li_click_30_listener() { return ctx.activeCategory("Habitacion Standard"); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function habitacionesComponent_Template_li_click_30_listener() { return ctx.activeCategory("Habitacion Standard"); });
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](31, " Standard ");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](32, "li", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function HabitacionesComponent_Template_li_click_32_listener() { return ctx.activeCategory("Habitaci\u00F3n Kitchenette"); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function habitacionesComponent_Template_li_click_32_listener() { return ctx.activeCategory("Habitaci\u00F3n Kitchenette"); });
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](33, " Kitchenette ");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](34, "li", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function HabitacionesComponent_Template_li_click_34_listener() { return ctx.activeCategory("Habitaci\u00F3n Suite Standard"); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function habitacionesComponent_Template_li_click_34_listener() { return ctx.activeCategory("Habitaci\u00F3n Suite Standard"); });
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](35, " Suite ");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](36, "li", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function HabitacionesComponent_Template_li_click_36_listener() { return ctx.activeCategory("Habitaci\u00F3n Standard Simple"); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function habitacionesComponent_Template_li_click_36_listener() { return ctx.activeCategory("Habitaci\u00F3n Standard Simple"); });
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](37, " Simple ");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
@@ -2438,7 +2438,7 @@ HabitacionesComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODU
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](38, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](39, "app-room-card", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("roomCardEvent", function HabitacionesComponent_Template_app_room_card_roomCardEvent_39_listener($event) { return ctx.habitacionSeleccionada($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("roomCardEvent", function habitacionesComponent_Template_app_room_card_roomCardEvent_39_listener($event) { return ctx.habitacionSeleccionada($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
@@ -2643,12 +2643,12 @@ function InicioComponent_ng_template_29_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("roomCardData", ctx_r4.categorias);
+    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵproperty"]("roomCardData", ctx_r4.primaria);
 } }
 function InicioComponent_ng_template_35_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](0, "div", 91);
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](1, "h1", 92);
-    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](2, " Haga su reserva ya !! ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](2, " todo sobre Secundaria !! ");
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -2707,8 +2707,8 @@ class InicioComponent {
         this.carruselData = []; //data de carrusel
         this.comentariosData = {};
         this.roomData = [];
-        this.habitaciones = [];
-        this.categorias = [];
+        this.habitaciones= [];
+        this.primaria = [];
         this.showRoomList = false;
         this.contactenosForm = this.fb.group({
             nombre: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_10__.Validators.required],
@@ -2726,7 +2726,7 @@ class InicioComponent {
         this.config = this.inicioService.swiperOptions;
         this.http.get(`${url_base_backend}/habitaciones-genericas-tipo/`)
             .subscribe((data) => {
-            this.categorias = data;
+            this.primaria = data;
         }, (error) => {
             console.log(error);
         });
@@ -2782,7 +2782,7 @@ class InicioComponent {
     }
     obtenerDatosReserva(valor) {
         this.showRoomList = true;
-        this.habitaciones = valor.habitaciones;
+        this.habitaciones= valor.habitaciones;
         this.prereserva = valor.prereserva;
     }
     /**
@@ -2819,7 +2819,7 @@ InicioComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_9__
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](11, "div", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](12, "div", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](13, "h1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](14, "Habitaciones & Suites");
+        _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](14, "Niveles Educativos");
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](15, "h3", 10);
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](16, "En ");
@@ -2838,7 +2838,7 @@ InicioComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_9__
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](25, "a", 17);
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](26, "div", 18);
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](27, "h6", 19);
-        _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](28, "Categorias");
+        _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](28, "primaria");
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
@@ -2848,7 +2848,7 @@ InicioComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_9__
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](31, "a", 17);
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](32, "div", 18);
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementStart"](33, "h6", 19);
-        _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](34, "Habitaciones");
+        _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵtext"](34, "habitaciones");
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵelementEnd"]();
@@ -3030,7 +3030,7 @@ function NosotrosComponent_ng_template_70_Template(rf, ctx) { if (rf & 1) {
 } }
 function NosotrosComponent_ng_template_71_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "p", 62);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Habitaciones para personas con discapacidad, aire acondicionado, atm\u00F3sfera relajante y c\u00E1lida, ubicaci\u00F3n a orillas del Mar que hacen realmente a Buena Vista la mejor opci\u00F3n de alojamiento en M\u00E1ncora");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "habitacionespara personas con discapacidad, aire acondicionado, atm\u00F3sfera relajante y c\u00E1lida, ubicaci\u00F3n a orillas del Mar que hacen realmente a Buena Vista la mejor opci\u00F3n de alojamiento en M\u00E1ncora");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } }
 function NosotrosComponent_ng_template_73_Template(rf, ctx) { if (rf & 1) {
@@ -3434,7 +3434,7 @@ PagesModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_12__["�
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵsetNgModuleScope"](PagesModule, { declarations: [_pages_component__WEBPACK_IMPORTED_MODULE_0__.PagesComponent,
         _inicio_inicio_component__WEBPACK_IMPORTED_MODULE_1__.InicioComponent,
         _nosotros_nosotros_component__WEBPACK_IMPORTED_MODULE_2__.NosotrosComponent,
-        _habitaciones_habitaciones_component__WEBPACK_IMPORTED_MODULE_3__.HabitacionesComponent,
+        _habitaciones_habitaciones_component__WEBPACK_IMPORTED_MODULE_3__.habitacionesComponent,
         _servicios_servicios_component__WEBPACK_IMPORTED_MODULE_4__.ServiciosComponent,
         _eventos_eventos_component__WEBPACK_IMPORTED_MODULE_5__.EventosComponent,
         _contacto_contacto_component__WEBPACK_IMPORTED_MODULE_6__.ContactoComponent,
@@ -3459,7 +3459,7 @@ PagesModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_12__["�
         _angular_forms__WEBPACK_IMPORTED_MODULE_24__.ReactiveFormsModule], exports: [_pages_component__WEBPACK_IMPORTED_MODULE_0__.PagesComponent,
         _inicio_inicio_component__WEBPACK_IMPORTED_MODULE_1__.InicioComponent,
         _nosotros_nosotros_component__WEBPACK_IMPORTED_MODULE_2__.NosotrosComponent,
-        _habitaciones_habitaciones_component__WEBPACK_IMPORTED_MODULE_3__.HabitacionesComponent,
+        _habitaciones_habitaciones_component__WEBPACK_IMPORTED_MODULE_3__.habitacionesComponent,
         _servicios_servicios_component__WEBPACK_IMPORTED_MODULE_4__.ServiciosComponent,
         _eventos_eventos_component__WEBPACK_IMPORTED_MODULE_5__.EventosComponent,
         _contacto_contacto_component__WEBPACK_IMPORTED_MODULE_6__.ContactoComponent,
@@ -3508,7 +3508,7 @@ const routes = [
         children: [
             { path: '', component: _inicio_inicio_component__WEBPACK_IMPORTED_MODULE_1__.InicioComponent },
             { path: 'nosotros', component: _nosotros_nosotros_component__WEBPACK_IMPORTED_MODULE_2__.NosotrosComponent },
-            { path: 'habitaciones', component: _habitaciones_habitaciones_component__WEBPACK_IMPORTED_MODULE_3__.HabitacionesComponent },
+            { path: 'habitaciones', component: _habitaciones_habitaciones_component__WEBPACK_IMPORTED_MODULE_3__.habitacionesComponent },
             { path: 'servicios', component: _servicios_servicios_component__WEBPACK_IMPORTED_MODULE_4__.ServiciosComponent },
             { path: 'eventos', component: _eventos_eventos_component__WEBPACK_IMPORTED_MODULE_5__.EventosComponent },
             { path: 'contacto', component: _contacto_contacto_component__WEBPACK_IMPORTED_MODULE_6__.ContactoComponent },
@@ -3591,7 +3591,7 @@ class ServiciosComponent {
             {
                 icon: "uil uil-temperature-half h1 text-primary",
                 title: "Aire Acondicionado",
-                description: "Poseemos habitaciones con el aire acondicionado que buscas."
+                description: "Poseemos habitacionescon el aire acondicionado que buscas."
             },
             {
                 icon: "uil uil-lock-access h1 text-primary",
@@ -3601,7 +3601,7 @@ class ServiciosComponent {
             {
                 icon: "uil uil-sunset h1 text-primary",
                 title: "Terraza frente al mar",
-                description: "La mejor vista frente al mar, solo en Buena Vista Máncora."
+                description: "La mejor vista frente al mar, Calidad educativa ."
             },
             {
                 icon: "uil uil-stretcher h1 text-primary",
@@ -4048,9 +4048,9 @@ class InicioService {
         ];
         this.carruselData = [
             {
-                h1: 'La mejor vista al mar, solo en ',
-                h1Parrafo: 'Buena Vista Máncora',
-                h4: 'Disfruta de las mejores vacaciones frente a la mejor vista.',
+                h1: 'Colegio 86253 - Celso Garro Valderrama, ',
+                 h1Parrafo: 'EDUCACION DE CALIDAD',
+                h4: 'La mejor educacion en nuestras manos',
                 span: 'Mirar Ahora',
                 src: 'https://www.youtube.com/embed/v66TvVNxN6s',
                 urlImage: 'assets/images/hotel/portada1.jpg',
@@ -4058,7 +4058,7 @@ class InicioService {
                 link: '',
             },
             {
-                h1: 'Buena Vista Máncora, la mejor elección para sus vacaciones',
+                h1: 'Celso Garro Valderrama, la mejor elección para sus vacaciones',
                 h1Parrafo: '',
                 h4: 'Contempla de un alba único, acompañado del sonido del mar.',
                 span: '',
@@ -4068,9 +4068,9 @@ class InicioService {
                 link: 'Nosotros',
             },
             {
-                h1: 'Bienvenidos al paradisíaco ',
-                h1Parrafo: 'Buena Vista Máncora',
-                h4: 'Reserva las habitaciones que tenemos para ti.',
+                h1: 'Bienvenidos, Colegio 86253  ',
+                 h1Parrafo: 'EDUCACION DE CALIDAD',
+                h4: 'Reserva las habitacionesque tenemos para ti.',
                 span: '',
                 src: '',
                 urlImage: 'assets/images/hotel/portada3.jpg',
@@ -4078,8 +4078,8 @@ class InicioService {
                 link: '',
             },
             {
-                h1: 'Bienvenidos al paradisíaco ',
-                h1Parrafo: 'Buena Vista Máncora',
+                h1: 'Bienvenidos, Colegio 86253  ',
+                 h1Parrafo: 'EDUCACION DE CALIDAD',
                 h4: 'Launch your campaign and benefit from our expertise on designing.',
                 span: '',
                 src: '',
@@ -4232,7 +4232,7 @@ class CalendarioComponent {
         this.detalleService = detalleService;
         this.dataId = 0;
         this.obtenerDatosReserva = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
-        this.habitaciones = [];
+        this.habitaciones= [];
         this.defaultDate = ["2021-11-25", "2021-11-29"];
         this.reservas = [];
         this.checkDisponibilidadFormSubmitted = false;
@@ -4752,7 +4752,7 @@ function FooterComponent_div_0_ng_template_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "li");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "a", 66);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](36, "i", 34);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, " Habitaciones ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, " habitaciones");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "li");
@@ -5378,7 +5378,7 @@ class HeaderComponent {
     }
 }
 HeaderComponent.ɵfac = function HeaderComponent_Factory(t) { return new (t || HeaderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__.NgbModal)); };
-HeaderComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HeaderComponent, selectors: [["app-header"]], inputs: { navClass: "navClass", buttonList: "buttonList", sliderTopbar: "sliderTopbar", isdeveloper: "isdeveloper", shopPages: "shopPages" }, decls: 36, vars: 16, consts: [["class", "tagline bg-light", 4, "ngIf"], ["id", "topnav", 1, "defaultscroll", "sticky", 3, "ngClass", "scroll"], [1, "container", 2, "margin-top", "5px"], ["class", "logo", 4, "ngIf"], ["class", "buy-button list-inline mb-0", 4, "ngIf"], ["class", "logo", "routerLink", "", 4, "ngIf"], [4, "ngIf"], [1, "menu-extras"], [1, "menu-item"], ["id", "isToggle", 1, "navbar-toggle", 3, "ngClass", "click"], [1, "lines"], ["id", "navigation"], [1, "navigation-menu"], ["routerLink", "", 1, "nav-link-ref", 2, "font-family", "'Dancing Script', cursive", "font-size", "medium", "margin-left", "-4px"], ["routerLink", "nosotros", 1, "nav-link-ref", 2, "font-family", "'Dancing Script', cursive", "font-size", "medium"], ["routerLink", "habitaciones", 1, "nav-link-ref", 2, "font-family", "'Dancing Script', cursive", "font-size", "medium"], ["routerLink", "servicios", 1, "nav-link-ref", 2, "font-family", "'Dancing Script', cursive", "font-size", "medium"], ["routerLink", "eventos", 1, "nav-link-ref", 2, "font-family", "'Dancing Script', cursive", "font-size", "medium"], ["routerLink", "contacto", 1, "nav-link-ref", 2, "font-family", "'Dancing Script', cursive", "font-size", "medium", "margin-right", "-31px"], [1, "tagline", "bg-light"], [1, "container-fluid"], [1, "row"], [1, "col-12"], [1, "text-slider"], [1, "list-inline", "mb-0", "move-text"], [1, "list-inline-item", "px-2", "mb-0"], [1, "text-success"], [1, "text-danger"], [1, "text-muted"], [1, "logo"], ["src", "assets/images/logo/logo-dark-bvm.png", "height", "55", "alt", "", 1, "l-dark", "logo-light-mode", 2, "margin-right", "-90px", "margin-left", "-90px", "margin-top", "8px", "margin-bottom", "8px"], ["src", "assets/images/logo/logo-light-bvm.png", "height", "55", "alt", "", 1, "logo-dark-mode"], [1, "buy-button", "list-inline", "mb-0"], [1, "list-inline-item", "mb-0", "ms-1"], [1, "dropdown"], ["type", "button", "data-bs-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "btn", "btn-link", "text-decoration-none", "dropdown-toggle", "p-0", "pe-2"], [1, "uil", "uil-search", "text-muted"], [1, "dropdown-menu", "dd-menu", "dropdown-menu-end", "bg-white", "shadow", "rounded", "border-0", "mt-3", "py-0", 2, "width", "300px"], ["type", "text", "id", "text", "name", "name", "placeholder", "Search...", 1, "form-control", "border", "bg-white"], ["href", "javascript:void(0)", 1, "btn", "btn-icon", "btn-primary"], [1, "uil", "uil-facebook-f", "icons"], [1, "uil", "uil-github", "icons"], [1, "uil", "uil-twitter", "icons"], [1, "uil", "uil-linkedin-alt", "icons"], [1, "list-inline-item", "mb-0"], ["type", "text", "id", "text2", "name", "name", "placeholder", "Search...", 1, "form-control", "border", "bg-white"], [1, "list-inline-item", "mb-0", "pe-1"], ["href", "#", 1, "btn", "btn-icon", "btn-soft-primary"], [1, "mdi", "mdi-stack-overflow", "mdi-18px", "icons"], ["href", "javascript:void(0)", "data-bs-toggle", "modal", "data-bs-target", "#loginform", 1, "btn", "btn-icon", "btn-soft-primary", 3, "click"], [1, "uil", "uil-user", "icons"], ["content", ""], ["role", "document", 1, "modal-lg", "modal-dialog-centered"], [1, "modal-content", "rounded", "shadow-lg", "border-0", "overflow-hidden", "position-relative"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn-close", "position-absolute", "top-0", "end-0", "mt-2", "me-2", 2, "z-index", "1", 3, "click"], [1, "modal-body", "p-0"], [1, "container-fluid", "px-0"], [1, "row", "align-items-center", "g-0"], [1, "col-lg-6", "col-md-5"], ["src", "assets/images/course/online/ab02.jpg", "alt", "", 1, "img-fluid"], [1, "col-lg-6", "col-md-7"], [1, "login-form", "p-4"], [1, "col-lg-12"], [1, "mb-3"], [1, "form-label"], [1, "form-icon", "position-relative"], ["name", "user", 1, "fea", "icon-sm", "icons"], ["type", "email", "placeholder", "Email", "name", "email", "required", "", 1, "form-control", "ps-5"], ["name", "key", 1, "fea", "icon-sm", "icons"], ["type", "password", "placeholder", "Password", "required", "", 1, "form-control", "ps-5"], [1, "d-flex", "justify-content-between"], [1, "custom-control", "custom-checkbox"], ["type", "checkbox", "id", "customCheck1", 1, "custom-control-input"], ["for", "customCheck1", 1, "custom-control-label", "ms-1"], [1, "forgot-pass", "mb-0"], ["routerLink", "/auth-re-password", 1, "text-dark", "fw-bold"], [1, "col-lg-12", "mb-0"], [1, "d-grid"], [1, "btn", "btn-primary"], [1, "col-12", "text-center"], [1, "mb-0", "mt-3"], [1, "text-dark", "me-2"], ["routerLink", "/auth-signup", 1, "text-dark", "fw-bold"], ["routerLink", "", 1, "logo"], ["src", "assets/images/logo/logo-dark-bvm.png", "height", "55", "alt", "", 1, "l-dark", 2, "margin-right", "-90px", "margin-left", "-90px", "margin-top", "8px", "margin-bottom", "8px"], ["src", "assets/images/logo/logo-light-bvm.png", "height", "55", "alt", "", 1, "l-light", 2, "margin-right", "-90px", "margin-left", "-90px", "margin-top", "8px", "margin-bottom", "8px"], [1, "buy-button"], [3, "ngIf"], ["routerLink", "/", 1, "btn", "btn-primary", "login-btn-primary", 3, "ngxScrollTo"], [1, "btn", "btn-primary", 3, "ngxScrollTo"]], template: function HeaderComponent_Template(rf, ctx) { if (rf & 1) {
+HeaderComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HeaderComponent, selectors: [["app-header"]], inputs: { navClass: "navClass", buttonList: "buttonList", sliderTopbar: "sliderTopbar", isdeveloper: "isdeveloper", shopPages: "shopPages" }, decls: 36, vars: 16, consts: [["class", "tagline bg-light", 4, "ngIf"], ["id", "topnav", 1, "defaultscroll", "sticky", 3, "ngClass", "scroll"], [1, "container", 2, "margin-top", "5px"], ["class", "logo", 4, "ngIf"], ["class", "buy-button list-inline mb-0", 4, "ngIf"], ["class", "logo", "routerLink", "", 4, "ngIf"], [4, "ngIf"], [1, "menu-extras"], [1, "menu-item"], ["id", "isToggle", 1, "navbar-toggle", 3, "ngClass", "click"], [1, "lines"], ["id", "navigation"], [1, "navigation-menu"], ["routerLink", "", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "medium", "margin-left", "-4px"], ["routerLink", "nosotros", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "medium"], ["routerLink", "habitaciones", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "medium"], ["routerLink", "servicios", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "medium"], ["routerLink", "eventos", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "medium"], ["routerLink", "contacto", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "medium", "margin-right", "-31px"], [1, "tagline", "bg-light"], [1, "container-fluid"], [1, "row"], [1, "col-12"], [1, "text-slider"], [1, "list-inline", "mb-0", "move-text"], [1, "list-inline-item", "px-2", "mb-0"], [1, "text-success"], [1, "text-danger"], [1, "text-muted"], [1, "logo"], ["src", "assets/images/logo/logo-dark-bvm.jpg", "height", "55", "alt", "", 1, "l-dark", "logo-light-mode", 2, "margin-right", "-90px", "margin-left", "-90px", "margin-top", "8px", "margin-bottom", "8px"], ["src", "assets/images/logo/logo-light-bvm.png", "height", "55", "alt", "", 1, "logo-dark-mode"], [1, "buy-button", "list-inline", "mb-0"], [1, "list-inline-item", "mb-0", "ms-1"], [1, "dropdown"], ["type", "button", "data-bs-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "btn", "btn-link", "text-decoration-none", "dropdown-toggle", "p-0", "pe-2"], [1, "uil", "uil-search", "text-muted"], [1, "dropdown-menu", "dd-menu", "dropdown-menu-end", "bg-white", "shadow", "rounded", "border-0", "mt-3", "py-0", 2, "width", "300px"], ["type", "text", "id", "text", "name", "name", "placeholder", "Search...", 1, "form-control", "border", "bg-white"], ["href", "javascript:void(0)", 1, "btn", "btn-icon", "btn-primary"], [1, "uil", "uil-facebook-f", "icons"], [1, "uil", "uil-github", "icons"], [1, "uil", "uil-twitter", "icons"], [1, "uil", "uil-linkedin-alt", "icons"], [1, "list-inline-item", "mb-0"], ["type", "text", "id", "text2", "name", "name", "placeholder", "Search...", 1, "form-control", "border", "bg-white"], [1, "list-inline-item", "mb-0", "pe-1"], ["href", "#", 1, "btn", "btn-icon", "btn-soft-primary"], [1, "mdi", "mdi-stack-overflow", "mdi-18px", "icons"], ["href", "javascript:void(0)", "data-bs-toggle", "modal", "data-bs-target", "#loginform", 1, "btn", "btn-icon", "btn-soft-primary", 3, "click"], [1, "uil", "uil-user", "icons"], ["content", ""], ["role", "document", 1, "modal-lg", "modal-dialog-centered"], [1, "modal-content", "rounded", "shadow-lg", "border-0", "overflow-hidden", "position-relative"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn-close", "position-absolute", "top-0", "end-0", "mt-2", "me-2", 2, "z-index", "1", 3, "click"], [1, "modal-body", "p-0"], [1, "container-fluid", "px-0"], [1, "row", "align-items-center", "g-0"], [1, "col-lg-6", "col-md-5"], ["src", "assets/images/course/online/ab02.jpg", "alt", "", 1, "img-fluid"], [1, "col-lg-6", "col-md-7"], [1, "login-form", "p-4"], [1, "col-lg-12"], [1, "mb-3"], [1, "form-label"], [1, "form-icon", "position-relative"], ["name", "user", 1, "fea", "icon-sm", "icons"], ["type", "email", "placeholder", "Email", "name", "email", "required", "", 1, "form-control", "ps-5"], ["name", "key", 1, "fea", "icon-sm", "icons"], ["type", "password", "placeholder", "Password", "required", "", 1, "form-control", "ps-5"], [1, "d-flex", "justify-content-between"], [1, "custom-control", "custom-checkbox"], ["type", "checkbox", "id", "customCheck1", 1, "custom-control-input"], ["for", "customCheck1", 1, "custom-control-label", "ms-1"], [1, "forgot-pass", "mb-0"], ["routerLink", "/auth-re-password", 1, "text-dark", "fw-bold"], [1, "col-lg-12", "mb-0"], [1, "d-grid"], [1, "btn", "btn-primary"], [1, "col-12", "text-center"], [1, "mb-0", "mt-3"], [1, "text-dark", "me-2"], ["routerLink", "/auth-signup", 1, "text-dark", "fw-bold"], ["routerLink", "", 1, "logo"], ["src", "assets/images/logo/logo-dark-bvm.jpg", "height", "55", "alt", "", 1, "l-dark", 2, "margin-right", "-90px", "margin-left", "-90px", "margin-top", "8px", "margin-bottom", "8px"], ["src", "assets/images/logo/logo-light-bvm.png", "height", "55", "alt", "", 1, "l-light", 2, "margin-right", "-90px", "margin-left", "-90px", "margin-top", "8px", "margin-bottom", "8px"], [1, "buy-button"], [3, "ngIf"], ["routerLink", "/", 1, "btn", "btn-primary", "login-btn-primary", 3, "ngxScrollTo"], [1, "btn", "btn-primary", 3, "ngxScrollTo"]], template: function HeaderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, HeaderComponent_div_0_Template, 75, 0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "header", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("scroll", function HeaderComponent_Template_header_scroll_1_listener() { return ctx.windowScroll(); }, false, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresolveWindow"]);
@@ -5416,7 +5416,7 @@ HeaderComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "a", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Habitaciones");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "habitaciones");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
@@ -5599,7 +5599,7 @@ class ReservaDetalleComponent {
             // console.log(`${url_base_backend}/habitaciones-libres/`);
             // console.log(this.busquedaDisponibilidad);
             // console.log(resp);
-            this.habitaciones = resp;
+            this.habitaciones= resp;
             if (this.habitaciones.length > 0) {
                 this.habilitarBtnReserva = true;
                 // console.log("disponibilidad pase por if leng>0",this.habitaciones.length)
@@ -5716,7 +5716,7 @@ class ReservaInicioComponent {
         this.inicioService = inicioService;
         this.obtenerDatosReserva = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
         this.prereserva = this.inicioService.prereserva;
-        this.habitaciones = [];
+        this.habitaciones= [];
         //formulario
         this.checkDisponibilidadFormSubmitted = false;
         this.checkDisponibilidadForm = this.fb.group({

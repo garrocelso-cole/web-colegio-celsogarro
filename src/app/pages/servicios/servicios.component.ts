@@ -51,7 +51,7 @@ export class ServiciosComponent implements OnInit {
     {
       icon: "uil uil-temperature-half h1 text-primary",
       title: "Aire Acondicionado",
-      description: "Poseemos habitaciones con el aire acondicionado que buscas."
+      description: "Poseemos habitacionescon el aire acondicionado que buscas."
     },
     {
       icon: "uil uil-lock-access h1 text-primary",
@@ -61,7 +61,7 @@ export class ServiciosComponent implements OnInit {
     {
       icon: "uil uil-sunset h1 text-primary",
       title: "Terraza frente al mar",
-      description: "La mejor vista frente al mar, solo en Buena Vista Máncora."
+      description: "La mejor vista frente al mar, Calidad educativa ."
     },
     {
       icon: "uil uil-stretcher h1 text-primary",

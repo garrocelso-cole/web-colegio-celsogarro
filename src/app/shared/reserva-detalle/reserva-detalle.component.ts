@@ -127,7 +127,7 @@ export class ReservaDetalleComponent implements OnInit {
        // console.log(`${url_base_backend}/habitaciones-libres/`);
        // console.log(this.busquedaDisponibilidad);
        // console.log(resp);
-        this.habitaciones = resp
+        this.habitaciones= resp
         if (this.habitaciones.length > 0) { 
           this.habilitarBtnReserva = true
 	// console.log("disponibilidad pase por if leng>0",this.habitaciones.length)

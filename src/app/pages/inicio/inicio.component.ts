@@ -51,7 +51,7 @@ export class InicioComponent implements OnInit {
   comentariosData = {}
   roomData: _Habitacion[] = []
   habitaciones: _Habitacion[] = []
-  categorias: _Habitacion[] = []
+  primaria: _Habitacion[] = []
   categoria: _Habitacion
   public config: SwiperOptions
   showRoomList : boolean = false
@@ -73,7 +73,7 @@ export class InicioComponent implements OnInit {
     this.http.get(`${url_base_backend}/habitaciones-genericas-tipo/`)
       .subscribe(
         (data: _Habitacion []) =>{ 
-          this.categorias = data
+          this.primaria = data
         },
         (error)=>{
           console.log(error)
@@ -137,7 +137,7 @@ export class InicioComponent implements OnInit {
 
   obtenerDatosReserva(valor : _prereserva){    
     this.showRoomList = true
-    this.habitaciones = valor.habitaciones
+    this.habitaciones= valor.habitaciones
     this.prereserva = valor.prereserva
     
   }

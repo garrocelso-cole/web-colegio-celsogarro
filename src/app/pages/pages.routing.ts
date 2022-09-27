@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { PagesComponent } from './pages.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
-import { HabitacionesComponent } from './habitaciones/habitaciones.component';
+import { habitacionesComponent } from './habitaciones/habitaciones.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { ContactoComponent } from './contacto/contacto.component';
@@ -19,7 +19,7 @@ const routes: Routes = [
         children: [
           { path: '', component: InicioComponent },
           { path: 'nosotros', component: NosotrosComponent },
-          { path: 'habitaciones', component: HabitacionesComponent },
+          { path: 'habitaciones', component: habitacionesComponent },
           { path: 'servicios', component: ServiciosComponent },
           { path: 'eventos', component: EventosComponent },
           { path: 'contacto', component: ContactoComponent },

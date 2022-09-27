@@ -12,7 +12,7 @@ const url_base_backend =environment.url_base_backend
   styleUrls: ['./habitaciones.component.css']
 })
 
-export class HabitacionesComponent implements OnInit {
+export class habitacionesComponent implements OnInit {
   constructor(
     private router: Router,
     private http: HttpClient,
@@ -35,7 +35,7 @@ export class HabitacionesComponent implements OnInit {
     }
     this.http.get(`${url_base_backend}/habitaciones`)
     .subscribe((data: _Habitacion []) => {
-      this.habitaciones = data
+      this.habitaciones= data
       this.filterredImages = this.habitaciones
       this.activeCategory(this.habitacion.tipohabitacion.nombretipo)
       })

@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { PagesComponent } from './pages.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
-import { HabitacionesComponent } from './habitaciones/habitaciones.component';
+import { habitacionesComponent } from './habitaciones/habitaciones.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { ContactoComponent } from './contacto/contacto.component';
@@ -38,7 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     PagesComponent,
     InicioComponent,
     NosotrosComponent,
-    HabitacionesComponent,
+    habitacionesComponent,
     ServiciosComponent,
     EventosComponent,
     ContactoComponent,
@@ -48,7 +48,7 @@ import { HttpClientModule } from '@angular/common/http';
     PagesComponent,
     InicioComponent,
     NosotrosComponent,
-    HabitacionesComponent,
+    habitacionesComponent,
     ServiciosComponent,
     EventosComponent,
     ContactoComponent,

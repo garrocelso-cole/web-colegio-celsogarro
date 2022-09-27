@@ -7,11 +7,11 @@ const url_base_backend =environment.url_base_backend
 @Injectable({
   providedIn: 'root'
 })
-export class HabitacionesService {
+export class habitacionesService {
   
   constructor(private http: HttpClient) { }
   
-  getHabitaciones(){  
+  gethabitaciones(){  
     return this.http.get(`${url_base_backend}/habitaciones/`)
   }
 

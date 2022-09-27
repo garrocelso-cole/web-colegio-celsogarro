@@ -40,118 +40,11 @@
         <!-- Logo container-->
         <div>
             <a class="logo" *ngIf="navClass !== 'nav-light'">
-                <img src="assets/images/logo/logo-dark-bvm.png" class="l-dark logo-light-mode" height="55" alt="" style="margin-right: -90px; margin-left: -90px; margin-top: 8px; margin-bottom: 8px;">
-                <img src="assets/images/logo/logo-light-bvm.png" class="logo-dark-mode" height="55" alt="">
+                <img src="assets/images/logo/logo-dark-bvm.jpg" class="l-dark logo-light-mode" height="55" alt="" style="margin-right: -90px; margin-left: -90px; margin-top: 8px; margin-bottom: 8px;">
+                <img src="assets/images/logo/logo-light-bvm.png" class="logo-dark-mode" height="55" alt="" >
             </a>
 
-            <!-- <ul class="buy-button list-inline mb-0" *ngIf="shopPages == true">
-        <li class="list-inline-item mb-0">
-          <div class="dropdown" ngbDropdown>
-            <button type="button" class="btn btn-link text-decoration-none dropdown-toggle p-0 pe-2" ngbDropdownToggle
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="uil uil-search h5 text-muted"></i>
-            </button>
-            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 py-0"
-              style="width: 300px;" ngbDropdownMenu>
-              <form>
-                <input type="text" id="text" name="name" class="form-control border bg-white" placeholder="Search...">
-              </form>
-            </div>
-          </div>
-        </li>
-        <li class="list-inline-item mb-0 pe-1">
-          <div class="dropdown" ngbDropdown>
-            <button type="button" class="btn btn-icon btn-soft-primary dropdown-toggle" ngbDropdownToggle data-bs-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false"><i
-                class="uil uil-shopping-cart align-middle icons"></i></button>
-            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 p-4" ngbDropdownMenu
-              style="width: 300px;">
-              <div class="pb-4">
-                <a href="javascript:void(0)" class="d-flex align-items-center">
-                  <img src="assets/images/shop/product/s-1.jpg" class="shadow rounded" style="max-height: 64px;" alt="">
-                  <div class="flex-1 text-start ms-3">
-                    <h6 class="text-dark mb-0">T-shirt (M)</h6>
-                    <p class="text-muted mb-0">$320 X 2</p>
-                  </div>
-                  <h6 class="text-dark mb-0">$640</h6>
-                </a>
-
-                <a href="javascript:void(0)" class="d-flex align-items-center mt-4">
-                  <img src="assets/images/shop/product/s-2.jpg" class="shadow rounded" style="max-height: 64px;" alt="">
-                  <div class="flex-1 text-start ms-3">
-                    <h6 class="text-dark mb-0">Bag</h6>
-                    <p class="text-muted mb-0">$50 X 5</p>
-                  </div>
-                  <h6 class="text-dark mb-0">$250</h6>
-                </a>
-
-                <a href="javascript:void(0)" class="d-flex align-items-center mt-4">
-                  <img src="assets/images/shop/product/s-3.jpg" class="shadow rounded" style="max-height: 64px;" alt="">
-                  <div class="flex-1 text-start ms-3">
-                    <h6 class="text-dark mb-0">Watch (Men)</h6>
-                    <p class="text-muted mb-0">$800 X 1</p>
-                  </div>
-                  <h6 class="text-dark mb-0">$800</h6>
-                </a>
-              </div>
-
-              <div class="d-flex align-items-center justify-content-between pt-4 border-top">
-                <h6 class="text-dark mb-0">Total($):</h6>
-                <h6 class="text-dark mb-0">$1690</h6>
-              </div>
-
-              <div class="mt-3 text-center">
-                <a href="javascript:void(0)" class="btn btn-primary me-2">View Cart</a>
-                <a href="javascript:void(0)" class="btn btn-primary">Checkout</a>
-              </div>
-              <p class="text-muted text-start mt-1 mb-0">*T&amp;C Apply</p>
-            </div>
-          </div>
-        </li>
-        <li class="list-inline-item mb-0 pe-1">
-          <a href="javascript:void(0);" class="btn btn-icon btn-soft-primary" (click)="wishListModal(content)"><i
-              class="uil uil-heart align-middle icons"></i></a>
-        </li>
-
-        <ng-template #content>
-          <div class="modal-content rounded shadow-lg border-0 overflow-hidden">
-            <div class="modal-body py-5">
-              <div class="text-center">
-                <div class="icon d-flex align-items-center justify-content-center bg-soft-danger rounded-circle mx-auto"
-                  style="height: 95px; width:95px;">
-                  <h1 class="mb-0"><i class="uil uil-heart-break align-middle"></i></h1>
-                </div>
-                <div class="mt-4">
-                  <h4>Your wishlist is empty.</h4>
-                  <p class="text-muted">Create your first wishlist request...</p>
-                  <div class="mt-4">
-                    <a href="javascript:void(0)" class="btn btn-outline-primary">+ Create new wishlist</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </ng-template>
-
-        <li class="list-inline-item mb-0">
-          <div class="dropdown dropdown-primary" ngbDropdown>
-            <button type="button" class="btn btn-icon btn-soft-primary dropdown-toggle" ngbDropdownToggle
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                class="uil uil-user align-middle icons"></i></button>
-            <div class="dropdown-menu bg-white shadow rounded border-0 mt-3 py-3"
-              ngbDropdownMenu style="width: 200px;">
-              <a class="dropdown-item text-dark" href="#"><i class="uil uil-user align-middle me-1"></i> Account</a>
-              <a class="dropdown-item text-dark" href="#"><i class="uil uil-clipboard-notes align-middle me-1"></i>
-                Order History</a>
-              <a class="dropdown-item text-dark" href="#"><i class="uil uil-arrow-circle-down align-middle me-1"></i>
-                Download</a>
-              <div class="dropdown-divider my-3 border-top"></div>
-              <a class="dropdown-item text-dark" href="#"><i class="uil uil-sign-out-alt align-middle me-1"></i>
-                Logout</a>
-            </div>
-          </div>
-        </li>
-      </ul> -->
+           
 
             <ul class="buy-button list-inline mb-0" *ngIf="buttonList == true">
                 <li class="list-inline-item mb-0 ms-1">
@@ -279,7 +172,7 @@
             </ul>
 
             <a class="logo" routerLink="" *ngIf="navClass === 'nav-light'">
-                <img src="assets/images/logo/logo-dark-bvm.png" class="l-dark" height="55" alt="" style="margin-right: -90px; margin-left: -90px; margin-top: 8px; margin-bottom: 8px;">
+                <img src="assets/images/logo/logo-dark-bvm.jpg" class="l-dark" height="55" alt="" style="margin-right: -90px; margin-left: -90px; margin-top: 8px; margin-bottom: 8px;">
                 <img src="assets/images/logo/logo-light-bvm.png" class="l-light" height="55" alt="" style="margin-right: -90px; margin-left: -90px; margin-top: 8px; margin-bottom: 8px;">
             </a>
         </div>
@@ -287,11 +180,11 @@
         <span *ngIf="!buttonList && !isdeveloper && !shopPages">
       <div class="buy-button">
         <ng-template [ngIf]="navClass === 'nav-light'">
-          <a routerLink="/" [ngxScrollTo]="'#bookroom'" class="btn btn-primary login-btn-primary">Reservar</a>
+          <a routerLink="/" [ngxScrollTo]="'#bookroom'" class="btn btn-primary login-btn-primary">Intranet</a>
           <!-- <a href="javascript: void(0);" class="btn btn-light login-btn-light">Buy Now</a> -->
         </ng-template>
         <ng-template [ngIf]="navClass !== 'nav-light'">
-          <a [ngxScrollTo]="'#bookroom'" class="btn btn-primary">Reservar</a>
+          <a [ngxScrollTo]="'#bookroom'" class="btn btn-primary">Intranet</a>
           <!-- <a pageScroll [routerLink]="['Home']" href="#myanchor">Go there</a> -->
 
         </ng-template>
@@ -316,12 +209,12 @@
         <div id="navigation">
             <!-- Navigation Menu-->
             <ul class="navigation-menu" [class]="navClass">
-                <li><a class="nav-link-ref" routerLink="" style="font-family: 'Dancing Script', cursive; font-size: medium; margin-left: -4px;">Inicio</a></li>
-                <li><a class="nav-link-ref" routerLink="nosotros" style="font-family: 'Dancing Script', cursive; font-size: medium;">Nosotros</a></li>
-                <li><a class="nav-link-ref" routerLink="habitaciones" style="font-family: 'Dancing Script', cursive; font-size: medium;">Habitaciones</a></li>
-                <li><a class="nav-link-ref" routerLink="servicios" style="font-family: 'Dancing Script', cursive; font-size: medium;">Servicios</a></li>
-                <li><a class="nav-link-ref" routerLink="eventos" style="font-family: 'Dancing Script', cursive; font-size: medium;">Eventos</a></li>
-                <li><a class="nav-link-ref" routerLink="contacto" style="font-family: 'Dancing Script', cursive; font-size: medium; margin-right: -31px;">Contacto</a></li>
+                <li><a class="nav-link-ref" routerLink="" style="font-family: 'Lucida Sans', cursive; font-size: medium; margin-left: -4px;">Inicio</a></li>
+                <li><a class="nav-link-ref" routerLink="nosotros" style="font-family: 'Lucida Sans', cursive; font-size: medium;">Nosotros</a></li>
+                <li><a class="nav-link-ref" routerLink="habitaciones" style="font-family: 'Lucida Sans', cursive; font-size: medium;">Gestión</a></li>
+                <li><a class="nav-link-ref" routerLink="servicios" style="font-family: 'Lucida Sans', cursive; font-size: medium;">Noticias</a></li>
+                <li><a class="nav-link-ref" routerLink="eventos" style="font-family: 'Lucida Sans', cursive; font-size: medium;">Aliados</a></li>
+                <li><a class="nav-link-ref" routerLink="contacto" style="font-family: 'Lucida Sans', cursive; font-size: medium; margin-right: -31px;">Normatividades</a></li>
                 <!-- <li class="has-submenu">
           <a href="javascript:void(0)" (click)="onMenuClick($event)">Pages</a><span class="menu-arrow"></span>
           <ul class="submenu">

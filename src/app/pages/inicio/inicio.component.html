@@ -38,7 +38,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-7 col-md-7">
                             <div class="position-relative mt-4" style="z-index: 1;">
-                                <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark" style="color: white;">Buena Vista Máncora, la mejor elección para sus vacaciones</h1>
+                                <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark" style="color: white;">Celso Garro Valderrama, la mejor elección para sus vacaciones</h1>
                                 <h2 class="para-desc text-white">{{ carruselData[1].h4 }}</h2>
                                 <div class="watch-video mt-4 pt-2">
                                     <a routerLink="nosotros" class="btn btn-primary"><i class="uil uil-heart-alt"></i>{{ carruselData[1].link }}</a>
@@ -83,8 +83,8 @@
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <div class="section-title mb-4 pb-2">
-                    <h1>Habitaciones & Suites</h1>
-                    <h3 style="font-size: x-large; color: blue;">En <span class="text-primary fw-bold">Buena Vista Máncora</span> disfruta del mejor alojamiento.
+                    <h1>Niveles Educativos</h1>
+                    <h3 style="font-size: x-large; color: blue;">En <span class="text-primary fw-bold">Celso Garro Valderrama</span> disfruta del mejor alojamiento.
                     </h3>
                 </div>
             </div>
@@ -97,13 +97,13 @@
                     <li [ngbNavItem]="1" class="nav-item m-1 ">
                         <a ngbNavLink class="nav-link py-2 px-5 rounded">
                             <div class="text-center">
-                                <h6 class="mb-0">Categorias</h6>
+                                <h6 class="mb-0">primaria</h6>
                             </div>
                         </a>
                         <ng-template ngbNavContent>
                             <div class="row">
                                 <!-- componente 1 -->
-                                <app-room-card [roomCardData]="categorias" (roomCardEvent)="envioFiltro($event)"></app-room-card>
+                                <app-room-card [roomCardData]="primaria" (roomCardEvent)="envioFiltro($event)"></app-room-card>
                                 <!-- End componente 1 -->
                             </div>
                         </ng-template>
@@ -112,13 +112,13 @@
                     <li [ngbNavItem]="2" class="nav-item m-1">
                         <a ngbNavLink class="nav-link py-2 px-5 rounded">
                             <div class="text-center">
-                                <h6 class="mb-0">Habitaciones</h6>
+                                <h6 class="mb-0">Secundaria</h6>
                             </div>
                         </a>
                         <ng-template ngbNavContent>
                             <div class="row" *ngIf="!showRoomList" [ngxScrollTo]="'#bookroom'">
                                 <h1 style="text-align: center;">
-                                    Haga su reserva ya !!
+                                    todo sobre Secundaria !!
                                 </h1>
                             </div>
                             <div class="row" *ngIf="showRoomList">
@@ -144,7 +144,7 @@
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <div class="section-title">
-                    <h1 class="text-white">Tour por Buena Vista Máncora</h1>
+                    <h1 class="text-white">Tour por Celso Garro Valderrama</h1>
                     <h3 class="text-light para-dark mx-auto" style="font-size: x-large;">Disfruta de lo mejor de nuetros ambientes frente al mar.
                     </h3>
                     <a (click)="openModal(contentmodal)" href="javascript:void(0);" class="play-btn border border-light mt-4 video-play-icon">
@@ -197,9 +197,8 @@
         <div class="row">
             <div class="col-lg-8 col-md-6 p-0 ps-md-3 pr-md-3">
                 <div class="card map map-height-two rounded map-gray border-0">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.587686131091!2d-81.05472639999999!3d-4.1039796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9036914a63d87ed9%3A0x457ce3f368dea032!2sBuena%20Vista%20M%C3%A1ncora%20Hotel!5e0!3m2!1sen!2spe!4v1633813915125!5m2!1sen!2spe"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.7503353584443!2d-77.15969248620799!3d-10.119510792769262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a8330d221e2755%3A0xe9769e4a265b24eb!2sColegio%20Nacional%20Celso%20Garro%20Valderrama%20Pampan!5e0!3m2!1ses!2spe!4v1663966265191!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
                 </div>
             </div>
             <!--end col-->

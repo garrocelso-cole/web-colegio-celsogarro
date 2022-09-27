@@ -1,9 +1,9 @@
-Dancing Script Variable Font
+Lucida Sans Variable Font
 ============================
 
-This download contains Dancing Script as both a variable font and static fonts.
+This download contains Lucida Sans as both a variable font and static fonts.
 
-Dancing Script is a variable font with this axis:
+Lucida Sans is a variable font with this axis:
   wght
 
 This means all the styles are contained in a single file:
@@ -11,7 +11,7 @@ This means all the styles are contained in a single file:
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Dancing Script:
+in those cases you can use the static font files for Lucida Sans:
   static/DancingScript-Regular.ttf
   static/DancingScript-Medium.ttf
   static/DancingScript-SemiBold.ttf
