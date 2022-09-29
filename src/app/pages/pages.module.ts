@@ -32,6 +32,8 @@ import { CountToModule } from 'angular-count-to';
 import { NgxMasonryModule } from 'ngx-masonry';
 import { LightboxModule } from 'ngx-lightbox';
 import { HttpClientModule } from '@angular/common/http';
+import { NoticiasComponent } from './noticias/noticias.component';
+import { AliadosComponent } from './aliados/aliados.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { HttpClientModule } from '@angular/common/http';
     EventosComponent,
     ContactoComponent,
     DetalleComponent,
+    NoticiasComponent,
+    AliadosComponent,
   ],
   exports: [
     PagesComponent,
