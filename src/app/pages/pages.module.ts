@@ -34,6 +34,7 @@ import { LightboxModule } from 'ngx-lightbox';
 import { HttpClientModule } from '@angular/common/http';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { AliadosComponent } from './aliados/aliados.component';
+import { NormatividadesComponent } from './normatividades/normatividades.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { AliadosComponent } from './aliados/aliados.component';
     DetalleComponent,
     NoticiasComponent,
     AliadosComponent,
+    NormatividadesComponent,
   ],
   exports: [
     PagesComponent,
