@@ -17,6 +17,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { NormatividadesComponent } from './normatividades/normatividades.component';
 
 import { DetalleComponent } from './detalle/detalle.component';
+import { GestionComponent } from './gestion/gestion.component';
 
 const routes: Routes = [
 
@@ -26,7 +27,7 @@ const routes: Routes = [
         children: [
           { path: '', component: InicioComponent },
           { path: 'nosotros', component: NosotrosComponent },
-          { path: 'gestion', component: habitacionesComponent },
+          { path: 'gestion', component: GestionComponent },
           { path: 'noticias', component: NoticiasComponent },
           { path: 'aliados', component: AliadosComponent },
           { path: 'normatividades', component: NormatividadesComponent },
