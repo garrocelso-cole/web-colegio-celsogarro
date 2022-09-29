@@ -11,6 +11,7 @@ import { map } from 'rxjs/internal/operators';
 export class AliadosComponent implements OnInit {
 
   constructor(private modalService: NgbModal) { }
+  navClass = 'nav-light';
     /**
    * cartillaData
    */
