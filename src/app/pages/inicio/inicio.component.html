@@ -21,7 +21,7 @@
                         </button>
                                         </div>
                                         <div class="modal-body">
-                                            <iframe class="marcovideo" height="450px" width="780px" src="https://www.youtube.com/embed/v66TvVNxN6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                            <iframe class="marcovideo" height="450px" width="780px" src="https://www.youtube.com/embed/1Z7Jx3g9u58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                                             </iframe>
                                         </div>
                                     </ng-template>
@@ -38,7 +38,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-7 col-md-7">
                             <div class="position-relative mt-4" style="z-index: 1;">
-                                <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark" style="color: white;">Celso Garro Valderrama, la mejor elección para sus vacaciones</h1>
+                                <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark" style="color: white;">{{carruselData[1].h1}}</h1>
                                 <h2 class="para-desc text-white">{{ carruselData[1].h4 }}</h2>
                                 <div class="watch-video mt-4 pt-2">
                                     <a routerLink="nosotros" class="btn btn-primary"><i class="uil uil-heart-alt"></i>{{ carruselData[1].link }}</a>
@@ -57,9 +57,9 @@
                             <div class="position-relative mt-4" style="z-index: 1;">
                                 <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark">{{ carruselData[2].h1 }} <br>{{ carruselData[2].h1Parrafo }}</h1>
                                 <h2 class="para-desc">{{ carruselData[2].h4 }}</h2>
-                                <div class="mt-4 pt-2">
+                                <!-- <div class="mt-4 pt-2">
                                     <a [ngxScrollTo]="'#bookroom'" class="btn btn-primary"><i class="uil uil-home fw-bold"></i> Reservar</a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,9 @@
                         <ng-template ngbNavContent>
                             <div class="row">
                                 <!-- componente 1 -->
-                                <app-room-card [roomCardData]="primaria" (roomCardEvent)="envioFiltro($event)"></app-room-card>
+<!--                                 <app-room-card [roomCardData]="primaria" (roomCardEvent)="envioFiltro($event)"></app-room-card>
+ -->                                <!-- Nuevo contenido -->
+                                <h1 style="text-align: center;">Nuevo Contenido de primaria</h1>
                                 <!-- End componente 1 -->
                             </div>
                         </ng-template>
@@ -121,11 +123,12 @@
                                     todo sobre Secundaria !!
                                 </h1>
                             </div>
-                            <div class="row" *ngIf="showRoomList">
+<!--                             <div class="row" *ngIf="showRoomList">
                                 <!-- componente 2 -->
-                                <app-room-list [roomListData]="habitaciones" (roomListDataValor)="habitacionSeleccionada($event)" [totalCoincidencias]="habitaciones.length"></app-room-list>
+<!--                                 <app-room-list [roomListData]="habitaciones" (roomListDataValor)="habitacionSeleccionada($event)" [totalCoincidencias]="habitaciones.length"></app-room-list>
+                                <h1>Nuevo Contenido de secundaria</h1> -->
                                 <!-- End componente 2 -->
-                            </div>
+                            <!-- </div> -->
                         </ng-template>
                     </li>
 
