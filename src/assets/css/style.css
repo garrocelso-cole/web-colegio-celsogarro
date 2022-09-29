@@ -1615,3 +1615,8 @@ button:not(:disabled) {
   padding: 30px 0;
   border-top: 1px solid #3d4349;
 }
+
+
+.personalizado {
+  background-color: rgb(8, 231, 247);
+}
