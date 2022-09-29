@@ -34,12 +34,7 @@ export class InicioService {
       icon: "uil uil-accessible-icon-alt h1 text-primary",
       title: "Instalaciones para discapacitados",
       description: "Contamos con instalaciones para personas con discapacidad."
-    },
-    {
-      icon: "uil uil-tv-retro h1 text-primary",
-      title: "Televisión Cable",
-      description: "Contamos con television por cable las 24 horas."
-    },
+    }
   ];
 
   blogData = [
@@ -104,34 +99,34 @@ export class InicioService {
 
   cartillaData = [
     {
-      image: 'assets/images/personal/1.jpg',
-      title: 'Vista frente al mar',
-      category: 'Mar de Máncora'
+      image: 'assets/images/colegio/foto-colegio1.jpg',
+      title: '',
+      category: ''
     },
     {
-      image: 'assets/images/personal/2.jpg',
-      title: 'Hermosos atardeceres',
-      category: 'Ocaso'
+      image: 'assets/images/colegio/foto-colegio2.jpg',
+      title: '',
+      category: ''
     },
     {
-      image: 'assets/images/personal/3.jpg',
-      title: 'Nuestras instalaciones',
-      category: 'Para su confort'
+      image: 'assets/images/colegio/foto-colegio3.jpg',
+      title: '',
+      category: ''
     },
     {
-      image: 'assets/images/personal/4.jpg',
-      title: 'Atardecer inolvidable',
-      category: 'Sol de Máncora'
+      image: 'assets/images/colegio/foto-colegio4.jpg',
+      title: '',
+      category: ''
     },
     {
-      image: 'assets/images/personal/5.jpg',
-      title: 'Piscina frente al mar',
-      category: 'Disfruta las mejores vacaciones'
+      image: 'assets/images/colegio/foto-colegio5.jpg',
+      title: '',
+      category: ''
     },
     {
-      image: 'assets/images/personal/6.jpg',
-      title: 'Momentos inolvidables',
-      category: 'Cenas romanticas'
+      image: 'assets/images/colegio/foto-colegio6.jpg',
+      title: '',
+      category: ''
     },
   ];
 
@@ -152,7 +147,7 @@ export class InicioService {
       h4: '',
       span: '',
       src: '',
-      urlImage: 'assets/images/hotel/portada2.jpg',
+      urlImage: 'assets/images/colegio/portada1.jpg',
       iframe:'',
       link: 'Nosotros',
 
@@ -163,7 +158,7 @@ export class InicioService {
       h4: 'Reserva tu vacante.',
       span: '',
       src: '',
-      urlImage: 'assets/images/hotel/portada3.jpg',
+      urlImage: 'assets/images/colegio/portada1.jpg',
       iframe:'',
       link: '',
     },
