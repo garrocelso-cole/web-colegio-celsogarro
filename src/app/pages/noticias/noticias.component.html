@@ -37,123 +37,183 @@
 <!--Shape End-->
 
 <!-- Feature Start -->
-<section class="section">
+<!-- <section class="section">
     <div class="container">
         <app-services [servicesData]="servicesData"></app-services>
     </div>
-    <!--end container-->
-</section>
+    
+</section> -->
 <!--end section-->
 <!-- Feature Start -->
 
 <!-- Project Start -->
-<section class="section bg-light">
+<section class="section">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <div class="section-title mb-4 pb-2">
-                    <h1 class="mb-4">Tus mejores momentos, nuestros Noticias</h1>
-                    <h3 style="font-size: x-large; color: blue;">En <span class="text-primary fw-bold">Celso Garro Valderrama</span> cuentas con los siguientes servicios.</h3>
+      <div class="row">
+        <div class="col-lg-6 mt-4 pt-2">
+            <div class="card work-container work-modern rounded border-0 overflow-hidden">
+                <div class="card-header">
+                    <h1>Noticia 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam culpa unde id consectetur, modi corrupti esse itaque sequi voluptatibus sunt ad quos autem, ut nihil at. Consequatur, porro laborum. Ullam.</p>
                 </div>
-            </div>
-            <!--end col-->
-        </div>
-        <!--end row-->
-
-        <div class="row">
-            <div class="col-md-6 col-12 mt-4 pt-2">
-                <div class="card work-container work-modern position-relative overflow-hidden shadow rounded border-0">
-                    <div class="card-body p-0">
-                        <img src="assets/images/work/1.jpg" class="img-fluid rounded" alt="work-image">
-                        <div class="overlay-work bg-dark"></div>
-                        <div class="content">
-                            <a class="title text-white d-block fw-bold">Piscina frente al mar</a>
-                            <h6 class="text-light">Adultos y niños</h6>
-                        </div>
-                        <!-- <div class="client">
-                <small class="text-light user d-block"><i class="mdi mdi-account"></i> Calvin Carlo</small>
-                <small class="text-light date"><i class="mdi mdi-calendar-check"></i> 13th August, 2019</small>
-              </div> -->
-                    </div>
+              <div  class="card-body p-0">
+                <img src="assets/images/hotel/portadaNoticias.jpg" class="img-fluid rounded" alt="work-image">
+                <div class="overlay-work bg-dark"></div>
+                <div class="content">
+                  <a  class="title text-white pb-2 border-bottom" style="font-size: x-large;">aaaaaaaa</a>
+                  <!-- <a href="javascript:void(0)" class="title text-white pb-2 border-bottom">{{ data.title }}</a> -->
+                  <ul class="post-meta mb-0 mt-2 text-white list-unstyled">
+                    <li class="list-inline-item me-3" style="font-size: x-large;"><i class="uil uil-bed-double me-2" ></i >xxxxx</li>
+                    <!-- <li class="list-inline-item" style="font-size: x-large;"><i class="uil uil-bath me-2"></i>yyyyyy</li> -->
+                  </ul>
+                  <p class="text-white d-block mb-0" style="font-size: x-large;">noticia: <span class="text-success">uu</span> </p>
                 </div>
-            </div>
-            <!--end col-->
-
-            <div class="col-md-6 col-12 mt-4 pt-2">
-                <div class="card work-container work-modern position-relative overflow-hidden shadow rounded border-0">
-                    <div class="card-body p-0">
-                        <img src="assets/images/work/2.jpg" class="img-fluid rounded" alt="work-image">
-                        <div class="overlay-work bg-dark"></div>
-                        <div class="content">
-                            <a class="title text-white d-block fw-bold">Mesa de billar</a>
-                            <h6 class="text-light">Diviertete con tus amigos</h6>
-                        </div>
-                        <!-- <div class="client">
-                <small class="text-light user d-block"><i class="mdi mdi-account"></i> Calvin Carlo</small>
-                <small class="text-light date"><i class="mdi mdi-calendar-check"></i> 13th August, 2019</small>
-              </div> -->
-                    </div>
+                <div class="read_more bg-primary text-center rounded-circle">
+                  <a href="javascript:void(0)" class="text-light d-block">
+                    <i-feather name="chevron-right" class="fea icon-sm title-dark"></i-feather>
+                  </a>
                 </div>
-            </div>
-            <!--end col-->
-
-            <div class="col-md-6 col-12 mt-4 pt-2">
-                <div class="card work-container work-modern position-relative overflow-hidden shadow rounded border-0">
-                    <div class="card-body p-0">
-                        <img src="assets/images/work/3.jpg" class="img-fluid rounded" alt="work-image">
-                        <div class="overlay-work bg-dark"></div>
-                        <div class="content">
-                            <a class="title text-white d-block fw-bold">Terraza frente al mar</a>
-                            <h6 class="text-light">La mejor vista solo en Buena Vista</h6>
-                        </div>
-                        <!-- <div class="client">
-                <small class="text-light user d-block"><i class="mdi mdi-account"></i> Calvin Carlo</small>
-                <small class="text-light date"><i class="mdi mdi-calendar-check"></i> 13th August, 2019</small>
-              </div> -->
-                    </div>
-                </div>
-            </div>
-            <!--end col-->
-
-            <div class="col-md-6 col-12 mt-4 pt-2">
-                <div class="card work-container work-modern position-relative overflow-hidden shadow rounded border-0">
-                    <div class="card-body p-0">
-                        <img src="assets/images/work/4.jpg" class="img-fluid rounded" alt="work-image">
-                        <div class="overlay-work bg-dark"></div>
-                        <div class="content">
-                            <a class="title text-white d-block fw-bold">Estacionamiento</a>
-                            <h6 class="text-light">Amplio espacio de facil acceso</h6>
-                        </div>
-                        <!-- <div class="client">
-                <small class="text-light user d-block"><i class="mdi mdi-account"></i> Calvin Carlo</small>
-                <small class="text-light date"><i class="mdi mdi-calendar-check"></i> 13th August, 2019</small>
-              </div> -->
-                    </div>
-                </div>
-            </div>
-            <!--end col-->
-        </div>
-        <!--end row-->
-    </div>
-    <!--end container-->
-
-    <!-- <div class="container mt-100 mt-60">
-      <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <div class="section-title">
-            <h4 class="title mb-4">See everything about your employee at one place.</h4>
-            <p class="text-muted para-desc mx-auto">Start working with <span class="text-primary fw-bold">Landrick</span>
-              that can provide everything you need to generate awareness, drive traffic, connect.</p>
-  
-            <div class="mt-4">
-              <a href="javascript:void(0)" class="btn btn-primary mt-2 me-3">Get Started Now</a>
-              <a href="javascript:void(0)" class="btn btn-outline-primary mt-2">Free Trial</a>
+              </div>
             </div>
           </div>
-        </div>
+          <div class=" col-lg-6 mt-4 pt-2">
+              <div class="card work-container work-modern rounded border-0 overflow-hidden">
+                  <div class="card-header">
+                      <h1> Noticia 2</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore modi itaque accusantium dicta consequatur aspernatur magni consectetur maxime excepturi. Quod possimus cupiditate veritatis sapiente reiciendis alias exercitationem dolore commodi labore.</p>
+                  </div>
+                <div  class="card-body p-0">
+                  <img src="assets/images/hotel/portadaNoticias.jpg" class="img-fluid rounded" alt="work-image">
+                  <div class="overlay-work bg-dark"></div>
+                  <div class="content">
+                    <a  class="title text-white pb-2 border-bottom" style="font-size: x-large;">aaaaaaaa</a>
+                    <!-- <a href="javascript:void(0)" class="title text-white pb-2 border-bottom">{{ data.title }}</a> -->
+                    <ul class="post-meta mb-0 mt-2 text-white list-unstyled">
+                      <li class="list-inline-item me-3" style="font-size: x-large;"><i class="uil uil-bed-double me-2" ></i >noticia</li>
+                      
+                    </ul>
+                    <p class="text-white d-block mb-0" style="font-size: x-large;">noticia: <span class="text-success">uuu</span> noticia</p>
+                  </div>
+                  <div class="read_more bg-primary text-center rounded-circle">
+                    <a href="javascript:void(0)" class="text-light d-block">
+                      <i-feather name="chevron-right" class="fea icon-sm title-dark"></i-feather>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4 pt-2">
+                <div class="card work-container work-modern rounded border-0 overflow-hidden">
+                    <div class="card-header">
+                        <h1>Noticia 3</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam culpa unde id consectetur, modi corrupti esse itaque sequi voluptatibus sunt ad quos autem, ut nihil at. Consequatur, porro laborum. Ullam.</p>
+                    </div>
+                  <div  class="card-body p-0">
+                    <img src="assets/images/hotel/portadaNoticias.jpg" class="img-fluid rounded" alt="work-image">
+                    <div class="overlay-work bg-dark"></div>
+                    <div class="content">
+                      <a  class="title text-white pb-2 border-bottom" style="font-size: x-large;">aaaaaaaa</a>
+                      <!-- <a href="javascript:void(0)" class="title text-white pb-2 border-bottom">{{ data.title }}</a> -->
+                      <ul class="post-meta mb-0 mt-2 text-white list-unstyled">
+                        <li class="list-inline-item me-3" style="font-size: x-large;"><i class="uil uil-bed-double me-2" ></i >xxxxx</li>
+                        <li class="list-inline-item" style="font-size: x-large;"><i class="uil uil-bath me-2"></i>yyyyyy</li>
+                      </ul>
+                      <p class="text-white d-block mb-0" style="font-size: x-large;">Desde: <span class="text-success">S/.uuuuuuu</span> x Noche</p>
+                    </div>
+                    <div class="read_more bg-primary text-center rounded-circle">
+                      <a href="javascript:void(0)" class="text-light d-block">
+                        <i-feather name="chevron-right" class="fea icon-sm title-dark"></i-feather>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-lg-6 mt-4 pt-2">
+                  <div class="card work-container work-modern rounded border-0 overflow-hidden">
+                      <div class="card-header">
+                          <h1> Noticia 4</h1>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore modi itaque accusantium dicta consequatur aspernatur magni consectetur maxime excepturi. Quod possimus cupiditate veritatis sapiente reiciendis alias exercitationem dolore commodi labore.</p>
+                      </div>
+                    <div  class="card-body p-0">
+                      <img src="assets/images/hotel/portadaNoticias.jpg" class="img-fluid rounded" alt="work-image">
+                      <div class="overlay-work bg-dark"></div>
+                      <div class="content">
+                        <a  class="title text-white pb-2 border-bottom" style="font-size: x-large;">aaaaaaaa</a>
+                        <!-- <a href="javascript:void(0)" class="title text-white pb-2 border-bottom">{{ data.title }}</a> -->
+                        <ul class="post-meta mb-0 mt-2 text-white list-unstyled">
+                          <li class="list-inline-item me-3" style="font-size: x-large;"><i class="uil uil-bed-double me-2" ></i >xxxxx</li>
+                          <li class="list-inline-item" style="font-size: x-large;"><i class="uil uil-bath me-2"></i>yyyyyy</li>
+                        </ul>
+                        <p class="text-white d-block mb-0" style="font-size: x-large;">Desde: <span class="text-success">S/.uuuuuuu</span> x Noche</p>
+                      </div>
+                      <div class="read_more bg-primary text-center rounded-circle">
+                        <a href="javascript:void(0)" class="text-light d-block">
+                          <i-feather name="chevron-right" class="fea icon-sm title-dark"></i-feather>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-4 pt-2">
+                    <div class="card work-container work-modern rounded border-0 overflow-hidden">
+                        <div class="card-header">
+                            <h1>Noticia 5</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam culpa unde id consectetur, modi corrupti esse itaque sequi voluptatibus sunt ad quos autem, ut nihil at. Consequatur, porro laborum. Ullam.</p>
+                        </div>
+                      <div  class="card-body p-0">
+                        <img src="assets/images/hotel/portadaNoticias.jpg" class="img-fluid rounded" alt="work-image">
+                        <div class="overlay-work bg-dark"></div>
+                        <div class="content">
+                          <a  class="title text-white pb-2 border-bottom" style="font-size: x-large;">aaaaaaaa</a>
+                          <!-- <a href="javascript:void(0)" class="title text-white pb-2 border-bottom">{{ data.title }}</a> -->
+                          <ul class="post-meta mb-0 mt-2 text-white list-unstyled">
+                            <li class="list-inline-item me-3" style="font-size: x-large;"><i class="uil uil-bed-double me-2" ></i >xxxxx</li>
+                            <li class="list-inline-item" style="font-size: x-large;"><i class="uil uil-bath me-2"></i>yyyyyy</li>
+                          </ul>
+                          <p class="text-white d-block mb-0" style="font-size: x-large;">Desde: <span class="text-success">S/.uuuuuuu</span> x Noche</p>
+                        </div>
+                        <div class="read_more bg-primary text-center rounded-circle">
+                          <a href="javascript:void(0)" class="text-light d-block">
+                            <i-feather name="chevron-right" class="fea icon-sm title-dark"></i-feather>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" col-lg-6 mt-4 pt-2">
+                      <div class="card work-container work-modern rounded border-0 overflow-hidden">
+                          <div class="card-header">
+                              <h1> Noticia 6</h1>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore modi itaque accusantium dicta consequatur aspernatur magni consectetur maxime excepturi. Quod possimus cupiditate veritatis sapiente reiciendis alias exercitationem dolore commodi labore.</p>
+                          </div>
+                        <div  class="card-body p-0">
+                          <img src="assets/images/hotel/portadaNoticias.jpg" class="img-fluid rounded" alt="work-image">
+                          <div class="overlay-work bg-dark"></div>
+                          <div class="content">
+                            <a  class="title text-white pb-2 border-bottom" style="font-size: x-large;">aaaaaaaa</a>
+                            <!-- <a href="javascript:void(0)" class="title text-white pb-2 border-bottom">{{ data.title }}</a> -->
+                            <ul class="post-meta mb-0 mt-2 text-white list-unstyled">
+                              <li class="list-inline-item me-3" style="font-size: x-large;"><i class="uil uil-bed-double me-2" ></i >xxxxx</li>
+                              <li class="list-inline-item" style="font-size: x-large;"><i class="uil uil-bath me-2"></i>yyyyyy</li>
+                            </ul>
+                            <p class="text-white d-block mb-0" style="font-size: x-large;">Desde: <span class="text-success">S/.uuuuuuu</span> x Noche</p>
+                          </div>
+                          <div class="read_more bg-primary text-center rounded-circle">
+                            <a href="javascript:void(0)" class="text-light d-block">
+                              <i-feather name="chevron-right" class="fea icon-sm title-dark"></i-feather>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
       </div>
-    </div> -->
-    <!--end container-->
+        
+      </div>
+     
+
+        
+      
+      
 </section>
 <!--end section-->
 <!-- Project End -->
