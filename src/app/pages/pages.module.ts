@@ -35,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { AliadosComponent } from './aliados/aliados.component';
 import { NormatividadesComponent } from './normatividades/normatividades.component';
+import { GestionComponent } from './gestion/gestion.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { NormatividadesComponent } from './normatividades/normatividades.compone
     NoticiasComponent,
     AliadosComponent,
     NormatividadesComponent,
+    GestionComponent,
   ],
   exports: [
     PagesComponent,

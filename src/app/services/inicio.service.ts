@@ -34,12 +34,7 @@ export class InicioService {
       icon: "uil uil-accessible-icon-alt h1 text-primary",
       title: "Instalaciones para discapacitados",
       description: "Contamos con instalaciones para personas con discapacidad."
-    },
-    {
-      icon: "uil uil-tv-retro h1 text-primary",
-      title: "Televisión Cable",
-      description: "Contamos con television por cable las 24 horas."
-    },
+    }
   ];
 
   blogData = [
@@ -104,34 +99,34 @@ export class InicioService {
 
   cartillaData = [
     {
-      image: 'assets/images/personal/1.jpg',
-      title: 'Vista frente al mar',
-      category: 'Mar de Máncora'
+      image: 'assets/images/colegio/foto-colegio1.jpg',
+      title: '',
+      category: ''
     },
     {
-      image: 'assets/images/personal/2.jpg',
-      title: 'Hermosos atardeceres',
-      category: 'Ocaso'
+      image: 'assets/images/colegio/foto-colegio2.jpg',
+      title: '',
+      category: ''
     },
     {
-      image: 'assets/images/personal/3.jpg',
-      title: 'Nuestras instalaciones',
-      category: 'Para su confort'
+      image: 'assets/images/colegio/foto-colegio3.jpg',
+      title: '',
+      category: ''
     },
     {
-      image: 'assets/images/personal/4.jpg',
-      title: 'Atardecer inolvidable',
-      category: 'Sol de Máncora'
+      image: 'assets/images/colegio/foto-colegio4.jpg',
+      title: '',
+      category: ''
     },
     {
-      image: 'assets/images/personal/5.jpg',
-      title: 'Piscina frente al mar',
-      category: 'Disfruta las mejores vacaciones'
+      image: 'assets/images/colegio/foto-colegio5.jpg',
+      title: '',
+      category: ''
     },
     {
-      image: 'assets/images/personal/6.jpg',
-      title: 'Momentos inolvidables',
-      category: 'Cenas romanticas'
+      image: 'assets/images/colegio/foto-colegio6.jpg',
+      title: '',
+      category: ''
     },
   ];
 
@@ -141,29 +136,29 @@ export class InicioService {
        h1Parrafo: 'EDUCACION DE CALIDAD',
       h4: 'La mejor educacion en nuestras manos',
       span: 'Mirar Ahora',
-      src:'https://www.youtube.com/embed/v66TvVNxN6s',
-      urlImage: 'assets/images/hotel/portada1.jpg',
-      iframe:'',
+      src:'https://www.youtube.com/embed/1Z7Jx3g9u58',
+      urlImage: 'assets/images/colegio/portada1.jpg',
+      iframe:'https://www.youtube.com/embed/1Z7Jx3g9u58',
       link: '',
     },
     {
-      h1: 'Celso Garro Valderrama, la mejor elección para sus vacaciones',
+      h1: 'Celso Garro Valderrama, la mejor elección para su educación',
       h1Parrafo: '',
-      h4: 'Contempla de un alba único, acompañado del sonido del mar.',
+      h4: '',
       span: '',
       src: '',
-      urlImage: 'assets/images/hotel/portada2.jpg',
+      urlImage: 'assets/images/colegio/portada1.jpg',
       iframe:'',
       link: 'Nosotros',
 
     },
     {
       h1: 'Bienvenidos, Colegio 86253  ',
-       h1Parrafo: 'EDUCACION DE CALIDAD',
-      h4: 'Reserva las habitacionesque tenemos para ti.',
+      h1Parrafo: 'EDUCACION DE CALIDAD',
+      h4: 'Reserva tu vacante.',
       span: '',
       src: '',
-      urlImage: 'assets/images/hotel/portada3.jpg',
+      urlImage: 'assets/images/colegio/portada1.jpg',
       iframe:'',
       link: '',
     },

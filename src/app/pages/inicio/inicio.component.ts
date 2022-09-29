@@ -68,6 +68,8 @@ export class InicioComponent implements OnInit {
     this.cartillaData = this.inicioService.cartillaData
     this.customOptions = this.inicioService.customOptions
     this.carruselData = this.inicioService.carruselData
+    console.log(this.carruselData);
+    
     this.comentariosData = this.inicioService.comentariosData
     this.config = this.inicioService.swiperOptions
     this.http.get(`${url_base_backend}/habitaciones-genericas-tipo/`)
