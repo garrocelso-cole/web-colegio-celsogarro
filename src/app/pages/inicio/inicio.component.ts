@@ -61,8 +61,17 @@ export class InicioComponent implements OnInit {
     email: ['', [Validators.required, Validators.email ]],
     comentarios: ['', Validators.required]
   }) 
+
+  rows: any[] = []
+  columns: any[] = []
+
   ngOnInit() {
-    
+    this.rows = [
+      { name: 'Austin', gender: 'Male', company: 'Swimlane' },
+      { name: 'Dany', gender: 'Male', company: 'KFC' },
+      { name: 'Molly', gender: 'Female', company: 'Burger King' }
+    ];
+    this.columns = [{ prop: 'name' }, { name: 'Gender' }, { name: 'Company' }];
     this.servicesData = this.inicioService.servicesData
     this.blogData = this.inicioService.blogData
     this.cartillaData = this.inicioService.cartillaData
