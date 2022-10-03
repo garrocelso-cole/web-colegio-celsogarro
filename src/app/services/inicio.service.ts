@@ -39,7 +39,7 @@ export class InicioService {
 
   blogData = [
     {
-      image: "assets/images/hotel/portada1.jpg",
+      image: "assets/images/hotel/portada1xx.jfif",
       title: "Piscina a metros del mar",
       like: "33",
       message: "08",
@@ -137,7 +137,7 @@ export class InicioService {
       h4: 'La mejor educacion en nuestras manos',
       span: 'Mirar Ahora',
       src:'https://www.youtube.com/embed/1Z7Jx3g9u58',
-      urlImage: 'assets/images/colegio/portada1.jpg',
+      urlImage: 'assets/images/colegio/portada1xx.jfif',
       iframe:'https://www.youtube.com/embed/1Z7Jx3g9u58',
       link: '',
     },
@@ -147,7 +147,7 @@ export class InicioService {
       h4: '',
       span: '',
       src: '',
-      urlImage: 'assets/images/colegio/portada1.jpg',
+      urlImage: 'assets/images/colegio/portada1xx.jfif',
       iframe:'',
       link: 'Nosotros',
 
@@ -158,7 +158,7 @@ export class InicioService {
       h4: 'Reserva tu vacante.',
       span: '',
       src: '',
-      urlImage: 'assets/images/colegio/portada1.jpg',
+      urlImage: 'assets/images/colegio/portada1xx.jfif',
       iframe:'',
       link: '',
     },

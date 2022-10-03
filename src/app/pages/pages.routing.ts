@@ -16,6 +16,8 @@ import { AliadosComponent } from './aliados/aliados.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { NormatividadesComponent } from './normatividades/normatividades.component';
 
+import { InnovacionComponent } from './innovacion/innovacion.component';
+
 import { DetalleComponent } from './detalle/detalle.component';
 import { GestionComponent } from './gestion/gestion.component';
 
@@ -30,6 +32,7 @@ const routes: Routes = [
           { path: 'gestion', component: GestionComponent },
           { path: 'noticias', component: NoticiasComponent },
           { path: 'aliados', component: AliadosComponent },
+          { path: 'innovacion', component: InnovacionComponent },
           { path: 'normatividades', component: NormatividadesComponent },
           { path: 'detalle', component: DetalleComponent },
           { path: '', redirectTo: '/inicio', pathMatch: 'full' },

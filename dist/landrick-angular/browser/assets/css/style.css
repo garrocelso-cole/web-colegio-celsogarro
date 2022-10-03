@@ -1250,7 +1250,7 @@ button:not(:disabled) {
   left: 0;
   top: 0;
   z-index: 1030;
-  background-color: transparent;
+  background-color: white !important;
   border: 0;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -1357,7 +1357,7 @@ button:not(:disabled) {
   float: left;
   display: block;
   position: relative;
-  margin: 0 10px;
+  /* margin: 0 10px; */
 }
 
 #topnav .navigation-menu > li:hover > a, #topnav .navigation-menu > li:active > a {
@@ -1457,8 +1457,8 @@ button:not(:disabled) {
             justify-content: center !important;
   }
   #topnav .navigation-menu > li > a {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     min-height: 62px;
   }
   #topnav .navigation-menu > li:hover > a,

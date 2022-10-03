@@ -3958,7 +3958,7 @@ class InicioService {
         ];
         this.blogData = [
             {
-                image: "assets/images/hotel/portada1.jpg",
+                image: "assets/images/hotel/portada1xx.jfif",
                 title: "Piscina a metros del mar",
                 like: "33",
                 message: "08",
@@ -4053,7 +4053,7 @@ class InicioService {
                 h4: 'La mejor educacion en nuestras manos',
                 span: 'Mirar Ahora',
                 src: 'https://www.youtube.com/embed/v66TvVNxN6s',
-                urlImage: 'assets/images/hotel/portada1.jpg',
+                urlImage: 'assets/images/hotel/portada1xx.jfif',
                 iframe: '',
                 link: '',
             },

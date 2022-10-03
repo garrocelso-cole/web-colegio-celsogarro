@@ -36,6 +36,7 @@ import { NoticiasComponent } from './noticias/noticias.component';
 import { AliadosComponent } from './aliados/aliados.component';
 import { NormatividadesComponent } from './normatividades/normatividades.component';
 import { GestionComponent } from './gestion/gestion.component';
+import { InnovacionComponent } from './innovacion/innovacion.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { GestionComponent } from './gestion/gestion.component';
     AliadosComponent,
     NormatividadesComponent,
     GestionComponent,
+    InnovacionComponent,
   ],
   exports: [
     PagesComponent,
