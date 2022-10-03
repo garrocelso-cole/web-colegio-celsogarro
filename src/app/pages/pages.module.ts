@@ -37,6 +37,7 @@ import { AliadosComponent } from './aliados/aliados.component';
 import { NormatividadesComponent } from './normatividades/normatividades.component';
 import { GestionComponent } from './gestion/gestion.component';
 import { InnovacionComponent } from './innovacion/innovacion.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
   declarations: [
@@ -90,6 +91,7 @@ import { InnovacionComponent } from './innovacion/innovacion.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxDatatableModule,
   ]
 })
 export class PagesModule { }

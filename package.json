@@ -33,6 +33,7 @@
     "@ng-bootstrap/ng-bootstrap": "^9.1.2",
     "@nguniversal/express-engine": "^12.0.2",
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
+    "@swimlane/ngx-datatable": "^20.0.0",
     "@vimeo/player": "^2.14.1",
     "angular-count-to": "0.0.3",
     "angular-feather": "^6.0.10",

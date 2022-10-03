@@ -44,6 +44,7 @@ import { PoliticasComponent } from './adicional/politicas/politicas.component';
 import { DerechosComponent } from './adicional/derechos/derechos.component';
 import { RegistrosComponent } from './adicional/registros/registros.component';
 import { PreguntasComponent } from './adicional/preguntas/preguntas.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 // import { InicioComponent } from './pages/inicio/inicio.component';
 // import { PagesComponent } from './pages/pages.component';
 
@@ -91,6 +92,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     PagesModule,
     PagesRoutingModule,
     HttpClientModule,
+    NgxDatatableModule
   ],
   exports: [
     FeatherModule,
