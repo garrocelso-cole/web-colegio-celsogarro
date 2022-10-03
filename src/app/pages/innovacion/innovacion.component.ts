@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./innovacion.component.css']
 })
 export class InnovacionComponent implements OnInit {
-
+  navClass = 'nav-light';
   constructor() { }
 
   ngOnInit(): void {
