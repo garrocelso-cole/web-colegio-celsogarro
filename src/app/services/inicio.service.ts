@@ -133,7 +133,7 @@ export class InicioService {
   carruselData = [
     {
       h1: 'Colegio 86253 - Celso Garro Valderrama, ',
-       h1Parrafo: 'EDUCACION DE CALIDAD',
+       h1Parrafo: '"ESTUDIO PARA TRASCENDER"',
       h4: 'La mejor educacion en nuestras manos',
       span: 'Mirar Ahora',
       src:'https://www.youtube.com/embed/1Z7Jx3g9u58',
@@ -154,7 +154,7 @@ export class InicioService {
     },
     {
       h1: 'Bienvenidos, Colegio 86253  ',
-      h1Parrafo: 'EDUCACION DE CALIDAD',
+      h1Parrafo: '"ESTUDIO PARA TRASCENDER"',
       h4: 'Reserva tu vacante.',
       span: '',
       src: '',
@@ -164,7 +164,7 @@ export class InicioService {
     },
     {
       h1: 'Bienvenidos, Colegio 86253  ',
-       h1Parrafo: 'EDUCACION DE CALIDAD',
+       h1Parrafo: '"ESTUDIO PARA TRASCENDER"',
       h4: 'Launch your campaign and benefit from our expertise on designing.',
       span: '',
       src: '',

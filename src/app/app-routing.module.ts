@@ -15,16 +15,7 @@ import { RegistrosComponent } from './adicional/registros/registros.component';
 import { PreguntasComponent } from './adicional/preguntas/preguntas.component';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   component: PagesComponent,
-  //   children: [
-  //     { path: 'inicio', component: InicioComponent },
-  //     { path: 'nosotros', component: NosotrosComponent },
-  //   ]
-  // },
-
-  // path: '/inicio' PagesRouting
+ 
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
   { path: '#', component: SwitcherComponent },
   { path: 'terminos', component: TerminosComponent },
