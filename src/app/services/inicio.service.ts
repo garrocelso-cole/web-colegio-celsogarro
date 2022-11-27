@@ -99,32 +99,32 @@ export class InicioService {
 
   cartillaData = [
     {
-      image: 'assets/images/colegio/foto-colegio1.jpg',
+      image: '../../assets/images/colegio/FOTOSGENERALES/fotogenerica-4.jpeg',
       title: '',
       category: ''
     },
     {
-      image: 'assets/images/colegio/foto-colegio2.jpg',
+      image: '../../assets/images/colegio/FOTOSGENERALES/fotogenerica-5.jpeg',
       title: '',
       category: ''
     },
     {
-      image: 'assets/images/colegio/foto-colegio3.jpg',
+      image: '../../assets/images/colegio/FOTOSGENERALES/fotogenerica-6.jpeg',
       title: '',
       category: ''
     },
     {
-      image: 'assets/images/colegio/foto-colegio4.jpg',
+      image: '../../assets/images/colegio/FOTOSGENERALES/fotogenerica-7.jpeg',
       title: '',
       category: ''
     },
     {
-      image: 'assets/images/colegio/foto-colegio5.jpg',
+      image: '../../assets/images/colegio/FOTOSGENERALES/fotogenerica-8.jpeg',
       title: '',
       category: ''
     },
     {
-      image: 'assets/images/colegio/foto-colegio6.jpg',
+      image: '../../assets/images/colegio/FOTOSGENERALES/fotogenerica-9.jpeg',
       title: '',
       category: ''
     },
