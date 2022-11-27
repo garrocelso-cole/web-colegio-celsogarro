@@ -43,6 +43,7 @@ export class HeaderComponent implements OnInit {
      * Menu activation reset
      */
     const resetParent = (el) => {
+
       el.classList.remove("active");
       const parent = el.parentElement;
 
@@ -69,22 +70,28 @@ export class HeaderComponent implements OnInit {
       }
     };
     let links = document.getElementsByClassName("nav-link-ref");
+    console.log(links);
+    
     let matchingMenuItem = null;
     // tslint:disable-next-line: prefer-for-of
     for (let i = 0; i < links.length; i++) {
       // reset menu
       resetParent(links[i]);
     }
+    
     for (let i = 0; i < links.length; i++) {
       if (window.location.pathname === links[i]["pathname"]) {
         matchingMenuItem = links[i];
         break;
       }
     }
-
+    //console.log(matchingMenuItem);
+    
     if (matchingMenuItem) {
       matchingMenuItem.classList.add("active");
       const parent = matchingMenuItem.parentElement;
+      //console.log(parent);
+      
 
       /**
        * TODO: This is hard coded way of expading/activating parent menu dropdown and working till level 3.

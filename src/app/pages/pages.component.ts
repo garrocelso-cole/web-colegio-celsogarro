@@ -25,6 +25,8 @@ export class PagesComponent implements OnInit {
    * Router activation
    */
    onActivate(componentReference: any) {
+    //console.log(componentReference);
+    
     this.addclass = componentReference.navClass;
     this.buttonShow = componentReference.buttonList;
     this.TopbarShow = componentReference.sliderTopbar;

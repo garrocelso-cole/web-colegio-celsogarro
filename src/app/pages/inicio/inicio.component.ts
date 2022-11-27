@@ -77,19 +77,19 @@ export class InicioComponent implements OnInit {
     this.cartillaData = this.inicioService.cartillaData
     this.customOptions = this.inicioService.customOptions
     this.carruselData = this.inicioService.carruselData
-    console.log(this.carruselData);
+    //console.log(this.carruselData);
     
     this.comentariosData = this.inicioService.comentariosData
     this.config = this.inicioService.swiperOptions
-    this.http.get(`${url_base_backend}/habitaciones-genericas-tipo/`)
-      .subscribe(
-        (data: _Habitacion []) =>{ 
-          this.primaria = data
-        },
-        (error)=>{
-          console.log(error)
-        }
-      )
+    // this.http.get(`${url_base_backend}/habitaciones-genericas-tipo/`)
+    //   .subscribe(
+    //     (data: _Habitacion []) =>{ 
+    //       this.primaria = data
+    //     },
+    //     (error)=>{
+    //       //console.log(error)
+    //     }
+    //   )
   }
   enviarContacto(){
     if ( this.contactenosForm.invalid ) {
