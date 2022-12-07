@@ -12,8 +12,6 @@ RUN npm install --legacy-peer-deps
 
 COPY . /usr/src/app
 
-RUN npm run build --prod
-
 FROM nginx:1.20.2-alpine
 
 COPY nginx.conf /etc/nginx/nginx.conf
@@ -23,3 +21,7 @@ COPY --from=node /usr/src/app/dist/landrick-angular/browser /usr/share/nginx/htm
 EXPOSE 80
 
 CMD ["nginx","-g","daemon off;"]
+
+
+
+
