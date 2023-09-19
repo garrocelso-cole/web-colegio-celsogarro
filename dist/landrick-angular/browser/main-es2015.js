@@ -2762,7 +2762,7 @@ GestionComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0_
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " Gesti\u00F3n");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "h3", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Disfruta de la gama de habitacionescon la que contamos para su estadia.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Disfruta de la mejor educaci\u00F3n.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "nav", 9);
@@ -3496,7 +3496,7 @@ habitacionesComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODU
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](7, " habitaciones");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](8, "h3", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](9, "Disfruta de la gama de habitacionescon la que contamos para su estadia.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](9, "Disfruta de la mejor educaci\u00F3n.");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](10, "div", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](11, "nav", 9);
@@ -4041,15 +4041,18 @@ class InicioComponent {
         this.cartillaData = this.inicioService.cartillaData;
         this.customOptions = this.inicioService.customOptions;
         this.carruselData = this.inicioService.carruselData;
-        console.log(this.carruselData);
+        //console.log(this.carruselData);
         this.comentariosData = this.inicioService.comentariosData;
         this.config = this.inicioService.swiperOptions;
-        this.http.get(`${url_base_backend}/habitaciones-genericas-tipo/`)
-            .subscribe((data) => {
-            this.primaria = data;
-        }, (error) => {
-            console.log(error);
-        });
+        // this.http.get(`${url_base_backend}/habitaciones-genericas-tipo/`)
+        //   .subscribe(
+        //     (data: _Habitacion []) =>{ 
+        //       this.primaria = data
+        //     },
+        //     (error)=>{
+        //       //console.log(error)
+        //     }
+        //   )
     }
     enviarContacto() {
         if (this.contactenosForm.invalid) {
@@ -4550,7 +4553,7 @@ class NormatividadesComponent {
     }
 }
 NormatividadesComponent.ɵfac = function NormatividadesComponent_Factory(t) { return new (t || NormatividadesComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__.NgbModal)); };
-NormatividadesComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NormatividadesComponent, selectors: [["app-normatividades"]], decls: 59, vars: 1, consts: [["id", "home", 1, "bg-half", "d-table", "w-100", 2, "background", "url('assets/images/company/normatividadesPortada.png')", "background-size", "100% 100%", "height", "1000px"], [1, "bg-overlay"], [1, "container"], [1, "row", "justify-content-center"], [1, "col-lg-12", "text-center"], [1, "page-next-level", "title-heading"], [1, "display-4", "title-dark", "text-white", "fw-bold", "mb-3", "text-white", "title-dark", "title"], [1, "text-white", "para-desc", "mb-0", "mx-auto", 2, "font-size", "x-large"], [1, "page-next"], ["aria-label", "breadcrumb", 1, "d-inline-block"], [1, "breadcrumb", "bg-white", "rounded", "shadow", "mb-0"], [1, "breadcrumb-item"], ["routerLink", "/inicio"], ["aria-current", "page", 1, "breadcrumb-item", "active"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-white"], ["viewBox", "0 0 2880 48", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z", "fill", "currentColor"], [1, "section", "bg-light"], [1, "container", "mt-100", "mt-60", 2, "margin-top", "-15px"], [1, "row", "align-items-center"], [1, "col-lg-12", "col-md-12", "order-2", "order-md-1", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0"], [1, "section-title", "me-lg-5"], [2, "font-size", "large", "color", "blue"], [1, "text-primary", "fw-bold"], [1, "faq-content", "mt-4", "pt-2"], ["activeIds", "ngb-panel-0", "closeOthers", "true"], ["acc", "ngbAccordion"], ["cardClass", "border-0 rounded shadow mb-2"], ["ngbPanelTitle", ""], ["ngbPanelContent", ""], [1, "section", "bg-light", "pt-0"], [1, "col-12", "text-center"], [1, "video-solution-cta", "position-relative", 2, "z-index", "1"], ["src", "assets/images/modelo1.jpg", "alt", "", 1, "img-fluid", "rounded-md", "shadow-lg"], [1, "feature-posts-placeholder", "bg-primary"], ["href", "javascript: void(0);", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"], ["id", "headingtwo", 1, "border-0", "bg-light"], [1, "title", "mb-0", "text-dark"], [2, "font-size", "large"]], template: function NormatividadesComponent_Template(rf, ctx) { if (rf & 1) {
+NormatividadesComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NormatividadesComponent, selectors: [["app-normatividades"]], decls: 59, vars: 1, consts: [["id", "home", 1, "bg-half", "d-table", "w-100", 2, "background", "url('assets/images/company/normatividadesPortada.png')", "background-size", "100% 100%", "height", "1000px"], [1, "bg-overlay"], [1, "container"], [1, "row", "justify-content-center"], [1, "col-lg-12", "text-center"], [1, "page-next-level", "title-heading"], [1, "display-4", "title-dark", "text-white", "fw-bold", "mb-3", "text-white", "title-dark", "title"], [1, "text-white", "para-desc", "mb-0", "mx-auto", 2, "font-size", "x-large"], [1, "page-next"], ["aria-label", "breadcrumb", 1, "d-inline-block"], [1, "breadcrumb", "bg-white", "rounded", "shadow", "mb-0"], [1, "breadcrumb-item"], ["routerLink", "/inicio"], ["aria-current", "page", 1, "breadcrumb-item", "active"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-white"], ["viewBox", "0 0 2880 48", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z", "fill", "currentColor"], [1, "section", "bg-light"], [1, "container", "mt-100", "mt-60", 2, "margin-top", "-15px"], [1, "row", "align-items-center"], [1, "col-lg-12", "col-md-12", "order-2", "order-md-1", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0"], [1, "section-title", "me-lg-5"], [2, "font-size", "large", "color", "blue"], [1, "text-primary", "fw-bold"], [1, "faq-content", "mt-4", "pt-2"], ["activeIds", "ngb-panel-0", "closeOthers", "true"], ["acc", "ngbAccordion"], ["cardClass", "border-0 rounded shadow mb-2"], ["ngbPanelTitle", ""], ["ngbPanelContent", ""], [1, "section", "bg-light", "pt-0"], [1, "col-12", "text-center"], [1, "video-solution-cta", "position-relative", 2, "z-index", "1"], ["src", "../../../assets/images/colegio/FOTOSGENERALES/fotogenerica-1.jpeg", "alt", "", 1, "img-fluid", "rounded-md", "shadow-lg"], [1, "feature-posts-placeholder", "bg-primary"], ["href", "javascript: void(0);", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"], ["id", "headingtwo", 1, "border-0", "bg-light"], [1, "title", "mb-0", "text-dark"], [2, "font-size", "large"]], template: function NormatividadesComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -4746,7 +4749,7 @@ class NosotrosComponent {
     }
 }
 NosotrosComponent.ɵfac = function NosotrosComponent_Factory(t) { return new (t || NosotrosComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__.NgbModal)); };
-NosotrosComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NosotrosComponent, selectors: [["app-nosotros"]], decls: 85, vars: 4, consts: [["id", "home", 1, "bg-half", "d-table", "w-100", 2, "background", "url('assets/images/company/nosotrosPortada.jpg')", "background-size", "100% 100%"], [1, "bg-overlay"], [1, "container"], [1, "row", "justify-content-center"], [1, "col-lg-12", "text-center"], [1, "page-next-level", "title-heading"], [1, "display-4", "title-dark", "text-white", "fw-bold", "mb-3", "text-white", "title-dark", "title"], [1, "text-white", "para-desc", "mb-0", "mx-auto", 2, "font-size", "x-large"], [1, "page-next"], ["aria-label", "breadcrumb", 1, "d-inline-block"], [1, "breadcrumb", "bg-white", "rounded", "shadow", "mb-0"], [1, "breadcrumb-item"], ["routerLink", "/inicio"], ["aria-current", "page", 1, "breadcrumb-item", "active"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-white"], ["viewBox", "0 0 2880 48", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z", "fill", "currentColors"], [1, "section"], ["id", "counter", 1, "row", "align-items-center"], [1, "col-md-6", "mt-4", "pt-2", "mt-sm-0", "pt-sm-0"], [1, "ms-lg-4"], [1, "d-flex", "mb-4"], [1, "text-primary", "h1", "mb-0"], [1, "counter-value", "display-1", "fw-bold", 3, "CountTo", "from", "duration"], [1, "align-self-end", "ms-2", 2, "font-size", "x-large"], [1, "section-title"], [1, "mb-4"], [2, "font-size", "medium", "font-size", "large"], [1, "text-primary", "fw-bold", 2, "font-family", "Tillana"], ["href", "javascript:void(0)", "routerLink", "/inicio/contacto", 1, "btn", "btn-primary", "mt-3", 2, "font-size", "large"], [1, "col-md-6"], ["src", "assets/images/colegio/portada1xx.jfif", "alt", "", 1, "img-fluid"], ["src", "assets/images/company/noticiasPortada.jpg", "alt", "", 1, "img-fluid"], [1, "section", "bg-light"], [1, "container", "mt-100", "mt-60", 2, "margin-top", "-15px"], [1, "row", "align-items-center"], [1, "col-lg-6", "col-md-6", "order-1", "order-md-2"], [1, "title", "mb-4"], ["src", "assets/images/colegio/organigrama.png", "alt", "", 1, "img-fluid", "rounded", "shadow-md"], [1, "col-lg-5", "col-md-6", "order-2", "order-md-1", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0"], [1, "section-title", "me-lg-5"], [1, "faq-content", "mt-4", "pt-2"], ["activeIds", "ngb-panel-0", "closeOthers", "true"], ["acc", "ngbAccordion"], ["cardClass", "border-0 rounded shadow mb-2"], ["ngbPanelTitle", ""], ["ngbPanelContent", ""], [1, "section", "bg-light", "pt-0"], [1, "col-12", "text-center"], [1, "video-solution-cta", "position-relative", 2, "z-index", "1"], ["src", "assets/images/colegio/docentes-primaria.png", "alt", "", 1, "img-fluid", "rounded-md", "shadow-lg"], [1, "play-icon"], ["content", ""], [1, "feature-posts-placeholder", "bg-primary"], ["href", "javascript: void(0);", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"], ["id", "headingtwo", 1, "border-0", "bg-light"], [1, "title", "mb-0", "text-dark"], [2, "font-size", "large"], [1, "modal-header"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"]], template: function NosotrosComponent_Template(rf, ctx) { if (rf & 1) {
+NosotrosComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NosotrosComponent, selectors: [["app-nosotros"]], decls: 85, vars: 4, consts: [["id", "home", 1, "bg-half", "d-table", "w-100", 2, "background", "url('assets/images/company/nosotrosPortada.jpg')", "background-size", "100% 100%"], [1, "bg-overlay"], [1, "container"], [1, "row", "justify-content-center"], [1, "col-lg-12", "text-center"], [1, "page-next-level", "title-heading"], [1, "display-4", "title-dark", "text-white", "fw-bold", "mb-3", "text-white", "title-dark", "title"], [1, "text-white", "para-desc", "mb-0", "mx-auto", 2, "font-size", "x-large"], [1, "page-next"], ["aria-label", "breadcrumb", 1, "d-inline-block"], [1, "breadcrumb", "bg-white", "rounded", "shadow", "mb-0"], [1, "breadcrumb-item"], ["routerLink", "/inicio"], ["aria-current", "page", 1, "breadcrumb-item", "active"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-white"], ["viewBox", "0 0 2880 48", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z", "fill", "currentColors"], [1, "section"], ["id", "counter", 1, "row", "align-items-center"], [1, "col-md-6", "mt-4", "pt-2", "mt-sm-0", "pt-sm-0"], [1, "ms-lg-4"], [1, "d-flex", "mb-4"], [1, "text-primary", "h1", "mb-0"], [1, "counter-value", "display-1", "fw-bold", 3, "CountTo", "from", "duration"], [1, "align-self-end", "ms-2", 2, "font-size", "x-large"], [1, "section-title"], [1, "mb-4"], [2, "font-size", "medium", "font-size", "large"], [1, "text-primary", "fw-bold", 2, "font-family", "Tillana"], ["href", "javascript:void(0)", "routerLink", "/inicio/contacto", 1, "btn", "btn-primary", "mt-3", 2, "font-size", "large"], [1, "col-md-6"], ["src", "assets/images/colegio/portada1xx.jfif", "alt", "", 1, "img-fluid"], ["src", "assets/images/company/noticiasPortada.jpg", "alt", "", 1, "img-fluid"], [1, "section", "bg-light"], [1, "container", "mt-100", "mt-60", 2, "margin-top", "-15px"], [1, "row", "align-items-center"], [1, "col-lg-6", "col-md-6", "order-1", "order-md-2"], [1, "title", "mb-4"], ["src", "assets/images/colegio/organigrama.png", "alt", "", 1, "img-fluid", "rounded", "shadow-md"], [1, "col-lg-5", "col-md-6", "order-2", "order-md-1", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0"], [1, "section-title", "me-lg-5"], [1, "faq-content", "mt-4", "pt-2"], ["activeIds", "ngb-panel-0", "closeOthers", "true"], ["acc", "ngbAccordion"], ["cardClass", "border-0 rounded shadow mb-2"], ["ngbPanelTitle", ""], ["ngbPanelContent", ""], [1, "section", "bg-light", "pt-0"], [1, "col-12", "text-center"], [1, "video-solution-cta", "position-relative", 2, "z-index", "1"], ["src", "../../../assets/images/colegio/FOTOSGENERALES/fotogenerica-3.jpeg", "alt", "", 1, "img-fluid", "rounded-md", "shadow-lg"], [1, "play-icon"], ["content", ""], [1, "feature-posts-placeholder", "bg-primary"], ["href", "javascript: void(0);", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"], ["id", "headingtwo", 1, "border-0", "bg-light"], [1, "title", "mb-0", "text-dark"], [2, "font-size", "large"], [1, "modal-header"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"]], template: function NosotrosComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "section", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 2);
@@ -5025,7 +5028,7 @@ class NoticiasComponent {
     }
 }
 NoticiasComponent.ɵfac = function NoticiasComponent_Factory(t) { return new (t || NoticiasComponent)(); };
-NoticiasComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NoticiasComponent, selectors: [["app-noticias"]], decls: 184, vars: 1, consts: [["id", "home", 1, "bg-half", "bg-light", "d-table", "w-100", 2, "background", "url('assets/images/company/noticiasPortada.jpg')", "background-size", "100% 160%"], [1, "bg-overlay"], [1, "container"], [1, "row", "justify-content-center"], [1, "col-lg-12", "text-center"], [1, "page-next-level"], [1, "display-4", "title-dark", "text-white", "fw-bold", "mb-3", "text-white", "title-dark", "title"], [1, "text-white", "para-desc", "mb-0", "mx-auto", 2, "font-size", "x-large"], [1, "page-next"], ["aria-label", "breadcrumb", 1, "d-inline-block"], [1, "breadcrumb", "bg-white", "rounded", "shadow", "mb-0"], [1, "breadcrumb-item"], ["routerLink", "/inicio"], ["aria-current", "page", 1, "breadcrumb-item", "active"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-white"], ["viewBox", "0 0 2880 48", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z", "fill", "currentColor"], [1, "section"], [1, "row"], [1, "col-lg-6", "mt-4", "pt-2"], [1, "card", "work-container", "work-modern", "rounded", "border-0", "overflow-hidden"], [1, "card-header"], [1, "card-body", "p-0"], ["src", "assets/images/hotel/portadaNoticias.jpg", "alt", "work-image", 1, "img-fluid", "rounded"], [1, "overlay-work", "bg-dark"], [1, "content"], [1, "title", "text-white", "pb-2", "border-bottom", 2, "font-size", "x-large"], [1, "post-meta", "mb-0", "mt-2", "text-white", "list-unstyled"], [1, "list-inline-item", "me-3", 2, "font-size", "x-large"], [1, "uil", "uil-bed-double", "me-2"], [1, "text-white", "d-block", "mb-0", 2, "font-size", "x-large"], [1, "text-success"], [1, "read_more", "bg-primary", "text-center", "rounded-circle"], ["href", "javascript:void(0)", 1, "text-light", "d-block"], ["name", "chevron-right", 1, "fea", "icon-sm", "title-dark"], [1, "list-inline-item", 2, "font-size", "x-large"], [1, "uil", "uil-bath", "me-2"], ["href", "javascript: void(0);", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"]], template: function NoticiasComponent_Template(rf, ctx) { if (rf & 1) {
+NoticiasComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NoticiasComponent, selectors: [["app-noticias"]], decls: 115, vars: 1, consts: [["id", "home", 1, "bg-half", "bg-light", "d-table", "w-100", 2, "background", "url('assets/images/company/noticiasPortada.jpg')", "background-size", "100% 160%"], [1, "bg-overlay"], [1, "container"], [1, "row", "justify-content-center"], [1, "col-lg-12", "text-center"], [1, "page-next-level"], [1, "display-4", "title-dark", "text-white", "fw-bold", "mb-3", "text-white", "title-dark", "title"], [1, "text-white", "para-desc", "mb-0", "mx-auto", 2, "font-size", "x-large"], [1, "page-next"], ["aria-label", "breadcrumb", 1, "d-inline-block"], [1, "breadcrumb", "bg-white", "rounded", "shadow", "mb-0"], [1, "breadcrumb-item"], ["routerLink", "/inicio"], ["aria-current", "page", 1, "breadcrumb-item", "active"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-white"], ["viewBox", "0 0 2880 48", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z", "fill", "currentColor"], [1, "section"], [1, "row"], [1, "col-lg-6", "mt-4", "pt-2"], [1, "card", "work-container", "work-modern", "rounded", "border-0", "overflow-hidden"], [1, "card-header"], [1, "card-body", "p-0"], ["src", "assets/images/colegio/FOTOSGENERALES/fotogenerica-1.jpeg", "alt", "work-image", 1, "img-fluid", "rounded"], [1, "overlay-work", "bg-dark"], [1, "content"], [1, "read_more", "bg-primary", "text-center", "rounded-circle"], ["href", "javascript:void(0)", 1, "text-light", "d-block"], ["name", "chevron-right", 1, "fea", "icon-sm", "title-dark"], ["src", "assets/images/colegio/FOTOSGENERALES/fotogenerica-2.jpeg", "alt", "work-image", 1, "img-fluid", "rounded"], [1, "post-meta", "mb-0", "mt-2", "text-white", "list-unstyled"], [1, "list-inline-item", "me-3", 2, "font-size", "x-large"], [1, "uil", "uil-bed-double", "me-2"], ["src", "assets/images/colegio/FOTOSGENERALES/fotogenerica-3.jpeg", "alt", "work-image", 1, "img-fluid", "rounded"], ["src", "assets/images/colegio/FOTOSGENERALES/fotogenerica-4.jpeg", "alt", "work-image", 1, "img-fluid", "rounded"], ["src", "assets/images/colegio/FOTOSGENERALES/fotogenerica-5.jpeg", "alt", "work-image", 1, "img-fluid", "rounded"], ["src", "assets/images/colegio/FOTOSGENERALES/fotogenerica-6.jpeg", "alt", "work-image", 1, "img-fluid", "rounded"], ["href", "javascript: void(0);", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"]], template: function NoticiasComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -5082,246 +5085,140 @@ NoticiasComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 23);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](33, "img", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](34, "div", 25);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "div", 26);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "a", 27);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "aaaaaaaa");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](35, "div", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "div", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "a", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](38, "i-feather", 29);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "ul", 28);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "li", 29);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](40, "i", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, "xxxxx");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "p", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, "noticia: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "span", 32);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](45, "uu");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "div", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "div", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "div", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, " Noticia 2");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "div", 33);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "a", 34);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](48, "i-feather", 35);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](45, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore modi itaque accusantium dicta consequatur aspernatur magni consectetur maxime excepturi. Quod possimus cupiditate veritatis sapiente reiciendis alias exercitationem dolore commodi labore.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "div", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](47, "img", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](48, "div", 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "div", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "ul", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "li", 32);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](52, "i", 33);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, "noticia");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "div", 20);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "div", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "div", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "h1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, " Noticia 2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "div", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "a", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](56, "i-feather", 29);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore modi itaque accusantium dicta consequatur aspernatur magni consectetur maxime excepturi. Quod possimus cupiditate veritatis sapiente reiciendis alias exercitationem dolore commodi labore.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "div", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](57, "img", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](58, "div", 25);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "div", 26);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "a", 27);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "aaaaaaaa");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "ul", 28);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "li", 29);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](64, "i", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](65, "noticia");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "div", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "div", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "div", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "Noticia 3");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "p", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](67, "noticia: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "span", 32);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](69, "uuu");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](63, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam culpa unde id consectetur, modi corrupti esse itaque sequi voluptatibus sunt ad quos autem, ut nihil at. Consequatur, porro laborum. Ullam.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, " noticia");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "div", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](65, "img", 34);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](66, "div", 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](67, "div", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "div", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "a", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](70, "i-feather", 29);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "div", 33);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "a", 34);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](73, "i-feather", 35);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "div", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "div", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "div", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](75, " Noticia 4");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "div", 20);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "div", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](76, "div", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "h1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](78, "Noticia 3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](76, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](77, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore modi itaque accusantium dicta consequatur aspernatur magni consectetur maxime excepturi. Quod possimus cupiditate veritatis sapiente reiciendis alias exercitationem dolore commodi labore.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](80, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam culpa unde id consectetur, modi corrupti esse itaque sequi voluptatibus sunt ad quos autem, ut nihil at. Consequatur, porro laborum. Ullam.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](78, "div", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](79, "img", 35);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](80, "div", 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](81, "div", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "div", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "a", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](84, "i-feather", 29);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "div", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](82, "img", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](83, "div", 25);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](84, "div", 26);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "a", 27);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](86, "aaaaaaaa");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "ul", 28);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "li", 29);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](89, "i", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90, "xxxxx");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "li", 36);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](92, "i", 37);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, "yyyyyy");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](94, "p", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](95, "Desde: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "span", 32);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](97, "uuuu");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "div", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "div", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "div", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, "Noticia 5");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam culpa unde id consectetur, modi corrupti esse itaque sequi voluptatibus sunt ad quos autem, ut nihil at. Consequatur, porro laborum. Ullam.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "div", 33);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "a", 34);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](100, "i-feather", 35);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](92, "div", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](93, "img", 36);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](94, "div", 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](95, "div", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "div", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "a", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](98, "i-feather", 29);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "div", 20);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](102, "div", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "div", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](104, "h1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](105, " Noticia 4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "div", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](100, "div", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "div", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](102, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](103, " Noticia 6");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](107, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore modi itaque accusantium dicta consequatur aspernatur magni consectetur maxime excepturi. Quod possimus cupiditate veritatis sapiente reiciendis alias exercitationem dolore commodi labore.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](104, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](105, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore modi itaque accusantium dicta consequatur aspernatur magni consectetur maxime excepturi. Quod possimus cupiditate veritatis sapiente reiciendis alias exercitationem dolore commodi labore.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "div", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](109, "img", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](110, "div", 25);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "div", 26);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](112, "a", 27);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](113, "aaaaaaaa");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "div", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](107, "img", 37);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](108, "div", 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](109, "div", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](110, "div", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "a", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](112, "i-feather", 29);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](114, "ul", 28);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "li", 29);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](116, "i", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](117, "xxxxx");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](118, "li", 36);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](119, "i", 37);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](120, "yyyyyy");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "p", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](122, "Desde: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](123, "span", 32);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](124, "uuuu");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "div", 33);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](126, "a", 34);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](127, "i-feather", 35);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](128, "div", 20);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "div", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](130, "div", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "h1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](132, "Noticia 5");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](134, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam culpa unde id consectetur, modi corrupti esse itaque sequi voluptatibus sunt ad quos autem, ut nihil at. Consequatur, porro laborum. Ullam.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "div", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](136, "img", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](137, "div", 25);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](138, "div", 26);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](139, "a", 27);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](140, "aaaaaaaa");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "ul", 28);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](142, "li", 29);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](143, "i", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](144, "xxxxx");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "li", 36);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](146, "i", 37);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](147, "yyyyyy");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](148, "p", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](149, "Desde: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](150, "span", 32);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](151, "uuuuuuu");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](152, "div", 33);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](153, "a", 34);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](154, "i-feather", 35);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](155, "div", 20);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](156, "div", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](157, "div", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](158, "h1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](159, " Noticia 6");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](160, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](161, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore modi itaque accusantium dicta consequatur aspernatur magni consectetur maxime excepturi. Quod possimus cupiditate veritatis sapiente reiciendis alias exercitationem dolore commodi labore.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](162, "div", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](163, "img", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](164, "div", 25);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](165, "div", 26);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](166, "a", 27);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](167, "aaaaaaaa");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](168, "ul", 28);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](169, "li", 29);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](170, "i", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](171, "xxxxx");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](172, "li", 36);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](173, "i", 37);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](174, "yyyyyy");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](175, "p", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](176, "Desde: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](177, "span", 32);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](178, "uuuuuu");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](179, "div", 33);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](180, "a", 34);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](181, "i-feather", 35);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](182, "a", 38);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](183, "i-feather", 39);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "a", 38);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](114, "i-feather", 39);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](182);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](113);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngxScrollTo", "#home");
     } }, directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__.RouterLinkWithHref, angular_feather__WEBPACK_IMPORTED_MODULE_2__.FeatherComponent, _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_3__.ScrollToDirective], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJub3RpY2lhcy5jb21wb25lbnQuY3NzIn0= */"] });
 
@@ -5355,6 +5252,7 @@ class PagesComponent {
      * Router activation
      */
     onActivate(componentReference) {
+        //console.log(componentReference);
         this.addclass = componentReference.navClass;
         this.buttonShow = componentReference.buttonList;
         this.TopbarShow = componentReference.sliderTopbar;
@@ -6085,32 +5983,32 @@ class InicioService {
         ];
         this.cartillaData = [
             {
-                image: 'assets/images/colegio/foto-colegio1.jpg',
+                image: '../../assets/images/colegio/FOTOSGENERALES/fotogenerica-7.jpeg',
                 title: '',
                 category: ''
             },
             {
-                image: 'assets/images/colegio/foto-colegio2.jpg',
+                image: '../../assets/images/colegio/FOTOSGENERALES/fotogenerica-8.jpeg',
                 title: '',
                 category: ''
             },
             {
-                image: 'assets/images/colegio/foto-colegio3.jpg',
+                image: '../../assets/images/colegio/FOTOSGENERALES/fotogenerica-9.jpeg',
                 title: '',
                 category: ''
             },
             {
-                image: 'assets/images/colegio/foto-colegio4.jpg',
+                image: '../../assets/images/colegio/FOTOSGENERALES/fotogenerica-10.jpeg',
                 title: '',
                 category: ''
             },
             {
-                image: 'assets/images/colegio/foto-colegio5.jpg',
+                image: '../../assets/images/colegio/FOTOSGENERALES/fotogenerica-11.jpeg',
                 title: '',
                 category: ''
             },
             {
-                image: 'assets/images/colegio/foto-colegio6.jpg',
+                image: '../../assets/images/colegio/FOTOSGENERALES/fotogenerica-12.jpeg',
                 title: '',
                 category: ''
             },
@@ -6439,7 +6337,8 @@ class CartillasComponent {
         this._lightbox = _lightbox;
         this._album = [];
         for (let i = 1; i <= 6; i++) {
-            const src = '../../../assets/images/colegio/foto-colegio' + i + '.jpg';
+            // const src = '../../../assets/images/colegio/foto-colegio' + i + '.jpg';
+            const src = '../../assets/images/colegio/FOTOSGENERALES/fotogenerica-' + (i + 6) + '.jpeg';
             const caption = '';
             const thumb = '../../../assets/images/colegio/foto-colegio' + i + '-thumb.jpg';
             const album = {
@@ -7044,6 +6943,7 @@ class HeaderComponent {
             }
         };
         let links = document.getElementsByClassName("nav-link-ref");
+        console.log(links);
         let matchingMenuItem = null;
         // tslint:disable-next-line: prefer-for-of
         for (let i = 0; i < links.length; i++) {
@@ -7056,9 +6956,11 @@ class HeaderComponent {
                 break;
             }
         }
+        //console.log(matchingMenuItem);
         if (matchingMenuItem) {
             matchingMenuItem.classList.add("active");
             const parent = matchingMenuItem.parentElement;
+            //console.log(parent);
             /**
              * TODO: This is hard coded way of expading/activating parent menu dropdown and working till level 3.
              * We should come up with non hard coded approach
@@ -7143,7 +7045,7 @@ class HeaderComponent {
     }
 }
 HeaderComponent.ɵfac = function HeaderComponent_Factory(t) { return new (t || HeaderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__.NgbModal)); };
-HeaderComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HeaderComponent, selectors: [["app-header"]], inputs: { navClass: "navClass", buttonList: "buttonList", sliderTopbar: "sliderTopbar", isdeveloper: "isdeveloper", shopPages: "shopPages" }, decls: 38, vars: 15, consts: [["id", "topnav", 1, "defaultscroll", "sticky", 3, "ngClass", "scroll"], [1, "container", 2, "margin-top", "5px"], ["class", "logo", 4, "ngIf"], ["class", "buy-button list-inline mb-0", 4, "ngIf"], ["class", "logo", "routerLink", "", 4, "ngIf"], [4, "ngIf"], [1, "menu-extras"], [1, "menu-item"], ["id", "isToggle", 1, "navbar-toggle", 3, "ngClass", "click"], [1, "lines"], ["id", "navigation"], [1, "navigation-menu"], ["routerLink", "", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small", "margin-left", "-4px"], ["routerLink", "nosotros", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small"], ["routerLink", "gestion", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small"], ["routerLink", "noticias", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small"], ["routerLink", "aliados", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small"], ["routerLink", "innovacion", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small"], ["routerLink", "normatividades", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small", "margin-right", "-34px"], [1, "logo"], ["src", "assets/images/colegio/logo-colegio-celso.jpg", "height", "55", "alt", "", 1, "l-dark", "logo-light-mode", 2, "margin-right", "-90px", "margin-left", "-90px", "margin-top", "8px", "margin-bottom", "8px"], ["src", "assets/images/colegio/logo-colegio-celso.jpg", "height", "55", "alt", "", 1, "logo-dark-mode"], [1, "buy-button", "list-inline", "mb-0"], [1, "list-inline-item", "mb-0", "ms-1"], [1, "dropdown"], ["type", "button", "data-bs-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "btn", "btn-link", "text-decoration-none", "dropdown-toggle", "p-0", "pe-2"], [1, "uil", "uil-search", "text-muted"], [1, "dropdown-menu", "dd-menu", "dropdown-menu-end", "bg-white", "shadow", "rounded", "border-0", "mt-3", "py-0", 2, "width", "300px"], ["type", "text", "id", "text", "name", "name", "placeholder", "Search...", 1, "form-control", "border", "bg-white"], ["href", "javascript:void(0)", 1, "btn", "btn-icon", "btn-primary"], [1, "uil", "uil-facebook-f", "icons"], [1, "uil", "uil-github", "icons"], [1, "uil", "uil-twitter", "icons"], [1, "uil", "uil-linkedin-alt", "icons"], [1, "list-inline-item", "mb-0"], ["type", "text", "id", "text2", "name", "name", "placeholder", "Search...", 1, "form-control", "border", "bg-white"], [1, "list-inline-item", "mb-0", "pe-1"], ["href", "#", 1, "btn", "btn-icon", "btn-soft-primary"], [1, "mdi", "mdi-stack-overflow", "mdi-18px", "icons"], ["href", "javascript:void(0)", "data-bs-toggle", "modal", "data-bs-target", "#loginform", 1, "btn", "btn-icon", "btn-soft-primary", 3, "click"], [1, "uil", "uil-user", "icons"], ["content", ""], ["role", "document", 1, "modal-lg", "modal-dialog-centered"], [1, "modal-content", "rounded", "shadow-lg", "border-0", "overflow-hidden", "position-relative"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn-close", "position-absolute", "top-0", "end-0", "mt-2", "me-2", 2, "z-index", "1", 3, "click"], [1, "modal-body", "p-0"], [1, "container-fluid", "px-0"], [1, "row", "align-items-center", "g-0"], [1, "col-lg-6", "col-md-5"], ["src", "assets/images/course/online/ab02.jpg", "alt", "", 1, "img-fluid"], [1, "col-lg-6", "col-md-7"], [1, "login-form", "p-4"], [1, "row"], [1, "col-lg-12"], [1, "mb-3"], [1, "form-label"], [1, "text-danger"], [1, "form-icon", "position-relative"], ["name", "user", 1, "fea", "icon-sm", "icons"], ["type", "email", "placeholder", "Email", "name", "email", "required", "", 1, "form-control", "ps-5"], ["name", "key", 1, "fea", "icon-sm", "icons"], ["type", "password", "placeholder", "Password", "required", "", 1, "form-control", "ps-5"], [1, "d-flex", "justify-content-between"], [1, "custom-control", "custom-checkbox"], ["type", "checkbox", "id", "customCheck1", 1, "custom-control-input"], ["for", "customCheck1", 1, "custom-control-label", "ms-1"], [1, "forgot-pass", "mb-0"], ["routerLink", "/auth-re-password", 1, "text-dark", "fw-bold"], [1, "col-lg-12", "mb-0"], [1, "d-grid"], [1, "btn", "btn-primary"], [1, "col-12", "text-center"], [1, "mb-0", "mt-3"], [1, "text-dark", "me-2"], ["routerLink", "/auth-signup", 1, "text-dark", "fw-bold"], ["routerLink", "", 1, "logo"], ["src", "assets/images/logo/logo-dark-bvm.jpg", "height", "55", "alt", "", 1, "l-dark", 2, "margin-right", "-90px", "margin-left", "-90px", "margin-top", "8px", "margin-bottom", "8px"], [1, "buy-button"], [3, "ngIf"], ["routerLink", "/", 1, "btn", "personalizado", "login-btn-primary", 3, "ngxScrollTo"], [1, "btn", "personalizado", 3, "ngxScrollTo"]], template: function HeaderComponent_Template(rf, ctx) { if (rf & 1) {
+HeaderComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HeaderComponent, selectors: [["app-header"]], inputs: { navClass: "navClass", buttonList: "buttonList", sliderTopbar: "sliderTopbar", isdeveloper: "isdeveloper", shopPages: "shopPages" }, decls: 38, vars: 15, consts: [["id", "topnav", 1, "defaultscroll", "sticky", 3, "ngClass", "scroll"], [1, "container", 2, "margin-top", "5px"], ["class", "logo", 4, "ngIf"], ["class", "buy-button list-inline mb-0", 4, "ngIf"], ["class", "logo", "routerLink", "", 4, "ngIf"], [4, "ngIf"], [1, "menu-extras"], [1, "menu-item"], ["id", "isToggle", 1, "navbar-toggle", 3, "ngClass", "click"], [1, "lines"], ["id", "navigation"], [1, "navigation-menu"], ["routerLink", "/inicio", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small", "margin-left", "-4px"], ["routerLink", "/inicio/nosotros", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small"], ["routerLink", "/inicio/gestion", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small"], ["routerLink", "/inicio/noticias", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small"], ["routerLink", "/inicio/aliados", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small"], ["routerLink", "/inicio/innovacion", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small"], ["routerLink", "/inicio/normatividades", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive", "font-size", "small", "margin-right", "-34px"], [1, "logo"], ["src", "assets/images/colegio/logo-colegio-celso.jpg", "height", "55", "alt", "", 1, "l-dark", "logo-light-mode", 2, "margin-right", "-90px", "margin-left", "-90px", "margin-top", "8px", "margin-bottom", "8px"], ["src", "assets/images/colegio/logo-colegio-celso.jpg", "height", "55", "alt", "", 1, "logo-dark-mode"], [1, "buy-button", "list-inline", "mb-0"], [1, "list-inline-item", "mb-0", "ms-1"], [1, "dropdown"], ["type", "button", "data-bs-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "btn", "btn-link", "text-decoration-none", "dropdown-toggle", "p-0", "pe-2"], [1, "uil", "uil-search", "text-muted"], [1, "dropdown-menu", "dd-menu", "dropdown-menu-end", "bg-white", "shadow", "rounded", "border-0", "mt-3", "py-0", 2, "width", "300px"], ["type", "text", "id", "text", "name", "name", "placeholder", "Search...", 1, "form-control", "border", "bg-white"], ["href", "javascript:void(0)", 1, "btn", "btn-icon", "btn-primary"], [1, "uil", "uil-facebook-f", "icons"], [1, "uil", "uil-github", "icons"], [1, "uil", "uil-twitter", "icons"], [1, "uil", "uil-linkedin-alt", "icons"], [1, "list-inline-item", "mb-0"], ["type", "text", "id", "text2", "name", "name", "placeholder", "Search...", 1, "form-control", "border", "bg-white"], [1, "list-inline-item", "mb-0", "pe-1"], ["href", "#", 1, "btn", "btn-icon", "btn-soft-primary"], [1, "mdi", "mdi-stack-overflow", "mdi-18px", "icons"], ["href", "javascript:void(0)", "data-bs-toggle", "modal", "data-bs-target", "#loginform", 1, "btn", "btn-icon", "btn-soft-primary", 3, "click"], [1, "uil", "uil-user", "icons"], ["content", ""], ["role", "document", 1, "modal-lg", "modal-dialog-centered"], [1, "modal-content", "rounded", "shadow-lg", "border-0", "overflow-hidden", "position-relative"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn-close", "position-absolute", "top-0", "end-0", "mt-2", "me-2", 2, "z-index", "1", 3, "click"], [1, "modal-body", "p-0"], [1, "container-fluid", "px-0"], [1, "row", "align-items-center", "g-0"], [1, "col-lg-6", "col-md-5"], ["src", "assets/images/course/online/ab02.jpg", "alt", "", 1, "img-fluid"], [1, "col-lg-6", "col-md-7"], [1, "login-form", "p-4"], [1, "row"], [1, "col-lg-12"], [1, "mb-3"], [1, "form-label"], [1, "text-danger"], [1, "form-icon", "position-relative"], ["name", "user", 1, "fea", "icon-sm", "icons"], ["type", "email", "placeholder", "Email", "name", "email", "required", "", 1, "form-control", "ps-5"], ["name", "key", 1, "fea", "icon-sm", "icons"], ["type", "password", "placeholder", "Password", "required", "", 1, "form-control", "ps-5"], [1, "d-flex", "justify-content-between"], [1, "custom-control", "custom-checkbox"], ["type", "checkbox", "id", "customCheck1", 1, "custom-control-input"], ["for", "customCheck1", 1, "custom-control-label", "ms-1"], [1, "forgot-pass", "mb-0"], ["routerLink", "/auth-re-password", 1, "text-dark", "fw-bold"], [1, "col-lg-12", "mb-0"], [1, "d-grid"], [1, "btn", "btn-primary"], [1, "col-12", "text-center"], [1, "mb-0", "mt-3"], [1, "text-dark", "me-2"], ["routerLink", "/auth-signup", 1, "text-dark", "fw-bold"], ["routerLink", "", 1, "logo"], ["src", "assets/images/logo/logo-dark-bvm.jpg", "height", "55", "alt", "", 1, "l-dark", 2, "margin-right", "-90px", "margin-left", "-90px", "margin-top", "8px", "margin-bottom", "8px"], [1, "buy-button"], [3, "ngIf"], ["routerLink", "/", 1, "btn", "personalizado", "login-btn-primary", 3, "ngxScrollTo"], [1, "btn", "personalizado", 3, "ngxScrollTo"]], template: function HeaderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "header", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("scroll", function HeaderComponent_Template_header_scroll_0_listener() { return ctx.windowScroll(); }, false, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresolveWindow"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
@@ -7224,7 +7126,7 @@ HeaderComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](13, _c1, ctx.isCondensed === true));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx.navClass);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_3__.NgIf, _angular_router__WEBPACK_IMPORTED_MODULE_1__.RouterLinkWithHref, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgForm, angular_feather__WEBPACK_IMPORTED_MODULE_5__.FeatherComponent, _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_6__.ScrollToDirective], styles: [".personalizado[_ngcontent-%COMP%] {\r\n    background-color: rgb(151, 240, 247);\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksb0NBQW9DO0FBQ3hDIiwiZmlsZSI6ImhlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBlcnNvbmFsaXphZG8ge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDE1MSwgMjQwLCAyNDcpO1xyXG59Il19 */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_3__.NgIf, _angular_router__WEBPACK_IMPORTED_MODULE_1__.RouterLinkWithHref, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_4__.NgForm, angular_feather__WEBPACK_IMPORTED_MODULE_5__.FeatherComponent, _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_6__.ScrollToDirective], styles: [".personalizado[_ngcontent-%COMP%] {\r\n    background-color: rgb(151, 240, 247);\r\n}\r\n\r\n.activo[_ngcontent-%COMP%] {\r\n    background-color: rgb(1, 252, 168);\r\n    color: #120991\r\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksb0NBQW9DO0FBQ3hDOztBQUVBO0lBQ0ksa0NBQWtDO0lBQ2xDO0VBQ0YiLCJmaWxlIjoiaGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucGVyc29uYWxpemFkbyB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTUxLCAyNDAsIDI0Nyk7XHJcbn1cclxuXHJcbi5hY3Rpdm8ge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDEsIDI1MiwgMTY4KTtcclxuICAgIGNvbG9yOiAjMTIwOTkxXHJcbiAgfVxyXG4gICJdfQ== */"] });
 
 
 /***/ }),
