@@ -7,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 
-/**
- * PAge Error Component
- */
 export class PaginaerrorComponent implements OnInit {
 
   constructor() { }

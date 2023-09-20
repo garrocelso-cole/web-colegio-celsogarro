@@ -3,8 +3,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-normatividades',
-  templateUrl: './normatividades.component.html',
-  styleUrls: ['./normatividades.component.css']
+  templateUrl: './normatividades.component.html'
 })
 export class NormatividadesComponent implements OnInit {
 
@@ -17,11 +16,7 @@ export class NormatividadesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  /**
-  * Open modal for show the video
-  * @param content content of modal
-  */
-   openWindowCustomClass(content) {
+  openWindowCustomClass(content) {
     this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true });
   }
 

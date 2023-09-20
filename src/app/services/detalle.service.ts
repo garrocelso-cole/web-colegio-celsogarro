@@ -8,8 +8,8 @@ import { environment } from 'src/environments/environment';
 export class DetalleService {
 
   constructor(private http: HttpClient) { }
-  
-  getReservasHabitacion(id: number){  
-    return this.http.post(`${environment.url_base_backend}/obtener-fechas-habitacion`,{ id: id})
+
+  getReservasHabitacion(id: number) {
+    return this.http.post(`${environment.url_base_backend}/obtener-fechas-habitacion`, { id: id })
   }
 }

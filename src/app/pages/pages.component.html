@@ -1,16 +1,8 @@
-<app-header 
-    [navClass]="addclass" 
-    [buttonList]="buttonShow" 
-    [sliderTopbar]="TopbarShow" 
-    [isdeveloper]="developerPage" 
+<app-header [navClass]="addclass" [buttonList]="buttonShow" [sliderTopbar]="TopbarShow" [isdeveloper]="developerPage"
     [shopPages]="shopPages">
 </app-header>
 
-<!-- <app-switcher></app-switcher> -->
+<router-outlet (activate)="onActivate($event)"></router-outlet>
 
-<router-outlet (activate)="onActivate($event)" ></router-outlet>
-
-<app-footer 
-    [footerVariant]="footerClass" 
-    [hideFooter]="hideFooter">
-</app-footer> 
+<app-footer [footerVariant]="footerClass" [hideFooter]="hideFooter">
+</app-footer>

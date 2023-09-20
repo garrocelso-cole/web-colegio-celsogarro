@@ -8,9 +8,9 @@ describe('NormatividadesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NormatividadesComponent ]
+      declarations: [NormatividadesComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

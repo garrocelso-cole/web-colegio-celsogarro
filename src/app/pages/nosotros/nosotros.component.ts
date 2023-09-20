@@ -8,11 +8,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./nosotros.component.css']
 })
 
-/**
- * Aboutus Two Component
- */
 export class NosotrosComponent implements OnInit {
-  
+
   navClass = 'nav-light';
 
   anioActual = new Date().getFullYear();
@@ -22,11 +19,7 @@ export class NosotrosComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  /**
-  * Open modal for show the video
-  * @param content content of modal
-  */
-   openWindowCustomClass(content) {
+  openWindowCustomClass(content) {
     this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true });
   }
 }

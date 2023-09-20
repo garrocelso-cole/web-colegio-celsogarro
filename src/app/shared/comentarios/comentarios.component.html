@@ -1,36 +1,25 @@
-  <!-- Client Start -->
-  <section class="section" style="background: url('{{ comentariosData.url }}') center center; background-size: 50% 100%;">
-    <div class="bg-overlay"></div>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-7 text-center">
-          <!-- <div id="owl-fade" class="owl-carousel owl-theme"> -->
-          <owl-carousel-o id="customer-testi" [options]="customOptions">
-            <ng-template carouselSlide *ngFor="let item of comentariosData.data">
-              <div class="customer-testi text-center">
-                <p class="text-light title-dark" style="font-size: x-large;">"{{ item.parrafo }}"</p>
-                <ul class="list-unstyled mb-0 mt-3">
-                  <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                  <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                  <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                  <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                  <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                </ul>
-                <h5 class="text-light title-dark">{{ item.nombre }}</h5>
-                <img src="{{ item.imgUrl }}" class="img-fluid avatar avatar-small rounded-circle mx-auto shadow"
-                  alt="">
-              </div>
-              <!--end customer testi-->
-            </ng-template>
-          </owl-carousel-o>
-          <!-- </div> -->
-        </div>
-        <!--end col-->
+<section class="section" style="background: url('{{ comentariosData.url }}') center center; background-size: 50% 100%;">
+  <div class="bg-overlay"></div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 text-center">
+        <owl-carousel-o id="customer-testi" [options]="customOptions">
+          <ng-template carouselSlide *ngFor="let item of comentariosData.data">
+            <div class="customer-testi text-center">
+              <p class="text-light title-dark" style="font-size: x-large;">"{{ item.parrafo }}"</p>
+              <ul class="list-unstyled mb-0 mt-3">
+                <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+              </ul>
+              <h5 class="text-light title-dark">{{ item.nombre }}</h5>
+              <img src="{{ item.imgUrl }}" class="img-fluid avatar avatar-small rounded-circle mx-auto shadow" alt="">
+            </div>
+          </ng-template>
+        </owl-carousel-o>
       </div>
-      <!--end row-->
     </div>
-    <!--end container-->
-    <!-- Client End -->
-  </section>
-  <!-- Client End -->
-  
+  </div>
+</section>

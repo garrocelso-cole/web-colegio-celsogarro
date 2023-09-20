@@ -10,13 +10,13 @@ import { SwiperOptions } from 'swiper';
 import { _Habitacion } from 'src/app/interfaces/habitacion.interface';
 import { FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2'
-const url_base_backend =environment.url_base_backend
+const url_base_backend = environment.url_base_backend
 
-interface _prereserva{
+interface _prereserva {
   habitaciones: _Habitacion[],
   prereserva: {}
 }
-interface _contatenosForm{
+interface _contatenosForm {
   nombre: string,
   email: string,
   comentarios: string,
@@ -31,7 +31,7 @@ interface _contatenosForm{
 
 //Hotel Component
 export class InicioComponent implements OnInit {
-  
+
   constructor(
     private modalService: NgbModal,
     private router: Router,
@@ -42,25 +42,25 @@ export class InicioComponent implements OnInit {
 
   showNavigationArrows = true;
   showNavigationIndicators = false;
-  navClass = 'bg-white'; //Nav Bg Light Class Add
-  servicesData = [] //pendiente descripcion
-  blogData =[] //pendiente descripcion
-  cartillaData = [] //pendiente descripcion
-  customOptions: OwlOptions = {}; //Testimonial Slider
-  carruselData = [] //data de carrusel
+  navClass = 'bg-white';
+  servicesData = []
+  blogData = []
+  cartillaData = []
+  customOptions: OwlOptions = {};
+  carruselData = []
   comentariosData = {}
   roomData: _Habitacion[] = []
   habitaciones: _Habitacion[] = []
   primaria: _Habitacion[] = []
   categoria: _Habitacion
   public config: SwiperOptions
-  showRoomList : boolean = false
+  showRoomList: boolean = false
   prereserva: {}
   public contactenosForm = this.fb.group({
     nombre: ['', Validators.required],
-    email: ['', [Validators.required, Validators.email ]],
+    email: ['', [Validators.required, Validators.email]],
     comentarios: ['', Validators.required]
-  }) 
+  })
 
   rows: any[] = []
   columns: any[] = []
@@ -77,55 +77,36 @@ export class InicioComponent implements OnInit {
     this.cartillaData = this.inicioService.cartillaData
     this.customOptions = this.inicioService.customOptions
     this.carruselData = this.inicioService.carruselData
-    //console.log(this.carruselData);
-    
+
     this.comentariosData = this.inicioService.comentariosData
     this.config = this.inicioService.swiperOptions
-    // this.http.get(`${url_base_backend}/habitaciones-genericas-tipo/`)
-    //   .subscribe(
-    //     (data: _Habitacion []) =>{ 
-    //       this.primaria = data
-    //     },
-    //     (error)=>{
-    //       //console.log(error)
-    //     }
-    //   )
   }
-  enviarContacto(){
-    if ( this.contactenosForm.invalid ) {
+  enviarContacto() {
+    if (this.contactenosForm.invalid) {
       return
     }
     Swal.fire({
       title: 'Datos de contacto',
       html:
-      'Sus comentarios han sido enviados, '+
-      /* `<b>informacion@buenavistamancora.com</b>`+ */
-      'pronto nos pondremos en contacto con Ud.'
+        'Sus comentarios han sido enviados, ' +
+        'pronto nos pondremos en contacto con Ud.'
       ,
       icon: 'success',
       confirmButtonText: 'ok',
-      /* footer: 'Revise su correo' */
     })
-    console.log('---------------------------------------');
-    // console.log(`this.http.post(${url_base_backend}/contactenos/,this.contactenosForm.value)`);    
-    console.log('this.http.post');
-    console.log(`${url_base_backend}/contactenos/`);    
-    console.log(this.contactenosForm.value);
-    this.contactenosForm.reset()
-    console.log('---------------------------------------');
-    
 
+    this.contactenosForm.reset()
   }
-  showNgbNav(valor: boolean){
+  showNgbNav(valor: boolean) {
     let n = 0
     if (valor == true) {
       n = 2
-    }else{
+    } else {
       n = 1
     }
     return n
   }
-  envioFiltro(valor: _Habitacion){
+  envioFiltro(valor: _Habitacion) {
     if (localStorage.getItem('habitacion')) {
       localStorage.removeItem('habitacion')
     }
@@ -133,12 +114,12 @@ export class InicioComponent implements OnInit {
     this.router.navigateByUrl('/inicio/habitaciones')
   }
 
-  habitacionSeleccionada(valor: _Habitacion){
-    if (localStorage.getItem('habitacion')) { 
+  habitacionSeleccionada(valor: _Habitacion) {
+    if (localStorage.getItem('habitacion')) {
       localStorage.removeItem('habitacion')
     }
     localStorage.setItem('habitacion', JSON.stringify(valor))
-    
+
     if (localStorage.getItem('prereserva')) {
       localStorage.removeItem('prereserva')
     }
@@ -146,17 +127,13 @@ export class InicioComponent implements OnInit {
     this.router.navigateByUrl('/inicio/detalle')
   }
 
-  obtenerDatosReserva(valor : _prereserva){    
+  obtenerDatosReserva(valor: _prereserva) {
     this.showRoomList = true
-    this.habitaciones= valor.habitaciones
+    this.habitaciones = valor.habitaciones
     this.prereserva = valor.prereserva
-    
+
   }
-  /**
-    * Open modal for show the video
-    * @param content content of modal
-    */
-   openWindowCustomClass(content) {
+  openWindowCustomClass(content) {
     this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true });
   }
   openModal(content) {

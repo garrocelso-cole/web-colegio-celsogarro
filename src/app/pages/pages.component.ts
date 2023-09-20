@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class PagesComponent implements OnInit {
-  
+
   addclass: string;
   buttonShow: boolean;
   TopbarShow: boolean;
@@ -15,18 +15,15 @@ export class PagesComponent implements OnInit {
   developerPage: boolean;
   hideFooter: boolean;
   shopPages: boolean;
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  /**
-   * Router activation
-   */
-   onActivate(componentReference: any) {
-    //console.log(componentReference);
-    
+
+  onActivate(componentReference: any) {
+
     this.addclass = componentReference.navClass;
     this.buttonShow = componentReference.buttonList;
     this.TopbarShow = componentReference.sliderTopbar;

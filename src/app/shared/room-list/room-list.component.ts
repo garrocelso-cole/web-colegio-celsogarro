@@ -17,45 +17,41 @@ interface member {
   ]
 })
 export class RoomListComponent implements OnInit {
-  
+
   @Input() roomListData: Array<{
     id: number,
-    imagen1 : string,
-    imagen2 : string,
-    imagen3 : string,
-    imagen4 : string,
-    imagen5 : string,
-    nombrehabitacion : string,
+    imagen1: string,
+    imagen2: string,
+    imagen3: string,
+    imagen4: string,
+    imagen5: string,
+    nombrehabitacion: string,
     category: string,
-    numerodecamas : number,
-    numerodebanios : number,
-    preciohabitacion : number,
+    numerodecamas: number,
+    numerodebanios: number,
+    preciohabitacion: number,
     numerodepersonas: number,
     numerohabitacion: number,
   }>
   @Input() totalCoincidencias: number
   @Output() roomListDataValor: EventEmitter<any> = new EventEmitter()
-  
+
   constructor(
     private modalService: NgbModal,
     private inicioService: InicioService
-    ) { }
-  
-  memberData: member[] 
+  ) { }
+
+  memberData: member[]
   ngOnInit(): void {
     this.memberData = this.inicioService.memberData
   }
 
 
-  enviar(valor: any){
+  enviar(valor: any) {
     this.roomListDataValor.emit(valor)
   }
 
-  
-  /**
-  * Open modal for show the video
-  * @param content content of modal
-  */
+
   openWindowCustomClass(content) {
     this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true });
   }

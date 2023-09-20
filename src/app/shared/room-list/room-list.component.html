@@ -1,66 +1,40 @@
-
-  <!-- Shape Start -->
-  <!-- <div class="position-relative">
-    <div class="shape overflow-hidden text-white">
-      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-      </svg>
-    </div>
-  </div> -->
-  <!--Shape End-->
+<div class="container">
+  <div class="row">
+    <h5>Se encontró <span>{{ totalCoincidencias }}</span> coincidencia{{totalCoincidencias == 1 ? '' : 's'}}</h5>
+  </div>
+</div>
+<section class="section">
   <div class="container">
-    <div class="row">
-      <h5>Se encontró  <span>{{ totalCoincidencias }}</span> coincidencia{{totalCoincidencias == 1 ? '' : 's'}}</h5>
+    <div class="row align-items-center shadow bg-white rounded" *ngFor="let item of roomListData"
+      style="margin-top: 20px; padding: 15px;">
+      <div class="col-lg-3 col-md-3 mt-4 pt-2 mt-sm-0 pt-sm-0">
+        <div class="card work-container work-modern rounded border-0 overflow-hidden">
+          <div class="position-relative" (click)="enviar(item)">
+            <img src="{{ item.imagen1 }}" class="rounded img-fluid mx-auto d-block" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
+        <div class="section-title ms-lg-4">
+          <h4 class="title mb-4">{{ item.nombrehabitacion }}</h4>
+          <p class="text-muted">{{ item.category }}</p>
+          <p class="text-muted">Número de habitacion: {{ item.numerohabitacion }}</p>
+          <p class="text-muted">Número de personas: {{ item.numerodepersonas }}</p>
+          <p class="text-muted">Desde: <span class="text-success" style="color: blue;">S/. {{ item.preciohabitacion
+              }}</span>x Noche</p>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
+        <a (click)="enviar(item)" class="btn btn-primary mt-3">Reservar<i class="uil uil-angle-right-b"></i></a>
+      </div>
     </div>
   </div>
-  <!-- About Start -->
-  <section class="section">
-    <div class="container">
-      <div class="row align-items-center shadow bg-white rounded" *ngFor="let item of roomListData" style="margin-top: 20px; padding: 15px;">
-        <div class="col-lg-3 col-md-3 mt-4 pt-2 mt-sm-0 pt-sm-0">
-          <div class="card work-container work-modern rounded border-0 overflow-hidden">
-            <div class="position-relative" (click)="enviar(item)">
-              <img src="{{ item.imagen1 }}" class="rounded img-fluid mx-auto d-block" alt="">
-            </div>
-          </div>
-        </div>
-        <!--end col-->
-  
-        <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
-          <div class="section-title ms-lg-4">
-            <h4 class="title mb-4">{{ item.nombrehabitacion }}</h4>
-            <p class="text-muted">{{ item.category }}</p>
-            <p class="text-muted">Número de habitacion: {{ item.numerohabitacion }}</p>
-            <p class="text-muted">Número de personas: {{ item.numerodepersonas }}</p>
-            <p class="text-muted">Desde: <span class="text-success" style="color: blue;">S/. {{ item.preciohabitacion }}</span>x Noche</p>
-            <!-- <ul class="list-unstyled text-success h2 mb-0" >
-              <li class="list-inline-item h4"><i class="mdi mdi-star" style="text-emphasis-color: red;"></i></li>
-              <li class="list-inline-item h4"><i class="mdi mdi-airplane"></i></li>
-              <li class="list-inline-item h4"><i class="mdi mdi-medal-outline"></i></li>
-              <li class="list-inline-item h4"><i class="mdi mdi-star"></i></li>
-              <li class="list-inline-item h4"><i class="mdi mdi-star"></i></li>
-            </ul> -->
-          </div>
-        </div>
-        <!--end col-->
-        <div class="col-lg-2 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
-          <a (click)="enviar(item)" class="btn btn-primary mt-3">Reservar<i class="uil uil-angle-right-b"></i></a>
-        </div>
-        <!--end col-->
-      </div>
-      <!--end row-->
-    </div>
-    <!--end container-->
-  
 
-  </section>
-  <!--end section-->
-  <!-- About End -->
-  
-  
-      <!-- Back to top -->
-      <a href="javascript: void(0);" class="btn btn-icon btn-primary back-to-top" id="back-to-top"
-        [ngxScrollTo]="'#home'">
-        <i-feather name="arrow-up" class="icons"></i-feather>
-      </a>
-      <!-- Back to top -->
+</section>
+
+
+
+<a href="javascript: void(0);" class="btn btn-icon btn-primary back-to-top" id="back-to-top" [ngxScrollTo]="'#home'">
+  <i-feather name="arrow-up" class="icons"></i-feather>
+</a>

@@ -8,14 +8,14 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   ]
 })
 export class ComentariosComponent implements OnInit {
-  
+
   @Input() customOptions: OwlOptions = {}
   @Input() comentariosData: {
     url: string,
     data: Array<{
-      parrafo:string,
-      nombre:string,
-      imgUrl:string,
+      parrafo: string,
+      nombre: string,
+      imgUrl: string,
     }>
   }
   constructor() { }

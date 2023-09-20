@@ -9,9 +9,6 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ["./header.component.css"],
 })
 
-/***
- * Header Component
- */
 export class HeaderComponent implements OnInit {
 
   @Input() navClass: string;
@@ -39,18 +36,12 @@ export class HeaderComponent implements OnInit {
   }
 
   _activateMenuDropdown() {
-    /**
-     * Menu activation reset
-     */
+
     const resetParent = (el) => {
 
       el.classList.remove("active");
       const parent = el.parentElement;
 
-      /**
-       * TODO: This is hard coded way of expading/activating parent menu dropdown and working till level 3.
-       * We should come up with non hard coded approach
-       */
       if (parent) {
         parent.classList.remove("active");
         const parent2 = parent.parentElement;
@@ -71,32 +62,23 @@ export class HeaderComponent implements OnInit {
     };
     let links = document.getElementsByClassName("nav-link-ref");
     console.log(links);
-    
+
     let matchingMenuItem = null;
-    // tslint:disable-next-line: prefer-for-of
     for (let i = 0; i < links.length; i++) {
-      // reset menu
       resetParent(links[i]);
     }
-    
+
     for (let i = 0; i < links.length; i++) {
       if (window.location.pathname === links[i]["pathname"]) {
         matchingMenuItem = links[i];
         break;
       }
     }
-    //console.log(matchingMenuItem);
-    
+
     if (matchingMenuItem) {
       matchingMenuItem.classList.add("active");
       const parent = matchingMenuItem.parentElement;
-      //console.log(parent);
-      
 
-      /**
-       * TODO: This is hard coded way of expading/activating parent menu dropdown and working till level 3.
-       * We should come up with non hard coded approach
-       */
       if (parent) {
         parent.classList.add("active");
         const parent2 = parent.parentElement;
@@ -119,10 +101,6 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  /**
-   * Window scroll method
-   */
-  // tslint:disable-next-line: typedef
   windowScroll() {
     if (
       document.body.scrollTop > 50 ||
@@ -143,9 +121,6 @@ export class HeaderComponent implements OnInit {
       }
     }
   }
-  /**
-   * Toggle menu
-   */
   toggleMenu() {
     this.isCondensed = !this.isCondensed;
     if (this.isCondensed) {
@@ -155,9 +130,6 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  /**
-   * Menu clicked show the submenu
-   */
   onMenuClick(event) {
     event.preventDefault();
     const nextEl = event.target.nextSibling.nextSibling;

@@ -6,13 +6,15 @@
         <img src="{{ data.imagen1 }}" class="img-fluid rounded" alt="work-image">
         <div class="overlay-work bg-dark"></div>
         <div class="content">
-          <a  class="title text-white pb-2 border-bottom" style="font-size: x-large;">{{ data.nombrehabitacion }}</a>
-          <!-- <a href="javascript:void(0)" class="title text-white pb-2 border-bottom">{{ data.title }}</a> -->
+          <a class="title text-white pb-2 border-bottom" style="font-size: x-large;">{{ data.nombrehabitacion }}</a>
           <ul class="post-meta mb-0 mt-2 text-white list-unstyled">
-            <li class="list-inline-item me-3" style="font-size: x-large;"><i class="uil uil-bed-double me-2" ></i >{{ data.numerodecamas == 1 ? data.numerodecamas +' Cama ' : data.numerodecamas + ' Camas' }}</li>
-            <li class="list-inline-item" style="font-size: x-large;"><i class="uil uil-bath me-2"></i>{{ data.numerodebanios == 1 ? data.numerodebanios +' Baño' : data.numerodebanios + ' Baños' }}</li>
+            <li class="list-inline-item me-3" style="font-size: x-large;"><i class="uil uil-bed-double me-2"></i>{{
+              data.numerodecamas == 1 ? data.numerodecamas +' Cama ' : data.numerodecamas + ' Camas' }}</li>
+            <li class="list-inline-item" style="font-size: x-large;"><i class="uil uil-bath me-2"></i>{{
+              data.numerodebanios == 1 ? data.numerodebanios +' Baño' : data.numerodebanios + ' Baños' }}</li>
           </ul>
-          <p class="text-white d-block mb-0" style="font-size: x-large;">Desde: <span class="text-success">S/. {{ data.preciohabitacion }}</span> x Noche</p>
+          <p class="text-white d-block mb-0" style="font-size: x-large;">Desde: <span class="text-success">S/. {{
+              data.preciohabitacion }}</span> x Noche</p>
         </div>
         <div class="read_more bg-primary text-center rounded-circle">
           <a href="javascript:void(0)" class="text-light d-block">

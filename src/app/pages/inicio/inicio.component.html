@@ -1,27 +1,37 @@
-<!-- Hero Start -->
 <section class="main-slider" id="home">
-    <ngb-carousel class="slides" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+    <ngb-carousel class="slides" [showNavigationArrows]="showNavigationArrows"
+        [showNavigationIndicators]="showNavigationIndicators">
         <ng-template ngbSlide>
-            <li class="bg-home bg-animation-left d-flex align-items-center" style="background-image:url('{{ carruselData[0].urlImage }}'); ">
+            <li class="bg-home bg-animation-left d-flex align-items-center"
+                style="background-image:url('{{ carruselData[0].urlImage }}'); ">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-7 col-md-7">
                             <div class="position-relative mt-4" style="z-index: 1;">
-                                <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark">{{ carruselData[0].h1 }} {{ carruselData[0].h1Parrafo }}
+                                <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark">{{ carruselData[0].h1
+                                    }} {{ carruselData[0].h1Parrafo }}
                                 </h1>
                                 <h2 class="para-desc">{{ carruselData[0].h4 }}</h2>
                                 <div class="watch-video mt-4 pt-2">
-                                    <a (click)="openWindowCustomClass(content)" href="javascript:void(0);" data-type="youtube" data-id="yba7hPeTSjk" class="btn btn-icon btn-pills btn-primary">
+                                    <a (click)="openWindowCustomClass(content)" href="javascript:void(0);"
+                                        data-type="youtube" data-id="yba7hPeTSjk"
+                                        class="btn btn-icon btn-pills btn-primary">
                                         <i-feather name="video" class="icons"></i-feather>
-                                    </a><span class="fw-bold text-uppercase small align-middle ms-2">{{ carruselData[0].span }}</span>
+                                    </a><span class="fw-bold text-uppercase small align-middle ms-2">{{
+                                        carruselData[0].span }}</span>
                                     <ng-template #content let-modal>
                                         <div class="modal-header">
-                                            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
+                                            <button type="button" class="close" aria-label="Close"
+                                                (click)="modal.dismiss('Cross click')">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                         </div>
                                         <div class="modal-body">
-                                            <iframe class="marcovideo" height="450px" width="780px" src="https://www.youtube.com/embed/1Z7Jx3g9u58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                            <iframe class="marcovideo" height="450px" width="780px"
+                                                src="https://www.youtube.com/embed/1Z7Jx3g9u58"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen>
                                             </iframe>
                                         </div>
                                     </ng-template>
@@ -33,15 +43,18 @@
             </li>
         </ng-template>
         <ng-template ngbSlide>
-            <li class="bg-home  d-flex align-items-center" style="background-image:url('{{ carruselData[1].urlImage }}');">
+            <li class="bg-home  d-flex align-items-center"
+                style="background-image:url('{{ carruselData[1].urlImage }}');">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-7 col-md-7">
                             <div class="position-relative mt-4" style="z-index: 1;">
-                                <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark" style="color: white;">{{carruselData[1].h1}}</h1>
+                                <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark" style="color: white;">
+                                    {{carruselData[1].h1}}</h1>
                                 <h2 class="para-desc text-white">{{ carruselData[1].h4 }}</h2>
                                 <div class="watch-video mt-4 pt-2">
-                                    <a routerLink="nosotros" class="btn btn-primary"><i class="uil uil-heart-alt"></i>{{ carruselData[1].link }}</a>
+                                    <a routerLink="nosotros" class="btn btn-primary"><i class="uil uil-heart-alt"></i>{{
+                                        carruselData[1].link }}</a>
                                 </div>
                             </div>
                         </div>
@@ -50,12 +63,14 @@
             </li>
         </ng-template>
         <ng-template ngbSlide>
-            <li class="bg-home bg-animation-left d-flex align-items-center" style="background-image:url('{{ carruselData[2].urlImage }}')">
+            <li class="bg-home bg-animation-left d-flex align-items-center"
+                style="background-image:url('{{ carruselData[2].urlImage }}')">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-7 col-md-7">
                             <div class="position-relative mt-4" style="z-index: 1;">
-                                <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark">{{ carruselData[2].h1 }} <br>{{ carruselData[2].h1Parrafo }}</h1>
+                                <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark">{{ carruselData[2].h1
+                                    }} <br>{{ carruselData[2].h1Parrafo }}</h1>
                                 <h2 class="para-desc">{{ carruselData[2].h4 }}</h2>
                                 <!-- <div class="mt-4 pt-2">
                                     <a [ngxScrollTo]="'#bookroom'" class="btn btn-primary"><i class="uil uil-home fw-bold"></i> Reservar</a>
@@ -84,8 +99,12 @@
             <div class="col-12 text-center">
                 <div class="section-title mb-4 pb-2">
                     <h1>Presentación</h1>
-                    
-                    <p style="text-align: justify; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><img src="assets/images/colegio/fotopresentacion.jpeg" style="float: left;padding-right: 1.5rem; height: 40%;width: 40%;">Me dirijo a las y los seguidores de nuestra Institución Educativa
+
+                    <p
+                        style="text-align: justify; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        <img src="assets/images/colegio/fotopresentacion.jpeg"
+                            style="float: left;padding-right: 1.5rem; height: 40%;width: 40%;">Me dirijo a las y los
+                        seguidores de nuestra Institución Educativa
                         N° 86253 “Celso Garro Valderrama” del Centro Poblado de
                         Pampan, Provincia de Bolognesi, Región Ancash, en forma
                         especial a nuestra comunidad educativa y local, con la finalidad
@@ -113,13 +132,12 @@
                         Estaremos muy atentos a recibir sus sugerencias para mejorar y enriquecer los contenidos de
                         nuestra plataforma, poniendo a vuestra disposición para su conocimiento y emitir sus
                         comentarios. Gracias por su atención.<br><br></p>
-                        <h5> Marcos Victor Llallihuaman Antunez<br>
+                    <h5> Marcos Victor Llallihuaman Antunez<br>
                         DIRECTOR </h5>
                 </div>
             </div>
-            <!--end col-->
         </div>
-        
+
     </div>
 
     <div class="container mt-100 mt-60">
@@ -127,16 +145,17 @@
             <div class="col-12 text-center">
                 <div class="section-title mb-4 pb-2">
                     <h1>Niveles Educativos</h1>
-                    <h3 style="font-size: x-large; color: blue;">En <span class="text-primary fw-bold">Celso Garro Valderrama</span> disfruta de la mejor educacion.
+                    <h3 style="font-size: x-large; color: blue;">En <span class="text-primary fw-bold">Celso Garro
+                            Valderrama</span> disfruta de la mejor educacion.
                     </h3>
                 </div>
             </div>
-            <!--end col-->
         </div>
-        <!--end row-->
         <div class="row">
             <div class="col-12">
-                <ul ngbNav #nav="ngbNav" [activeId]="showNgbNav(showRoomList)" class="nav nav-pills shadow flex-column flex-sm-row d-md-inline-flex mb-0 p-1 bg-white rounded position-relative overflow-hidden" id="pills-tab" role="tablist">
+                <ul ngbNav #nav="ngbNav" [activeId]="showNgbNav(showRoomList)"
+                    class="nav nav-pills shadow flex-column flex-sm-row d-md-inline-flex mb-0 p-1 bg-white rounded position-relative overflow-hidden"
+                    id="pills-tab" role="tablist">
                     <li [ngbNavItem]="1" class="nav-item m-1 ">
                         <a ngbNavLink class="nav-link py-2 px-5 rounded ">
                             <div class="text-center">
@@ -153,163 +172,185 @@
                                 <img src="assets/images/colegio/tabla-primaria.png">
                             </div>
 
-                            <div class="container" >
-                        
+                            <div class="container">
+
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>DOCENTES PRIMARIA.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/PRIMARIA/DocentesActualesR.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/PRIMARIA/DocentesActualesR.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/PRIMARIA/estudiantesPrimariR.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/PRIMARIA/estudiantesPrimariR.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
-                                
-                               
+
+
                             </div>
                             <div class="container">
-                        
+
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>TUTORA : Fabian Antaurco.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/PRIMARIA/primeroysegundoPrimaria/tutoraFabianAntaurco.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/PRIMARIA/primeroysegundoPrimaria/tutoraFabianAntaurco.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>1ro y 2do de PRIMARIA - Actividades de aprendizaje.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/PRIMARIA/primeroysegundoPrimaria/ActividadesAprendizajeR.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/PRIMARIA/primeroysegundoPrimaria/ActividadesAprendizajeR.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
-                                
-                               
+
+
                             </div>
                             <div class="container">
-                        
+
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>TUTORA : Luz Valderrama.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/PRIMARIA/terceroPrimaria/tutoraLuzValderramaR.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/PRIMARIA/terceroPrimaria/tutoraLuzValderramaR.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>3ro de PRIMARIA - Actividades de aprendizaje.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/PRIMARIA/terceroPrimaria/actividadesAprendizaje3R.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/PRIMARIA/terceroPrimaria/actividadesAprendizaje3R.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
-                                
-                               
+
+
                             </div>
 
                             <div class="container">
-                        
+
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>TUTORA : Nelsy Zulema.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/PRIMARIA/cuartoPrimaria/tutoraNelsyZulemaR.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/PRIMARIA/cuartoPrimaria/tutoraNelsyZulemaR.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>4to de PRIMARIA - Actividades de aprendizaje.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/PRIMARIA/cuartoPrimaria/actividadesAprendizaje4R.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/PRIMARIA/cuartoPrimaria/actividadesAprendizaje4R.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
-                                
-                               
+
+
                             </div>
 
                             <div class="container">
-                        
+
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>TUTORA : Yoysy Rosas.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/PRIMARIA/quintoPrimaria/tutoraYoysyRosasR.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/PRIMARIA/quintoPrimaria/tutoraYoysyRosasR.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>5to de PRIMARIA - Actividades de aprendizaje.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/PRIMARIA/quintoPrimaria/ActividadesAprendizaje5R.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/PRIMARIA/quintoPrimaria/ActividadesAprendizaje5R.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
-                                
-                               
                             </div>
 
                             <div class="container">
-                        
+
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>TUTOR : Rober Velasquez.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/PRIMARIA/sextoPrimaria/tutorRoberVelasquezR.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/PRIMARIA/sextoPrimaria/tutorRoberVelasquezR.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>6to de PRIMARIA - Actividades de aprendizaje.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/PRIMARIA/sextoPrimaria/ActividadesAprendizaje6R.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/PRIMARIA/sextoPrimaria/ActividadesAprendizaje6R.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
-                                
-                               
+
+
                             </div>
 
                         </ng-template>
@@ -330,107 +371,121 @@
                             <div class="row" style="margin-top: 20px">
                                 <img src="assets/images/colegio/tabla-secundaria.png">
                             </div>
-                            
-                            <div class="container" >
-                        
+
+                            <div class="container">
+
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>DOCENTES SECUNDARIA.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/SECUNDARIA/profesoresSecundariaR.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/SECUNDARIA/profesoresSecundariaR.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <br>
                                         <br>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/SECUNDARIA/alunmosSecundaria.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/SECUNDARIA/alunmosSecundaria.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
-                                
-                               
+
+
                             </div>
                             <div class="container">
-                        
+
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>GRADO : 1ro DE SECUNDARIA.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/SECUNDARIA/primeroSecundariaR.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/SECUNDARIA/primeroSecundariaR.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>GRADO : 2do DE SECUNDARIA.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/SECUNDARIA/segundoSecundariaR.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/SECUNDARIA/segundoSecundariaR.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
-                                
-                               
+
+
                             </div>
                             <div class="container">
-                        
+
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>GRADO : 3ro DE SECUNDARIA.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/SECUNDARIA/terceroSecundariaR.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/SECUNDARIA/terceroSecundariaR.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>GRADO : 4to DE SECUNDARIA</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/SECUNDARIA/cuartoSecundariaR.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/SECUNDARIA/cuartoSecundariaR.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
-                                
-                               
+
+
                             </div>
 
                             <div class="container">
-                        
+
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2" >
+                                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2">
                                         <h4>GRADO : 5to DE SECUNDARIA.</h4>
-                                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                                        <div
+                                            class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
                                             <div class="card-body p-0">
-                                                <img src="../../../assets/images/colegio/SECUNDARIA/quintoSecundaria.png" class="img-fluid" alt="work-image">
+                                                <img src="../../../assets/images/colegio/SECUNDARIA/quintoSecundaria.png"
+                                                    class="img-fluid" alt="work-image">
                                             </div>
-                                          
+
                                         </div>
                                     </div>
-                                   
-                                    
+
+
                                 </div>
-                                
-                               
+
+
                             </div>
 
-                           
+
                         </ng-template>
                     </li>
 
@@ -443,7 +498,9 @@
 </section>
 
 <!-- CTA Start -->
-<section class="section bg-cta" style="background: url('assets/images/colegio/foto-panoramica.png') center center; background-size: 100% 200%;" id="cta">
+<section class="section bg-cta"
+    style="background: url('assets/images/colegio/foto-panoramica.png') center center; background-size: 100% 200%;"
+    id="cta">
     <div class="bg-overlay"></div>
     <div class="container">
         <div class="row justify-content-center">
@@ -452,61 +509,53 @@
                     <h1 class="text-white">En Celso Garro Valderrama</h1>
                     <h3 class="text-light para-dark mx-auto" style="font-size: x-large;">Disfruta de la mejor enseñanza.
                     </h3>
-                    <a (click)="openModal(contentmodal)" href="javascript:void(0);" class="play-btn border border-light mt-4 video-play-icon">
+                    <a (click)="openModal(contentmodal)" href="javascript:void(0);"
+                        class="play-btn border border-light mt-4 video-play-icon">
                         <i-feather name="play" class="fea icon-ex-md text-white title-dark"></i-feather>
                     </a>
                     <ng-template #contentmodal let-modal>
                         <div class="modal-header">
-                            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+                            <button type="button" class="close" aria-label="Close"
+                                (click)="modal.dismiss('Cross click')">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="modal-body">
-                            <iframe class="marcovideo" height="450px" width="780px" src="https://www.youtube.com/embed/VfQjUqrwh8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            <iframe class="marcovideo" height="450px" width="780px"
+                                src="https://www.youtube.com/embed/VfQjUqrwh8A" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
                             </iframe>
                         </div>
                     </ng-template>
                 </div>
             </div>
-            <!--end col-->
         </div>
-        <!--end row-->
     </div>
-    <!--end container-->
 </section>
-<!--end section-->
-<!-- CTA End -->
-
-<!-- Services Start -->
 <app-services [servicesData]="servicesData"></app-services>
-<!--end section-->
 <div class="position-relative">
     <div class="shape overflow-hidden text-light">
         <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
-      </svg>
+            <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+        </svg>
     </div>
 </div>
-<!-- End services -->
 
-<!-- News Start -->
 <app-cartillas [cartillaData]="cartillaData"></app-cartillas>
-<!--end section-->
-<!-- Blog End -->
-
-<!-- <app-comentarios [customOptions]="customOptions" [comentariosData]="comentariosData"></app-comentarios> -->
-
-<!-- Contact Start -->
 <section class="section">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-6 p-0 ps-md-3 pr-md-3">
                 <div class="card map map-height-two rounded map-gray border-0">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.7503353584443!2d-77.15969248620799!3d-10.119510792769262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a8330d221e2755%3A0xe9769e4a265b24eb!2sColegio%20Nacional%20Celso%20Garro%20Valderrama%20Pampan!5e0!3m2!1ses!2spe!4v1663966265191!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.7503353584443!2d-77.15969248620799!3d-10.119510792769262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a8330d221e2755%3A0xe9769e4a265b24eb!2sColegio%20Nacional%20Celso%20Garro%20Valderrama%20Pampan!5e0!3m2!1ses!2spe!4v1663966265191!5m2!1ses!2spe"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                 </div>
             </div>
-            <!--end col-->
 
             <div class="col-lg-4 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
                 <div class="card rounded shadow border-0">
@@ -515,67 +564,60 @@
 
                         <div class="custom-form mt-4">
                             <div id="message"></div>
-                            <form class="p-4 shadow bg-white rounded" autocomplete="off" [formGroup]="contactenosForm" (ngSubmit)="enviarContacto()">
+                            <form class="p-4 shadow bg-white rounded" autocomplete="off" [formGroup]="contactenosForm"
+                                (ngSubmit)="enviarContacto()">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="mb-3">
-                                            <label class="form-label" style="font-size: x-large;">Nombre <span class="text-danger">*</span></label>
+                                            <label class="form-label" style="font-size: x-large;">Nombre <span
+                                                    class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i-feather name="user" class="fea icon-sm icons"></i-feather>
-                                                <input class="form-control ps-5" type="text" formControlName="nombre" id="nombre" placeholder="Su nombre :">
+                                                <input class="form-control ps-5" type="text" formControlName="nombre"
+                                                    id="nombre" placeholder="Su nombre :">
                                             </div>
                                         </div>
                                     </div>
-                                    <!--end col-->
                                     <div class="col-md-12">
                                         <div class="mb-3">
-                                            <label class="form-label" style="font-size: x-large;">Email <span class="text-danger">*</span></label>
+                                            <label class="form-label" style="font-size: x-large;">Email <span
+                                                    class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i-feather name="email" class="fea icon-sm icons"></i-feather>
-                                                <input class="form-control ps-5" type="email" formControlName="email" id="email" placeholder="Su email :">
+                                                <input class="form-control ps-5" type="email" formControlName="email"
+                                                    id="email" placeholder="Su email :">
                                             </div>
                                         </div>
                                     </div>
-                                    <!--end col-->
                                     <div class="col-md-12">
                                         <div class="mb-3">
                                             <label class="form-label" style="font-size: x-large;">Comentarios</label>
                                             <div class="form-icon position-relative">
                                                 <i-feather name="message-circle" class="fea icon-sm icons"></i-feather>
-                                                <textarea class="form-control ps-5" type="text" formControlName="comentarios" id="comentarios" placeholder="Sus Comentarios :"></textarea>
+                                                <textarea class="form-control ps-5" type="text"
+                                                    formControlName="comentarios" id="comentarios"
+                                                    placeholder="Sus Comentarios :"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!--end row-->
                                 <div class="row">
                                     <div class="col-sm-12 text-center">
                                         <div class="d-grid">
-                                            <input class="submitBnt btn btn-primary" type="submit" id="search" name="search" value="Enviar Mensaje">
+                                            <input class="submitBnt btn btn-primary" type="submit" id="search"
+                                                name="search" value="Enviar Mensaje">
                                         </div>
                                     </div>
-                                    <!--end col-->
                                 </div>
-                                <!--end row-->
                             </form>
-                            <!--end form-->
                         </div>
-                        <!--end custom-form-->
                     </div>
                 </div>
             </div>
-            <!--end col-->
         </div>
-        <!--end row-->
     </div>
-    <!--end container-->
-    <!-- Contact End -->
 </section>
-<!--end section-->
-<!-- News End -->
 
-<!-- Back to top -->
 <a href="javascript: void(0);" class="btn btn-icon btn-primary back-to-top" id="back-to-top" [ngxScrollTo]="'#home'">
     <i-feather name="arrow-up" class="icons"></i-feather>
 </a>
-<!-- Back to top -->

@@ -5,11 +5,11 @@ import { RouterModule } from '@angular/router';
 
 import { FeatherModule } from 'angular-feather';
 
-import { FullCalendarModule } from '@fullcalendar/angular'; // must go before plugins
-import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
-import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
+import { FullCalendarModule } from '@fullcalendar/angular'; 
+import dayGridPlugin from '@fullcalendar/daygrid'; 
+import interactionPlugin from '@fullcalendar/interaction'; 
 
-FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+FullCalendarModule.registerPlugins([ 
   dayGridPlugin,
   interactionPlugin
 ]);
@@ -20,7 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SwitcherComponent } from './switcher/switcher.component';
 import { RoomCardComponent } from './room-cards/room-card.component';
 import { CartillasComponent } from './cartillas/cartillas.component';
-import { NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReservaInicioComponent } from './reserva-inicio/reserva-inicio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlatpickrModule } from 'angularx-flatpickr';
@@ -56,9 +56,8 @@ import { BrowserModule } from '@angular/platform-browser';
     ReactiveFormsModule,
     FlatpickrModule,
     ScrollToModule,
-    //NgbNavModule,
     BrowserModule,
-    FullCalendarModule // register FullCalendar with you app
+    FullCalendarModule 
   ],
   exports: [ 
     ServicesComponent, 

@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-//Componentes
 import { PagesComponent } from './pages.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { habitacionesComponent } from './habitaciones/habitaciones.component';
-import { ServiciosComponent } from './servicios/servicios.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { DetalleComponent } from './detalle/detalle.component';
@@ -44,7 +42,6 @@ import { InnovacionComponent } from './innovacion/innovacion.component';
     InicioComponent,
     NosotrosComponent,
     habitacionesComponent,
-    ServiciosComponent,
     EventosComponent,
     ContactoComponent,
     DetalleComponent,
@@ -59,13 +56,12 @@ import { InnovacionComponent } from './innovacion/innovacion.component';
     InicioComponent,
     NosotrosComponent,
     habitacionesComponent,
-    ServiciosComponent,
     EventosComponent,
     ContactoComponent,
     DetalleComponent,
   ],
   imports: [
-    CommonModule, // Incluye directivas de ngFor y ngif
+    CommonModule,
     SharedModule,
     BrowserModule,
     BrowserAnimationsModule,
@@ -90,7 +86,7 @@ import { InnovacionComponent } from './innovacion/innovacion.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    
+
   ]
 })
 export class PagesModule { }

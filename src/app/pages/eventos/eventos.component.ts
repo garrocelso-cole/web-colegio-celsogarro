@@ -9,22 +9,13 @@ import { map } from 'rxjs/internal/operators';
   styleUrls: ['./eventos.component.css']
 })
 
-/**
- * Event Component
- */
 export class EventosComponent implements OnInit {
 
-  /**
-   * Nav Light Class Add
-   */
-   navClass = 'nav-light';
+  navClass = 'nav-light';
 
   constructor(private modalService: NgbModal) { }
 
-  /**
-   * cartillaData
-   */
-   cartillaData = [
+  cartillaData = [
     {
       image: 'assets/images/personal/1.jpg',
       title: 'Vista frente al mar',
@@ -57,10 +48,7 @@ export class EventosComponent implements OnInit {
     },
   ];
 
-  /**
-   * Review Testimonial Data
-   */
-   reviewData = [
+  reviewData = [
     {
       profile: "assets/images/client/01.jpg",
       name: "Thomas Israel ",
@@ -109,10 +97,7 @@ export class EventosComponent implements OnInit {
     }
   ];
 
-  /**
-   * Blog Data
-   */
-   blogData = [
+  blogData = [
     {
       image: "assets/images/event/b01.jpg",
       title: "Design your apps in your own way",
@@ -148,7 +133,6 @@ export class EventosComponent implements OnInit {
 
   ngOnInit(): void {
     this._trialEndsAt = "2022-12-25";
-    //Day Counter
     interval(1000).pipe(
       map((x) => {
         this._diff = Date.parse(this._trialEndsAt) - Date.parse(new Date().toString());
@@ -160,38 +144,22 @@ export class EventosComponent implements OnInit {
       });
   }
 
-  /**
-  * Open modal for show the video
-  * @param content content of modal
-  */
-   openWindowCustomClass(content) {
+  openWindowCustomClass(content) {
     this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true });
   }
 
-  /***
-   * Get day
-   */
   getDays(t: any) {
     return Math.floor(t / (1000 * 60 * 60 * 24));
   }
 
-  /***
-   * Get Hours
-   */
   getHours(t: any) {
     return Math.floor((t / (1000 * 60 * 60)) % 24);
   }
 
-  /***
-   * Get Minutes
-   */
   getMinutes(t: any) {
     return Math.floor((t / 1000 / 60) % 60);
   }
 
-  /***
-   * Get Secounds
-   */
   getSeconds(t: any) {
     return Math.floor((t / 1000) % 60);
   }

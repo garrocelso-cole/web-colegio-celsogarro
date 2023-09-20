@@ -31,9 +31,7 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { FeatherModule } from 'angular-feather';
 
 import { allIcons } from 'angular-feather/icons';
-// import { HeaderComponent } from './shared/header/header.component';
-// import { FooterComponent } from './shared/footer/footer.component';
-// import { SwitcherComponent } from './shared/switcher/switcher.component';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PaginaerrorComponent } from './paginaerror/paginaerror.component';
 
@@ -44,8 +42,6 @@ import { PoliticasComponent } from './adicional/politicas/politicas.component';
 import { DerechosComponent } from './adicional/derechos/derechos.component';
 import { RegistrosComponent } from './adicional/registros/registros.component';
 import { PreguntasComponent } from './adicional/preguntas/preguntas.component';
-// import { InicioComponent } from './pages/inicio/inicio.component';
-// import { PagesComponent } from './pages/pages.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -55,16 +51,12 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
 @NgModule({
   declarations: [
     AppComponent,
-   
-    // SwitcherComponent,
     PaginaerrorComponent,
     TerminosComponent,
     PoliticasComponent,
     DerechosComponent,
     RegistrosComponent,
     PreguntasComponent,
-    // InicioComponent,
-    // PagesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

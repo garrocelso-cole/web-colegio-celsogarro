@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-// Components
 import { SwitcherComponent } from './shared/switcher/switcher.component';
 import { PaginaerrorComponent } from './paginaerror/paginaerror.component';
 
 
-// Routing
 import { PagesRoutingModule } from './pages/pages.routing';
 import { TerminosComponent } from './adicional/terminos/terminos.component';
 import { PoliticasComponent } from './adicional/politicas/politicas.component';
@@ -30,7 +28,6 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, { scrollPositionRestoration: "enabled",
     scrollOffset: [0, 0],
-    // Enable scrolling to anchors
     anchorScrolling: "enabled", initialNavigation: 'enabled'}),
   PagesRoutingModule,
   ],

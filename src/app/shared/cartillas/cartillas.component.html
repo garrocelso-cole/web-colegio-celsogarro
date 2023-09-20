@@ -4,13 +4,12 @@
             <div class="col-12 text-center">
                 <div class="section-title mb-4 pb-2">
                     <h1>Educación que nos diferencia</h1>
-                    <h3 style="font-size: x-large; color: blue;">En <span class="text-primary fw-bold">Celso Garro Valderrama</span> nos encargamos de educación de sus hijos.
+                    <h3 style="font-size: x-large; color: blue;">En <span class="text-primary fw-bold">Celso Garro
+                            Valderrama</span> nos encargamos de educación de sus hijos.
                     </h3>
                 </div>
             </div>
-            <!--end col-->
         </div>
-        <!--end row-->
 
         <div class="row">
             <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2" *ngFor="let item of cartillaData; let i=index">
@@ -23,7 +22,8 @@
                             <h6 class="text-light tag mb-0">{{item.category}}</h6>
                         </div>
                         <div class="icons text-center">
-                            <a (click)="open(i)" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image">
+                            <a (click)="open(i)"
+                                class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image">
                                 <i-feather name="camera" class="fea icon-sm"></i-feather>
                             </a>
                         </div>
@@ -32,5 +32,4 @@
             </div>
         </div>
     </div>
-    <!--end container-->
 </section>
