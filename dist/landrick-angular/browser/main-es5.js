@@ -6979,10 +6979,10 @@
         component: _pages_component__WEBPACK_IMPORTED_MODULE_0__.PagesComponent,
         children: [{
           path: '',
-          redirectTo: '/inicio',
+          redirectTo: '/',
           pathMatch: 'full'
         }, {
-          path: 'inicio',
+          path: '',
           component: _inicio_inicio_component__WEBPACK_IMPORTED_MODULE_1__.InicioComponent
         }, {
           path: 'nosotros',
@@ -8664,7 +8664,7 @@
         },
         decls: 29,
         vars: 10,
-        consts: [["id", "topnav", 1, "defaultscroll", "sticky", 3, "ngClass", "scroll"], [1, "container", 2, "margin-top", "5px"], ["class", "buy-button list-inline mb-0", 4, "ngIf"], ["class", "logo", "routerLink", "", 4, "ngIf"], [4, "ngIf"], ["id", "navigation"], [1, "navigation-menu"], ["routerLink", "/inicio", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], ["routerLink", "/nosotros", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], ["routerLink", "/gestion", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], ["routerLink", "/noticias", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], ["routerLink", "/aliados", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], ["routerLink", "/innovacion", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], ["routerLink", "/normatividades", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], [1, "buy-button", "list-inline", "mb-0"], [1, "list-inline-item", "mb-0", "ms-1"], ["href", "javascript:void(0)", 1, "btn", "btn-icon", "btn-primary"], [1, "uil", "uil-facebook-f", "icons"], [1, "uil", "uil-github", "icons"], [1, "uil", "uil-twitter", "icons"], [1, "uil", "uil-linkedin-alt", "icons"], ["routerLink", "", 1, "logo"], ["src", "assets/images/colegio/logo-colegio-celso.jpg", "height", "55", "alt", "", 1, "l-dark", "logo-dark-mode", 2, "margin-right", "-70px", "margin-left", "-70px", "margin-top", "8px"], [1, "buy-button"], [3, "ngIf"], ["routerLink", "/", 1, "btn", "personalizado", "login-btn-primary", 3, "ngxScrollTo"]],
+        consts: [["id", "topnav", 1, "defaultscroll", "sticky", 3, "ngClass", "scroll"], [1, "container", 2, "margin-top", "5px"], ["class", "buy-button list-inline mb-0", 4, "ngIf"], ["class", "logo", "routerLink", "", 4, "ngIf"], [4, "ngIf"], ["id", "navigation"], [1, "navigation-menu"], ["routerLink", "", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], ["routerLink", "nosotros", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], ["routerLink", "gestion", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], ["routerLink", "noticias", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], ["routerLink", "aliados", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], ["routerLink", "innovacion", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], ["routerLink", "normatividades", 1, "nav-link-ref", 2, "font-family", "'Lucida Sans', cursive"], [1, "buy-button", "list-inline", "mb-0"], [1, "list-inline-item", "mb-0", "ms-1"], ["href", "javascript:void(0)", 1, "btn", "btn-icon", "btn-primary"], [1, "uil", "uil-facebook-f", "icons"], [1, "uil", "uil-github", "icons"], [1, "uil", "uil-twitter", "icons"], [1, "uil", "uil-linkedin-alt", "icons"], ["routerLink", "", 1, "logo"], ["src", "assets/images/colegio/logo-colegio-celso.jpg", "height", "55", "alt", "", 1, "l-dark", "logo-dark-mode", 2, "margin-right", "-70px", "margin-left", "-70px", "margin-top", "8px"], [1, "buy-button"], [3, "ngIf"], ["routerLink", "/", 1, "btn", "personalizado", "login-btn-primary", 3, "ngxScrollTo"]],
         template: function HeaderComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "header", 0);

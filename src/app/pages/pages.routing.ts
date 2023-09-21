@@ -20,10 +20,11 @@ import { PaginaerrorComponent } from '../paginaerror/paginaerror.component';
 const routes: Routes = [
   
   {
-    path: 'v1', 
+    path: '', 
     component: PagesComponent,
     children: [
-      { path: 'inicio', component: InicioComponent },
+      { path: '', redirectTo: '/', pathMatch: 'full' },
+      { path: '', component: InicioComponent },
       { path: 'nosotros', component: NosotrosComponent },
       { path: 'gestion', component: GestionComponent },
       { path: 'noticias', component: NoticiasComponent },
@@ -31,7 +32,6 @@ const routes: Routes = [
       { path: 'innovacion', component: InnovacionComponent },
       { path: 'normatividades', component: NormatividadesComponent },
       { path: 'detalle', component: DetalleComponent },
-      { path: '', redirectTo: '/v1/inicio', pathMatch: 'full' },
       { path: '**', component: PaginaerrorComponent },
 
     ]
