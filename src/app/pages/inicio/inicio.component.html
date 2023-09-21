@@ -1,8 +1,4 @@
-<app-header [navClass]="addclass" [buttonList]="buttonShow"  [isdeveloper]="developerPage"
-    [shopPages]="shopPages">
-</app-header>
 
-<router-outlet (activate)="onActivate($event)"></router-outlet>
 <section class="main-slider" id="home">
     <ngb-carousel class="slides" [showNavigationArrows]="showNavigationArrows"
     [showNavigationIndicators]="showNavigationIndicators">
@@ -619,5 +615,3 @@
 <a href="javascript: void(0);" class="btn btn-icon btn-primary back-to-top" id="back-to-top" [ngxScrollTo]="'#home'">
     <i-feather name="arrow-up" class="icons"></i-feather>
 </a>
-<app-footer [footerVariant]="footerClass" [hideFooter]="hideFooter">
-</app-footer>

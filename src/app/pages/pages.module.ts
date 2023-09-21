@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { PagesComponent } from './pages.component'
 import { InicioComponent } from './inicio/inicio.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { DetalleComponent } from './detalle/detalle.component';
@@ -33,6 +34,7 @@ import { InnovacionComponent } from './innovacion/innovacion.component';
 
 @NgModule({
   declarations: [
+    PagesComponent,
     InicioComponent,
     NosotrosComponent,
     DetalleComponent,
@@ -43,6 +45,7 @@ import { InnovacionComponent } from './innovacion/innovacion.component';
     InnovacionComponent,
   ],
   exports: [
+    PagesComponent,
     InicioComponent,
     NosotrosComponent,
     DetalleComponent,
