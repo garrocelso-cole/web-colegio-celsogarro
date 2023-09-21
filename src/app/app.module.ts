@@ -88,6 +88,10 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptorService,
       multi: true
+    },
+    {
+      provide: LocationStrategy, 
+      useClass: HashLocationStrategy
     }
   ],
   bootstrap: [AppComponent]

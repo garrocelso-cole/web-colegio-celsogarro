@@ -72,31 +72,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": function() { return /* binding */ AppModule; }
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser */ 39075);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ 75835);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/forms */ 3679);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser */ 39075);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/platform-browser/animations */ 75835);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/forms */ 3679);
 /* harmony import */ var ngx_lightbox__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ngx-lightbox */ 629);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common */ 38583);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 55041);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/router */ 39895);
-/* harmony import */ var ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ngx-owl-carousel-o */ 5668);
-/* harmony import */ var _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @nicky-lenaers/ngx-scroll-to */ 48994);
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 12664);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/router */ 39895);
+/* harmony import */ var ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ngx-owl-carousel-o */ 5668);
+/* harmony import */ var _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @nicky-lenaers/ngx-scroll-to */ 48994);
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 12664);
 /* harmony import */ var ngx_swiper_wrapper__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ngx-swiper-wrapper */ 15923);
-/* harmony import */ var ngx_typed_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ngx-typed-js */ 23192);
-/* harmony import */ var ngx_youtube_player__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ngx-youtube-player */ 15622);
-/* harmony import */ var angularx_flatpickr__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! angularx-flatpickr */ 42160);
+/* harmony import */ var ngx_typed_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ngx-typed-js */ 23192);
+/* harmony import */ var ngx_youtube_player__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ngx-youtube-player */ 15622);
+/* harmony import */ var angularx_flatpickr__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! angularx-flatpickr */ 42160);
 /* harmony import */ var angular_count_to__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! angular-count-to */ 74848);
-/* harmony import */ var ngx_masonry__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ngx-masonry */ 70346);
+/* harmony import */ var ngx_masonry__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ngx-masonry */ 70346);
 /* harmony import */ var _shared_shared_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./shared/shared.module */ 44466);
 /* harmony import */ var _pages_pages_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/pages.module */ 18950);
 /* harmony import */ var _pages_pages_routing__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/pages.routing */ 63360);
-/* harmony import */ var _ckeditor_ckeditor5_angular__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @ckeditor/ckeditor5-angular */ 22723);
-/* harmony import */ var angular_feather__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! angular-feather */ 35411);
-/* harmony import */ var angular_feather_icons__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! angular-feather/icons */ 940);
+/* harmony import */ var _ckeditor_ckeditor5_angular__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @ckeditor/ckeditor5-angular */ 22723);
+/* harmony import */ var angular_feather__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! angular-feather */ 35411);
+/* harmony import */ var angular_feather_icons__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! angular-feather/icons */ 940);
 /* harmony import */ var _paginaerror_paginaerror_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./paginaerror/paginaerror.component */ 58027);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/http */ 91841);
 /* harmony import */ var _auth_interceptor_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./auth-interceptor.service */ 51035);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ 37716);
+
 
 
 
@@ -147,49 +149,53 @@ AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵ
             provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_10__.HTTP_INTERCEPTORS,
             useClass: _auth_interceptor_service__WEBPACK_IMPORTED_MODULE_7__.AuthInterceptorService,
             multi: true
+        },
+        {
+            provide: _angular_common__WEBPACK_IMPORTED_MODULE_11__.LocationStrategy,
+            useClass: _angular_common__WEBPACK_IMPORTED_MODULE_11__.HashLocationStrategy
         }
     ], imports: [[
-            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule.withServerTransition({ appId: 'serverApp' }),
-            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__.BrowserAnimationsModule,
-            _angular_router__WEBPACK_IMPORTED_MODULE_13__.RouterModule,
-            ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_14__.CarouselModule,
-            angular_feather__WEBPACK_IMPORTED_MODULE_15__.FeatherModule.pick(angular_feather_icons__WEBPACK_IMPORTED_MODULE_16__.allIcons),
-            _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_17__.ScrollToModule.forRoot(),
-            _angular_router__WEBPACK_IMPORTED_MODULE_13__.RouterModule.forRoot([], { relativeLinkResolution: 'legacy', initialNavigation: 'enabledNonBlocking' }),
-            ngx_youtube_player__WEBPACK_IMPORTED_MODULE_18__.NgxYoutubePlayerModule,
-            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__.NgbDropdownModule,
-            _ckeditor_ckeditor5_angular__WEBPACK_IMPORTED_MODULE_20__.CKEditorModule,
-            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__.NgbModule,
-            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__.NgbNavModule,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_21__.FormsModule,
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_12__.BrowserModule.withServerTransition({ appId: 'serverApp' }),
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__.BrowserAnimationsModule,
+            _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouterModule,
+            ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_15__.CarouselModule,
+            angular_feather__WEBPACK_IMPORTED_MODULE_16__.FeatherModule.pick(angular_feather_icons__WEBPACK_IMPORTED_MODULE_17__.allIcons),
+            _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_18__.ScrollToModule.forRoot(),
+            _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouterModule.forRoot([], { relativeLinkResolution: 'legacy', initialNavigation: 'enabledNonBlocking' }),
+            ngx_youtube_player__WEBPACK_IMPORTED_MODULE_19__.NgxYoutubePlayerModule,
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_20__.NgbDropdownModule,
+            _ckeditor_ckeditor5_angular__WEBPACK_IMPORTED_MODULE_21__.CKEditorModule,
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_20__.NgbModule,
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_20__.NgbNavModule,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_22__.FormsModule,
             ngx_swiper_wrapper__WEBPACK_IMPORTED_MODULE_9__.SwiperModule,
-            ngx_typed_js__WEBPACK_IMPORTED_MODULE_22__.NgxTypedJsModule,
-            angularx_flatpickr__WEBPACK_IMPORTED_MODULE_23__.FlatpickrModule.forRoot(),
+            ngx_typed_js__WEBPACK_IMPORTED_MODULE_23__.NgxTypedJsModule,
+            angularx_flatpickr__WEBPACK_IMPORTED_MODULE_24__.FlatpickrModule.forRoot(),
             angular_count_to__WEBPACK_IMPORTED_MODULE_2__.CountToModule,
-            ngx_masonry__WEBPACK_IMPORTED_MODULE_24__.NgxMasonryModule,
+            ngx_masonry__WEBPACK_IMPORTED_MODULE_25__.NgxMasonryModule,
             ngx_lightbox__WEBPACK_IMPORTED_MODULE_0__.LightboxModule,
             _shared_shared_module__WEBPACK_IMPORTED_MODULE_3__.SharedModule,
             _pages_pages_module__WEBPACK_IMPORTED_MODULE_4__.PagesModule,
             _pages_pages_routing__WEBPACK_IMPORTED_MODULE_5__.PagesRoutingModule,
             _angular_common_http__WEBPACK_IMPORTED_MODULE_10__.HttpClientModule,
-        ], angular_feather__WEBPACK_IMPORTED_MODULE_15__.FeatherModule] });
+        ], angular_feather__WEBPACK_IMPORTED_MODULE_16__.FeatherModule] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent,
-        _paginaerror_paginaerror_component__WEBPACK_IMPORTED_MODULE_6__.PaginaerrorComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__.BrowserAnimationsModule,
-        _angular_router__WEBPACK_IMPORTED_MODULE_13__.RouterModule,
-        ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_14__.CarouselModule, angular_feather__WEBPACK_IMPORTED_MODULE_15__.FeatherModule, _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_17__.ScrollToModule, _angular_router__WEBPACK_IMPORTED_MODULE_13__.RouterModule, ngx_youtube_player__WEBPACK_IMPORTED_MODULE_18__.NgxYoutubePlayerModule,
-        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__.NgbDropdownModule,
-        _ckeditor_ckeditor5_angular__WEBPACK_IMPORTED_MODULE_20__.CKEditorModule,
-        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__.NgbModule,
-        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_19__.NgbNavModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_21__.FormsModule,
+        _paginaerror_paginaerror_component__WEBPACK_IMPORTED_MODULE_6__.PaginaerrorComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_12__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__.BrowserAnimationsModule,
+        _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouterModule,
+        ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_15__.CarouselModule, angular_feather__WEBPACK_IMPORTED_MODULE_16__.FeatherModule, _nicky_lenaers_ngx_scroll_to__WEBPACK_IMPORTED_MODULE_18__.ScrollToModule, _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouterModule, ngx_youtube_player__WEBPACK_IMPORTED_MODULE_19__.NgxYoutubePlayerModule,
+        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_20__.NgbDropdownModule,
+        _ckeditor_ckeditor5_angular__WEBPACK_IMPORTED_MODULE_21__.CKEditorModule,
+        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_20__.NgbModule,
+        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_20__.NgbNavModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_22__.FormsModule,
         ngx_swiper_wrapper__WEBPACK_IMPORTED_MODULE_9__.SwiperModule,
-        ngx_typed_js__WEBPACK_IMPORTED_MODULE_22__.NgxTypedJsModule, angularx_flatpickr__WEBPACK_IMPORTED_MODULE_23__.FlatpickrModule, angular_count_to__WEBPACK_IMPORTED_MODULE_2__.CountToModule,
-        ngx_masonry__WEBPACK_IMPORTED_MODULE_24__.NgxMasonryModule,
+        ngx_typed_js__WEBPACK_IMPORTED_MODULE_23__.NgxTypedJsModule, angularx_flatpickr__WEBPACK_IMPORTED_MODULE_24__.FlatpickrModule, angular_count_to__WEBPACK_IMPORTED_MODULE_2__.CountToModule,
+        ngx_masonry__WEBPACK_IMPORTED_MODULE_25__.NgxMasonryModule,
         ngx_lightbox__WEBPACK_IMPORTED_MODULE_0__.LightboxModule,
         _shared_shared_module__WEBPACK_IMPORTED_MODULE_3__.SharedModule,
         _pages_pages_module__WEBPACK_IMPORTED_MODULE_4__.PagesModule,
         _pages_pages_routing__WEBPACK_IMPORTED_MODULE_5__.PagesRoutingModule,
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_10__.HttpClientModule], exports: [angular_feather__WEBPACK_IMPORTED_MODULE_15__.FeatherModule] }); })();
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_10__.HttpClientModule], exports: [angular_feather__WEBPACK_IMPORTED_MODULE_16__.FeatherModule] }); })();
 
 
 /***/ }),
@@ -3584,13 +3590,13 @@ const routes = [
         children: [
             { path: '', redirectTo: '/', pathMatch: 'full' },
             { path: '', component: _inicio_inicio_component__WEBPACK_IMPORTED_MODULE_1__.InicioComponent },
-            { path: '/nosotros', component: _nosotros_nosotros_component__WEBPACK_IMPORTED_MODULE_2__.NosotrosComponent },
-            { path: '/gestion', component: _gestion_gestion_component__WEBPACK_IMPORTED_MODULE_8__.GestionComponent },
-            { path: '/noticias', component: _noticias_noticias_component__WEBPACK_IMPORTED_MODULE_3__.NoticiasComponent },
-            { path: '/aliados', component: _aliados_aliados_component__WEBPACK_IMPORTED_MODULE_4__.AliadosComponent },
-            { path: '/innovacion', component: _innovacion_innovacion_component__WEBPACK_IMPORTED_MODULE_6__.InnovacionComponent },
-            { path: '/normatividades', component: _normatividades_normatividades_component__WEBPACK_IMPORTED_MODULE_5__.NormatividadesComponent },
-            { path: '/detalle', component: _detalle_detalle_component__WEBPACK_IMPORTED_MODULE_7__.DetalleComponent },
+            { path: 'nosotros', component: _nosotros_nosotros_component__WEBPACK_IMPORTED_MODULE_2__.NosotrosComponent },
+            { path: 'gestion', component: _gestion_gestion_component__WEBPACK_IMPORTED_MODULE_8__.GestionComponent },
+            { path: 'noticias', component: _noticias_noticias_component__WEBPACK_IMPORTED_MODULE_3__.NoticiasComponent },
+            { path: 'aliados', component: _aliados_aliados_component__WEBPACK_IMPORTED_MODULE_4__.AliadosComponent },
+            { path: 'innovacion', component: _innovacion_innovacion_component__WEBPACK_IMPORTED_MODULE_6__.InnovacionComponent },
+            { path: 'normatividades', component: _normatividades_normatividades_component__WEBPACK_IMPORTED_MODULE_5__.NormatividadesComponent },
+            { path: 'detalle', component: _detalle_detalle_component__WEBPACK_IMPORTED_MODULE_7__.DetalleComponent },
             { path: '**', component: _paginaerror_paginaerror_component__WEBPACK_IMPORTED_MODULE_9__.PaginaerrorComponent },
         ]
     },
