@@ -19,7 +19,7 @@ import { GestionComponent } from './gestion/gestion.component';
 const routes: Routes = [
   
   {
-    path: '',
+    path: '', 
     component: PagesComponent,
     children: [
       { path: 'inicio', component: InicioComponent },

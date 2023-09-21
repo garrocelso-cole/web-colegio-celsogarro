@@ -45,7 +45,7 @@ export class InicioComponent implements OnInit {
 
   showNavigationArrows = true;
   showNavigationIndicators = false;
-  navClass = 'bg-white';
+  navClass = 'nav-light';
   servicesData = []
   cartillaData = []
   customOptions: OwlOptions = {};
@@ -97,8 +97,8 @@ export class InicioComponent implements OnInit {
       n = 2
     } else {
       n = 1
-    }
-    return n
+    } 
+    return n   
   }
   envioFiltro(valor: _Habitacion) {
     if (localStorage.getItem('habitacion')) {

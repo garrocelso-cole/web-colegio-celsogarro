@@ -2,11 +2,7 @@
     [ngClass]="{'tagline-height': sliderTopbar == true}">
     <div class="container" style="margin-top: 5px;">
         <div>
-            <a class="logo" *ngIf="navClass !== 'nav-light'">
-                <img src="assets/images/colegio/logo-colegio-celso.jpg" class="l-dark logo-light-mode" height="55"
-                    alt="" style="margin-right: -90px; margin-left: -90px; margin-top: 8px; margin-bottom: 8px;">
-                <img src="assets/images/colegio/logo-colegio-celso.jpg" class="logo-dark-mode" height="55" alt="">
-            </a>
+           
             <ul class="buy-button list-inline mb-0" *ngIf="buttonList == true">
                 <li class="list-inline-item mb-0 ms-1">
                     <a href="javascript:void(0)" class="btn btn-icon btn-primary"><i
@@ -27,8 +23,8 @@
             </ul>
 
             <a class="logo" routerLink="" *ngIf="navClass === 'nav-light'">
-                <img src="assets/images/logo/logo-dark-bvm.jpg" class="l-dark" height="55" alt=""
-                    style="margin-right: -90px; margin-left: -90px; margin-top: 8px; margin-bottom: 8px;">
+                <img src="assets/images/colegio/logo-colegio-celso.jpg" class="l-dark logo-dark-mode" height="55" alt=""
+                    style="margin-right: -70px; margin-left: -70px; margin-top: 8px; ">
             </a>
         </div>
         <span *ngIf="!buttonList && !isdeveloper && !shopPages">
@@ -37,9 +33,7 @@
                     <a routerLink="/" [ngxScrollTo]="'#bookroom'"
                         class="btn personalizado login-btn-primary">Intranet</a>
                 </ng-template>
-                <ng-template [ngIf]="navClass !== 'nav-light'">
-                    <a [ngxScrollTo]="'#bookroom'" class="btn personalizado">Intranet</a>
-                </ng-template>
+             
             </div>
         </span>
         
