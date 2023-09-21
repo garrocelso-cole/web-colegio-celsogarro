@@ -6985,25 +6985,25 @@
           path: '',
           component: _inicio_inicio_component__WEBPACK_IMPORTED_MODULE_1__.InicioComponent
         }, {
-          path: 'nosotros',
+          path: '/nosotros',
           component: _nosotros_nosotros_component__WEBPACK_IMPORTED_MODULE_2__.NosotrosComponent
         }, {
-          path: 'gestion',
+          path: '/gestion',
           component: _gestion_gestion_component__WEBPACK_IMPORTED_MODULE_8__.GestionComponent
         }, {
-          path: 'noticias',
+          path: '/noticias',
           component: _noticias_noticias_component__WEBPACK_IMPORTED_MODULE_3__.NoticiasComponent
         }, {
-          path: 'aliados',
+          path: '/aliados',
           component: _aliados_aliados_component__WEBPACK_IMPORTED_MODULE_4__.AliadosComponent
         }, {
-          path: 'innovacion',
+          path: '/innovacion',
           component: _innovacion_innovacion_component__WEBPACK_IMPORTED_MODULE_6__.InnovacionComponent
         }, {
-          path: 'normatividades',
+          path: '/normatividades',
           component: _normatividades_normatividades_component__WEBPACK_IMPORTED_MODULE_5__.NormatividadesComponent
         }, {
-          path: 'detalle',
+          path: '/detalle',
           component: _detalle_detalle_component__WEBPACK_IMPORTED_MODULE_7__.DetalleComponent
         }, {
           path: '**',

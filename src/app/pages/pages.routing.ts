@@ -25,13 +25,13 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: '/', pathMatch: 'full' },
       { path: '', component: InicioComponent },
-      { path: 'nosotros', component: NosotrosComponent },
-      { path: 'gestion', component: GestionComponent },
-      { path: 'noticias', component: NoticiasComponent },
-      { path: 'aliados', component: AliadosComponent },
-      { path: 'innovacion', component: InnovacionComponent },
-      { path: 'normatividades', component: NormatividadesComponent },
-      { path: 'detalle', component: DetalleComponent },
+      { path: '/nosotros', component: NosotrosComponent },
+      { path: '/gestion', component: GestionComponent },
+      { path: '/noticias', component: NoticiasComponent },
+      { path: '/aliados', component: AliadosComponent },
+      { path: '/innovacion', component: InnovacionComponent },
+      { path: '/normatividades', component: NormatividadesComponent },
+      { path: '/detalle', component: DetalleComponent },
       { path: '**', component: PaginaerrorComponent },
 
     ]
