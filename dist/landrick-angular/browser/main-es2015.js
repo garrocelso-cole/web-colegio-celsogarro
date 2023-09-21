@@ -4468,10 +4468,8 @@ class HeaderComponent {
             resetParent(links[i]);
         }
         for (let i = 0; i < links.length; i++) {
-            console.log('**********');
-            console.log(links[i]);
-            console.log('//**********');
-            if (window.location.pathname === links[i]["pathname"]) {
+            let value = links[i]["hash"];
+            if (window.location.hash === value) {
                 matchingMenuItem = links[i];
                 break;
             }

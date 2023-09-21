@@ -8542,11 +8542,9 @@
             }
 
             for (var _i = 0; _i < links.length; _i++) {
-              console.log('**********');
-              console.log(links[_i]);
-              console.log('//**********');
+              var value = links[_i]["hash"];
 
-              if (window.location.pathname === links[_i]["pathname"]) {
+              if (window.location.hash === value) {
                 matchingMenuItem = links[_i];
                 break;
               }
