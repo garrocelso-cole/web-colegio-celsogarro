@@ -10,13 +10,7 @@ import { map } from 'rxjs/internal/operators';
 export class AliadosComponent implements OnInit {
 
   constructor(private modalService: NgbModal) { }
-  addclass: string;
-  buttonShow: boolean;
-  TopbarShow: boolean;
-  footerClass: string;
-  developerPage: boolean;
-  hideFooter: boolean;
-  shopPages: boolean;
+  
   navClass = 'nav-light';
 
   cartillaData = [
@@ -143,14 +137,5 @@ export class AliadosComponent implements OnInit {
   getSeconds(t: any) {
     return Math.floor((t / 1000) % 60);
   }
-  onActivate(componentReference: any) {
-
-    this.addclass = componentReference.navClass;
-    this.buttonShow = componentReference.buttonList;
-    this.TopbarShow = componentReference.sliderTopbar;
-    this.footerClass = componentReference.footerVariant;
-    this.developerPage = componentReference.isdeveloper;
-    this.hideFooter = componentReference.hideFooter;
-    this.shopPages = componentReference.shopPages;
-  }
+ 
 }

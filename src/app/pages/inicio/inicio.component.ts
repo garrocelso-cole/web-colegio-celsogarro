@@ -28,14 +28,6 @@ interface _contatenosForm {
 //Hotel Component
 export class InicioComponent implements OnInit {
 
-  addclass: string;
-  buttonShow: boolean;
-  TopbarShow: boolean;
-  footerClass: string;
-  developerPage: boolean;
-  hideFooter: boolean;
-  shopPages: boolean;
-
   constructor(
     private modalService: NgbModal,
     private router: Router,
@@ -134,14 +126,4 @@ export class InicioComponent implements OnInit {
     this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true });
   }
 
-  onActivate(componentReference: any) {
-
-    this.addclass = componentReference.navClass;
-    this.buttonShow = componentReference.buttonList;
-    this.TopbarShow = componentReference.sliderTopbar;
-    this.footerClass = componentReference.footerVariant;
-    this.developerPage = componentReference.isdeveloper;
-    this.hideFooter = componentReference.hideFooter;
-    this.shopPages = componentReference.shopPages;
-  }
 }

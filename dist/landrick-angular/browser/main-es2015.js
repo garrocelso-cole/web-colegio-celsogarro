@@ -364,15 +364,6 @@ class AliadosComponent {
     getSeconds(t) {
         return Math.floor((t / 1000) % 60);
     }
-    onActivate(componentReference) {
-        this.addclass = componentReference.navClass;
-        this.buttonShow = componentReference.buttonList;
-        this.TopbarShow = componentReference.sliderTopbar;
-        this.footerClass = componentReference.footerVariant;
-        this.developerPage = componentReference.isdeveloper;
-        this.hideFooter = componentReference.hideFooter;
-        this.shopPages = componentReference.shopPages;
-    }
 }
 AliadosComponent.ɵfac = function AliadosComponent_Factory(t) { return new (t || AliadosComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__.NgbModal)); };
 AliadosComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: AliadosComponent, selectors: [["app-aliados"]], decls: 247, vars: 1, consts: [["id", "home", 1, "bg-half", "d-table", "w-100", 2, "background", "url('assets/images/company/aliadosPortada.jpg')", "background-size", "100% 160%"], [1, "bg-overlay"], [1, "container"], [1, "row", "justify-content-center"], [1, "col-lg-10", "text-center"], [1, "title-heading", 2, "height", "250px"], [1, "display-4", "title-dark", "text-white", "fw-bold", "mb-3"], [1, "para-desc", "title-dark", "mx-auto", "text-light", 2, "font-size", "x-large"], [1, "section", "border-top"], [1, "card", "rounded", "shadow", "border-0", "bg-light", "overflow-hidden"], [1, "row", "no-gutters", "align-items-center"], [1, "col-lg-6"], ["src", "assets/images/fotosaliados/HuastaFoto.jpg", "alt", "", 1, "img-fluid"], [1, "card-body", "section-title", "p-md-5"], [1, "mb-4"], [2, "font-size", "large"], [1, "mt-4", "pt-2"], ["href", "http://munihuasta.gob.pe/", "target", "_blank", 1, "btn", "btn-outline-primary"], [1, "container", 2, "margin-top", "50px"], ["src", "../../../assets/images/colegio/aliados/municipalidadDePampan.png", "alt", "", 1, "img-fluid"], ["src", "assets/images/fotosaliados/qaliwarma.png", "alt", "", 1, "img-fluid"], ["href", "https://www.gob.pe/qaliwarma", "target", "_blank", 1, "btn", "btn-outline-primary"], ["src", "assets/images/fotosaliados/centroSalud.jpg", "alt", "", 1, "img-fluid"], ["href", "https://www.deperu.com/salud-nacional/establecimientos-de-salud-gbno-regional-minsa/huasta-huasta-1170", "target", "_blank", 1, "btn", "btn-outline-primary"], ["src", "assets/images/fotosaliados/cem.jpg", "alt", "", 1, "img-fluid"], ["src", "../../../assets/images/colegio/aliados/policiaNacional.png", "alt", "", 1, "img-fluid"], ["href", "https://www.policia.gob.pe/", "target", "_blank", 1, "btn", "btn-outline-primary"], ["src", "../../../assets/images/colegio/aliados/apafa.png", "alt", "", 1, "img-fluid"], ["href", "https://www.drelm.gob.pe/drelm/wp-content/uploads/2017/02/TallerAPAFA.pdf", "target", "_blank", 1, "btn", "btn-outline-primary"], ["src", "../../../assets/images/colegio/aliados/standard_Elecci\u00F3n del municipio escolar 2023.jpg", "alt", "", 1, "img-fluid"], ["href", "https://dnef.jne.gob.pe/documentos/3-cartillaeducativa3.pdf", "target", "_blank", 1, "btn", "btn-outline-primary"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-light"], ["viewBox", "0 0 2880 48", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z", "fill", "currentColor"], [1, "shape", "overflow-hidden", "text-white"], ["href", "javascript: void(0);", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"]], template: function AliadosComponent_Template(rf, ctx) { if (rf & 1) {
@@ -1106,15 +1097,6 @@ class GestionComponent {
         this.navClass = 'nav-light';
     }
     ngOnInit() {
-    }
-    onActivate(componentReference) {
-        this.addclass = componentReference.navClass;
-        this.buttonShow = componentReference.buttonList;
-        this.TopbarShow = componentReference.sliderTopbar;
-        this.footerClass = componentReference.footerVariant;
-        this.developerPage = componentReference.isdeveloper;
-        this.hideFooter = componentReference.hideFooter;
-        this.shopPages = componentReference.shopPages;
     }
 }
 GestionComponent.ɵfac = function GestionComponent_Factory(t) { return new (t || GestionComponent)(); };
@@ -2276,15 +2258,6 @@ class InicioComponent {
     openModal(content) {
         this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true });
     }
-    onActivate(componentReference) {
-        this.addclass = componentReference.navClass;
-        this.buttonShow = componentReference.buttonList;
-        this.TopbarShow = componentReference.sliderTopbar;
-        this.footerClass = componentReference.footerVariant;
-        this.developerPage = componentReference.isdeveloper;
-        this.hideFooter = componentReference.hideFooter;
-        this.shopPages = componentReference.shopPages;
-    }
 }
 InicioComponent.ɵfac = function InicioComponent_Factory(t) { return new (t || InicioComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_7__.NgbModal), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_8__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](src_app_services_inicio_service__WEBPACK_IMPORTED_MODULE_1__.InicioService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormBuilder)); };
 InicioComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: InicioComponent, selectors: [["app-inicio"]], decls: 130, vars: 10, consts: [["id", "home", 1, "main-slider"], [1, "slides", 3, "showNavigationArrows", "showNavigationIndicators"], ["ngbSlide", ""], ["id", "bookroom", 1, "section-two", "bg-light"], [1, "container"], [1, "row", "justify-content-center"], ["id", "#reserva", 3, "obtenerDatosReserva"], [1, "container", "mt-100", "mt-60"], [1, "col-12", "text-center"], [1, "section-title", "mb-4", "pb-2"], [2, "text-align", "justify", "font-family", "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"], ["src", "assets/images/colegio/fotopresentacion.jpeg", 2, "float", "left", "padding-right", "1.5rem", "height", "40%", "width", "40%"], [2, "font-size", "x-large", "color", "blue"], [1, "text-primary", "fw-bold"], [1, "row"], [1, "col-12"], ["ngbNav", "", "id", "pills-tab", "role", "tablist", 1, "nav", "nav-pills", "shadow", "flex-column", "flex-sm-row", "d-md-inline-flex", "mb-0", "p-1", "bg-white", "rounded", "position-relative", "overflow-hidden", 3, "activeId"], ["nav", "ngbNav"], [1, "nav-item", "m-1", 3, "ngbNavItem"], ["ngbNavLink", "", 1, "nav-link", "py-2", "px-5", "rounded"], [1, "text-center"], [1, "mb-0"], ["ngbNavContent", ""], [1, "col-12", "tab-content", "mt-5", 3, "ngbNavOutlet"], ["id", "cta", 1, "section", "bg-cta", 2, "background", "url('assets/images/colegio/foto-panoramica.png') center center", "background-size", "100% 200%"], [1, "bg-overlay"], [1, "section-title"], [1, "text-white"], [1, "text-light", "para-dark", "mx-auto", 2, "font-size", "x-large"], ["href", "javascript:void(0);", 1, "play-btn", "border", "border-light", "mt-4", "video-play-icon", 3, "click"], ["name", "play", 1, "fea", "icon-ex-md", "text-white", "title-dark"], ["contentmodal", ""], [3, "servicesData"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-light"], ["viewBox", "0 0 2880 250", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M720 125L2160 0H2880V250H0V125H720Z", "fill", "currentColor"], [3, "cartillaData"], [1, "section"], [1, "col-lg-8", "col-md-6", "p-0", "ps-md-3", "pr-md-3"], [1, "card", "map", "map-height-two", "rounded", "map-gray", "border-0"], ["src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.7503353584443!2d-77.15969248620799!3d-10.119510792769262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a8330d221e2755%3A0xe9769e4a265b24eb!2sColegio%20Nacional%20Celso%20Garro%20Valderrama%20Pampan!5e0!3m2!1ses!2spe!4v1663966265191!5m2!1ses!2spe", "width", "600", "height", "450", "allowfullscreen", "", "loading", "lazy", "referrerpolicy", "no-referrer-when-downgrade", 2, "border", "0"], [1, "col-lg-4", "col-md-6", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0"], [1, "card", "rounded", "shadow", "border-0"], [1, "card-body", "py-5"], [1, "card-title"], [1, "custom-form", "mt-4"], ["id", "message"], ["autocomplete", "off", 1, "p-4", "shadow", "bg-white", "rounded", 3, "formGroup", "ngSubmit"], [1, "col-md-12"], [1, "mb-3"], [1, "form-label", 2, "font-size", "x-large"], [1, "text-danger"], [1, "form-icon", "position-relative"], ["name", "user", 1, "fea", "icon-sm", "icons"], ["type", "text", "formControlName", "nombre", "id", "nombre", "placeholder", "Su nombre :", 1, "form-control", "ps-5"], ["name", "email", 1, "fea", "icon-sm", "icons"], ["type", "email", "formControlName", "email", "id", "email", "placeholder", "Su email :", 1, "form-control", "ps-5"], ["name", "message-circle", 1, "fea", "icon-sm", "icons"], ["type", "text", "formControlName", "comentarios", "id", "comentarios", "placeholder", "Sus Comentarios :", 1, "form-control", "ps-5"], [1, "col-sm-12", "text-center"], [1, "d-grid"], ["type", "submit", "id", "search", "name", "search", "value", "Enviar Mensaje", 1, "submitBnt", "btn", "btn-primary"], ["href", "javascript: void(0);", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"], [1, "bg-home", "bg-animation-left", "d-flex", "align-items-center"], [1, "row", "align-items-center"], [1, "col-lg-7", "col-md-7"], [1, "position-relative", "mt-4", 2, "z-index", "1"], [1, "heading", "mb-3", "display-4", "title-dark", "fw-bold", "title-dark"], [1, "para-desc"], [1, "watch-video", "mt-4", "pt-2"], ["href", "javascript:void(0);", "data-type", "youtube", "data-id", "yba7hPeTSjk", 1, "btn", "btn-icon", "btn-pills", "btn-primary", 3, "click"], ["name", "video", 1, "icons"], [1, "fw-bold", "text-uppercase", "small", "align-middle", "ms-2"], ["content", ""], [1, "modal-header"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"], ["height", "450px", "width", "780px", "src", "https://www.youtube.com/embed/1Z7Jx3g9u58", "title", "YouTube video player", "frameborder", "0", "allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", "allowfullscreen", "", 1, "marcovideo"], [1, "heading", "mb-3", "display-4", "title-dark", "fw-bold", "title-dark", 2, "color", "white"], [1, "para-desc", "text-white"], ["routerLink", "nosotros", 1, "btn", "btn-primary"], [1, "uil", "uil-heart-alt"], [1, "row", 2, "text-align", "center", "align-items", "center"], [1, "col"], ["src", "assets/images/colegio/docentes-primaria.png"], [1, "row", 2, "margin-top", "20px"], ["src", "assets/images/colegio/tabla-primaria.png"], [1, "col-lg-6", "col-md-6", "col-12", "mt-4", "pt-2"], [1, "card", "border-0", "work-container", "work-modern", "position-relative", "d-block", "overflow-hidden", "rounded"], [1, "card-body", "p-0"], ["src", "../../../assets/images/colegio/PRIMARIA/DocentesActualesR.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/PRIMARIA/estudiantesPrimariR.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/PRIMARIA/primeroysegundoPrimaria/tutoraFabianAntaurco.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/PRIMARIA/primeroysegundoPrimaria/ActividadesAprendizajeR.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/PRIMARIA/terceroPrimaria/tutoraLuzValderramaR.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/PRIMARIA/terceroPrimaria/actividadesAprendizaje3R.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/PRIMARIA/cuartoPrimaria/tutoraNelsyZulemaR.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/PRIMARIA/cuartoPrimaria/actividadesAprendizaje4R.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/PRIMARIA/quintoPrimaria/tutoraYoysyRosasR.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/PRIMARIA/quintoPrimaria/ActividadesAprendizaje5R.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/PRIMARIA/sextoPrimaria/tutorRoberVelasquezR.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/PRIMARIA/sextoPrimaria/ActividadesAprendizaje6R.png", "alt", "work-image", 1, "img-fluid"], ["src", "assets/images/colegio/docentes-secundaria.png", 2, "height", "250px"], ["src", "assets/images/colegio/tabla-secundaria.png"], ["src", "../../../assets/images/colegio/SECUNDARIA/profesoresSecundariaR.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/SECUNDARIA/alunmosSecundaria.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/SECUNDARIA/primeroSecundariaR.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/SECUNDARIA/segundoSecundariaR.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/SECUNDARIA/terceroSecundariaR.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/SECUNDARIA/cuartoSecundariaR.png", "alt", "work-image", 1, "img-fluid"], ["src", "../../../assets/images/colegio/SECUNDARIA/quintoSecundaria.png", "alt", "work-image", 1, "img-fluid"], ["height", "450px", "width", "780px", "src", "https://www.youtube.com/embed/VfQjUqrwh8A", "title", "YouTube video player", "frameborder", "0", "allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", "allowfullscreen", "", 1, "marcovideo"]], template: function InicioComponent_Template(rf, ctx) { if (rf & 1) {
@@ -2542,15 +2515,6 @@ class InnovacionComponent {
     }
     ngOnInit() {
     }
-    onActivate(componentReference) {
-        this.addclass = componentReference.navClass;
-        this.buttonShow = componentReference.buttonList;
-        this.TopbarShow = componentReference.sliderTopbar;
-        this.footerClass = componentReference.footerVariant;
-        this.developerPage = componentReference.isdeveloper;
-        this.hideFooter = componentReference.hideFooter;
-        this.shopPages = componentReference.shopPages;
-    }
 }
 InnovacionComponent.ɵfac = function InnovacionComponent_Factory(t) { return new (t || InnovacionComponent)(); };
 InnovacionComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: InnovacionComponent, selectors: [["app-innovacion"]], decls: 37, vars: 1, consts: [["id", "home", 1, "bg-half", "d-table", "w-100", 2, "background", "url('assets/images/company/innovacionPortada.jpg')", "background-size", "100% 160%"], [1, "bg-overlay"], [1, "container"], [1, "row", "justify-content-center"], [1, "col-lg-10", "text-center"], [1, "title-heading", 2, "height", "250px"], [1, "display-4", "title-dark", "text-white", "fw-bold", "mb-3"], [1, "para-desc", "title-dark", "mx-auto", "text-light", 2, "font-size", "x-large"], [1, "section", "border-top"], [1, "card", "rounded", "shadow", "border-0", "bg-light", "overflow-hidden"], [1, "row", "no-gutters", "align-items-center"], [1, "col-lg-6"], ["src", "assets/images/company/innovacionPortada.jpg", "alt", "", 1, "img-fluid"], [1, "card-body", "section-title", "p-md-5"], [1, "mb-4"], [2, "font-size", "large"], [1, "mt-4", "pt-2"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-light"], ["viewBox", "0 0 2880 48", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z", "fill", "currentColor"], [1, "shape", "overflow-hidden", "text-white"], ["href", "javascript: void(0);", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"]], template: function InnovacionComponent_Template(rf, ctx) { if (rf & 1) {
@@ -2722,15 +2686,6 @@ class NormatividadesComponent {
     }
     openWindowCustomClass(content) {
         this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true });
-    }
-    onActivate(componentReference) {
-        this.addclass = componentReference.navClass;
-        this.buttonShow = componentReference.buttonList;
-        this.TopbarShow = componentReference.sliderTopbar;
-        this.footerClass = componentReference.footerVariant;
-        this.developerPage = componentReference.isdeveloper;
-        this.hideFooter = componentReference.hideFooter;
-        this.shopPages = componentReference.shopPages;
     }
 }
 NormatividadesComponent.ɵfac = function NormatividadesComponent_Factory(t) { return new (t || NormatividadesComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__.NgbModal)); };
@@ -2920,15 +2875,6 @@ class NosotrosComponent {
     }
     openWindowCustomClass(content) {
         this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true });
-    }
-    onActivate(componentReference) {
-        this.addclass = componentReference.navClass;
-        this.buttonShow = componentReference.buttonList;
-        this.TopbarShow = componentReference.sliderTopbar;
-        this.footerClass = componentReference.footerVariant;
-        this.developerPage = componentReference.isdeveloper;
-        this.hideFooter = componentReference.hideFooter;
-        this.shopPages = componentReference.shopPages;
     }
 }
 NosotrosComponent.ɵfac = function NosotrosComponent_Factory(t) { return new (t || NosotrosComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__.NgbModal)); };
@@ -3208,15 +3154,6 @@ class NoticiasComponent {
         ];
     }
     ngOnInit() {
-    }
-    onActivate(componentReference) {
-        this.addclass = componentReference.navClass;
-        this.buttonShow = componentReference.buttonList;
-        this.TopbarShow = componentReference.sliderTopbar;
-        this.footerClass = componentReference.footerVariant;
-        this.developerPage = componentReference.isdeveloper;
-        this.hideFooter = componentReference.hideFooter;
-        this.shopPages = componentReference.shopPages;
     }
 }
 NoticiasComponent.ɵfac = function NoticiasComponent_Factory(t) { return new (t || NoticiasComponent)(); };
@@ -3615,7 +3552,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "PagesRoutingModule": function() { return /* binding */ PagesRoutingModule; }
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/router */ 39895);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/router */ 39895);
 /* harmony import */ var _pages_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages.component */ 37664);
 /* harmony import */ var _inicio_inicio_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./inicio/inicio.component */ 75461);
 /* harmony import */ var _nosotros_nosotros_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nosotros/nosotros.component */ 12290);
@@ -3625,7 +3562,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _innovacion_innovacion_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./innovacion/innovacion.component */ 247);
 /* harmony import */ var _detalle_detalle_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./detalle/detalle.component */ 99233);
 /* harmony import */ var _gestion_gestion_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./gestion/gestion.component */ 57182);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ 37716);
+/* harmony import */ var _paginaerror_paginaerror_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../paginaerror/paginaerror.component */ 58027);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ 37716);
+
 
 
 
@@ -3643,6 +3582,7 @@ const routes = [
         path: '',
         component: _pages_component__WEBPACK_IMPORTED_MODULE_0__.PagesComponent,
         children: [
+            { path: '', redirectTo: '/inicio', pathMatch: 'full' },
             { path: 'inicio', component: _inicio_inicio_component__WEBPACK_IMPORTED_MODULE_1__.InicioComponent },
             { path: 'nosotros', component: _nosotros_nosotros_component__WEBPACK_IMPORTED_MODULE_2__.NosotrosComponent },
             { path: 'gestion', component: _gestion_gestion_component__WEBPACK_IMPORTED_MODULE_8__.GestionComponent },
@@ -3651,16 +3591,16 @@ const routes = [
             { path: 'innovacion', component: _innovacion_innovacion_component__WEBPACK_IMPORTED_MODULE_6__.InnovacionComponent },
             { path: 'normatividades', component: _normatividades_normatividades_component__WEBPACK_IMPORTED_MODULE_5__.NormatividadesComponent },
             { path: 'detalle', component: _detalle_detalle_component__WEBPACK_IMPORTED_MODULE_7__.DetalleComponent },
-            { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+            { path: '**', component: _paginaerror_paginaerror_component__WEBPACK_IMPORTED_MODULE_9__.PaginaerrorComponent },
         ]
     },
 ];
 class PagesRoutingModule {
 }
 PagesRoutingModule.ɵfac = function PagesRoutingModule_Factory(t) { return new (t || PagesRoutingModule)(); };
-PagesRoutingModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({ type: PagesRoutingModule });
-PagesRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({ imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_10__.RouterModule.forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_10__.RouterModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵsetNgModuleScope"](PagesRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_10__.RouterModule], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_10__.RouterModule] }); })();
+PagesRoutingModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineNgModule"]({ type: PagesRoutingModule });
+PagesRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineInjector"]({ imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_11__.RouterModule.forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_11__.RouterModule] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵsetNgModuleScope"](PagesRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_11__.RouterModule], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_11__.RouterModule] }); })();
 
 
 /***/ }),
@@ -4227,6 +4167,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37716);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ 38583);
 /* harmony import */ var angular_feather__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! angular-feather */ 35411);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ 39895);
+
 
 
 
@@ -4371,7 +4313,7 @@ class FooterComponent {
     }
 }
 FooterComponent.ɵfac = function FooterComponent_Factory(t) { return new (t || FooterComponent)(); };
-FooterComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FooterComponent, selectors: [["app-footer"]], inputs: { footerVariant: "footerVariant", hideFooter: "hideFooter" }, decls: 11, vars: 2, consts: [[4, "ngIf"], [1, "footer", "footer-bar"], [1, "container", "text-center"], [1, "row", "align-items-center"], [1, "col-sm-6"], [1, "text-sm-start"], [1, "mb-0"], [1, "mdi", "mdi-heart", "text-danger"], [4, "ngIf", "ngIfElse"], ["execute_block", ""], [1, "footer", "bg-light"], [1, "container"], [1, "row"], [1, "col-lg-4", "col-12", "mb-0", "mb-md-4", "pb-0", "pb-md-2"], ["href", "#", 1, "logo-footer"], [1, "mt-4", "text-muted"], [1, "list-unstyled", "social-icon", "social", "mb-0", "mt-4"], [1, "list-inline-item"], ["href", "javascript:void(0)", 1, "rounded"], ["name", "facebook", 1, "fea", "icon-sm", "fea-social"], [1, "list-inline-item", "ms-1"], ["name", "instagram", 1, "fea", "icon-sm", "fea-social"], ["name", "twitter", 1, "fea", "icon-sm", "fea-social"], ["name", "linkedin", 1, "fea", "icon-sm", "fea-social"], [1, "footer"], [1, "col-lg-6", "col-12", "mb-0", "mb-md-4", "pb-0", "pb-md-2"], [1, "mt-4"], [1, "text-primary", "fw-bold"], [1, "list-unstyled", "social-icon", "foot-social-icon", "mb-0", "mt-4"], ["href", "https://www.facebook.com/", "target", "_blank", 1, "rounded"], ["href", "https://www.instagram.com/", "target", "_blank", 1, "rounded"], [1, "col-lg-3", "col-md-4", "col-12", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0"], [1, "list-unstyled", "footer-list", "mt-6"], ["href", "/nosotros", 1, "text-foot"], [1, "uil", "uil-angle-right-b", "me-1"], ["href", "/gestion", 1, "text-foot"], ["href", "/noticias", 1, "text-foot"], ["href", "/aliados", 1, "text-foot"], ["href", "/innovacion", 1, "text-foot"], ["href", "/normatividades", 1, "text-foot"], [1, "col-lg-3", "col-md-4", "col-12", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0", 2, "text-align", "end"], ["src", "../../../assets/images/mundo/logoSinFondo.png", "alt", "", 1, "col-lg-8", "col-md-12", "col-6", 2, "margin-top", "0px"]], template: function FooterComponent_Template(rf, ctx) { if (rf & 1) {
+FooterComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FooterComponent, selectors: [["app-footer"]], inputs: { footerVariant: "footerVariant", hideFooter: "hideFooter" }, decls: 11, vars: 2, consts: [[4, "ngIf"], [1, "footer", "footer-bar"], [1, "container", "text-center"], [1, "row", "align-items-center"], [1, "col-sm-6"], [1, "text-sm-start"], [1, "mb-0"], [1, "mdi", "mdi-heart", "text-danger"], [4, "ngIf", "ngIfElse"], ["execute_block", ""], [1, "footer", "bg-light"], [1, "container"], [1, "row"], [1, "col-lg-4", "col-12", "mb-0", "mb-md-4", "pb-0", "pb-md-2"], ["href", "#", 1, "logo-footer"], [1, "mt-4", "text-muted"], [1, "list-unstyled", "social-icon", "social", "mb-0", "mt-4"], [1, "list-inline-item"], ["href", "javascript:void(0)", 1, "rounded"], ["name", "facebook", 1, "fea", "icon-sm", "fea-social"], [1, "list-inline-item", "ms-1"], ["name", "instagram", 1, "fea", "icon-sm", "fea-social"], ["name", "twitter", 1, "fea", "icon-sm", "fea-social"], ["name", "linkedin", 1, "fea", "icon-sm", "fea-social"], [1, "footer"], [1, "col-lg-6", "col-12", "mb-0", "mb-md-4", "pb-0", "pb-md-2"], [1, "mt-4"], [1, "text-primary", "fw-bold"], [1, "list-unstyled", "social-icon", "foot-social-icon", "mb-0", "mt-4"], ["href", "https://www.facebook.com/", "target", "_blank", 1, "rounded"], ["href", "https://www.instagram.com/", "target", "_blank", 1, "rounded"], [1, "col-lg-3", "col-md-4", "col-12", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0"], [1, "list-unstyled", "footer-list", "mt-6"], ["routerLink", "nosotros", 1, "text-foot"], [1, "uil", "uil-angle-right-b", "me-1"], ["routerLink", "gestion", 1, "text-foot"], ["routerLink", "noticias", 1, "text-foot"], ["routerLink", "aliados", 1, "text-foot"], ["routerLink", "innovacion", 1, "text-foot"], ["routerLink", "normatividades", 1, "text-foot"], [1, "col-lg-3", "col-md-4", "col-12", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0", 2, "text-align", "end"], ["src", "../../../assets/images/mundo/logoSinFondo.png", "alt", "", 1, "col-lg-8", "col-md-12", "col-6", 2, "margin-top", "0px"]], template: function FooterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, FooterComponent_div_0_Template, 4, 2, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "footer", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -4393,7 +4335,7 @@ FooterComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.hideFooter);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.year, " Dise\u00F1ado con ");
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.NgIf, angular_feather__WEBPACK_IMPORTED_MODULE_2__.FeatherComponent], encapsulation: 2 });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.NgIf, angular_feather__WEBPACK_IMPORTED_MODULE_2__.FeatherComponent, _angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterLinkWithHref], encapsulation: 2 });
 
 
 /***/ }),

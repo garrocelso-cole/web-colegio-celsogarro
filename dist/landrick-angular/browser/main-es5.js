@@ -577,17 +577,6 @@
           value: function getSeconds(t) {
             return Math.floor(t / 1000 % 60);
           }
-        }, {
-          key: "onActivate",
-          value: function onActivate(componentReference) {
-            this.addclass = componentReference.navClass;
-            this.buttonShow = componentReference.buttonList;
-            this.TopbarShow = componentReference.sliderTopbar;
-            this.footerClass = componentReference.footerVariant;
-            this.developerPage = componentReference.isdeveloper;
-            this.hideFooter = componentReference.hideFooter;
-            this.shopPages = componentReference.shopPages;
-          }
         }]);
 
         return _AliadosComponent;
@@ -2050,17 +2039,6 @@
         _createClass(_GestionComponent, [{
           key: "ngOnInit",
           value: function ngOnInit() {}
-        }, {
-          key: "onActivate",
-          value: function onActivate(componentReference) {
-            this.addclass = componentReference.navClass;
-            this.buttonShow = componentReference.buttonList;
-            this.TopbarShow = componentReference.sliderTopbar;
-            this.footerClass = componentReference.footerVariant;
-            this.developerPage = componentReference.isdeveloper;
-            this.hideFooter = componentReference.hideFooter;
-            this.shopPages = componentReference.shopPages;
-          }
         }]);
 
         return _GestionComponent;
@@ -4381,17 +4359,6 @@
               centered: true
             });
           }
-        }, {
-          key: "onActivate",
-          value: function onActivate(componentReference) {
-            this.addclass = componentReference.navClass;
-            this.buttonShow = componentReference.buttonList;
-            this.TopbarShow = componentReference.sliderTopbar;
-            this.footerClass = componentReference.footerVariant;
-            this.developerPage = componentReference.isdeveloper;
-            this.hideFooter = componentReference.hideFooter;
-            this.shopPages = componentReference.shopPages;
-          }
         }]);
 
         return _InicioComponent;
@@ -4932,17 +4899,6 @@
         _createClass(_InnovacionComponent, [{
           key: "ngOnInit",
           value: function ngOnInit() {}
-        }, {
-          key: "onActivate",
-          value: function onActivate(componentReference) {
-            this.addclass = componentReference.navClass;
-            this.buttonShow = componentReference.buttonList;
-            this.TopbarShow = componentReference.sliderTopbar;
-            this.footerClass = componentReference.footerVariant;
-            this.developerPage = componentReference.isdeveloper;
-            this.hideFooter = componentReference.hideFooter;
-            this.shopPages = componentReference.shopPages;
-          }
         }]);
 
         return _InnovacionComponent;
@@ -5307,17 +5263,6 @@
               size: 'lg',
               centered: true
             });
-          }
-        }, {
-          key: "onActivate",
-          value: function onActivate(componentReference) {
-            this.addclass = componentReference.navClass;
-            this.buttonShow = componentReference.buttonList;
-            this.TopbarShow = componentReference.sliderTopbar;
-            this.footerClass = componentReference.footerVariant;
-            this.developerPage = componentReference.isdeveloper;
-            this.hideFooter = componentReference.hideFooter;
-            this.shopPages = componentReference.shopPages;
           }
         }]);
 
@@ -5722,17 +5667,6 @@
               size: 'lg',
               centered: true
             });
-          }
-        }, {
-          key: "onActivate",
-          value: function onActivate(componentReference) {
-            this.addclass = componentReference.navClass;
-            this.buttonShow = componentReference.buttonList;
-            this.TopbarShow = componentReference.sliderTopbar;
-            this.footerClass = componentReference.footerVariant;
-            this.developerPage = componentReference.isdeveloper;
-            this.hideFooter = componentReference.hideFooter;
-            this.shopPages = componentReference.shopPages;
           }
         }]);
 
@@ -6188,17 +6122,6 @@
         _createClass(_NoticiasComponent, [{
           key: "ngOnInit",
           value: function ngOnInit() {}
-        }, {
-          key: "onActivate",
-          value: function onActivate(componentReference) {
-            this.addclass = componentReference.navClass;
-            this.buttonShow = componentReference.buttonList;
-            this.TopbarShow = componentReference.sliderTopbar;
-            this.footerClass = componentReference.footerVariant;
-            this.developerPage = componentReference.isdeveloper;
-            this.hideFooter = componentReference.hideFooter;
-            this.shopPages = componentReference.shopPages;
-          }
         }]);
 
         return _NoticiasComponent;
@@ -6981,7 +6904,7 @@
       /* harmony import */
 
 
-      var _angular_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+      var _angular_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! @angular/router */
       39895);
       /* harmony import */
@@ -7041,7 +6964,13 @@
       /* harmony import */
 
 
-      var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+      var _paginaerror_paginaerror_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+      /*! ../paginaerror/paginaerror.component */
+      58027);
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! @angular/core */
       37716);
 
@@ -7049,6 +6978,10 @@
         path: '',
         component: _pages_component__WEBPACK_IMPORTED_MODULE_0__.PagesComponent,
         children: [{
+          path: '',
+          redirectTo: '/inicio',
+          pathMatch: 'full'
+        }, {
           path: 'inicio',
           component: _inicio_inicio_component__WEBPACK_IMPORTED_MODULE_1__.InicioComponent
         }, {
@@ -7073,9 +7006,8 @@
           path: 'detalle',
           component: _detalle_detalle_component__WEBPACK_IMPORTED_MODULE_7__.DetalleComponent
         }, {
-          path: '',
-          redirectTo: '/inicio',
-          pathMatch: 'full'
+          path: '**',
+          component: _paginaerror_paginaerror_component__WEBPACK_IMPORTED_MODULE_9__.PaginaerrorComponent
         }]
       }];
 
@@ -7087,17 +7019,17 @@
         return new (t || _PagesRoutingModule)();
       };
 
-      _PagesRoutingModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({
+      _PagesRoutingModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineNgModule"]({
         type: _PagesRoutingModule
       });
-      _PagesRoutingModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({
-        imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_10__.RouterModule.forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_10__.RouterModule]
+      _PagesRoutingModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineInjector"]({
+        imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_11__.RouterModule.forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_11__.RouterModule]
       });
 
       (function () {
-        (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵsetNgModuleScope"](_PagesRoutingModule, {
-          imports: [_angular_router__WEBPACK_IMPORTED_MODULE_10__.RouterModule],
-          exports: [_angular_router__WEBPACK_IMPORTED_MODULE_10__.RouterModule]
+        (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵsetNgModuleScope"](_PagesRoutingModule, {
+          imports: [_angular_router__WEBPACK_IMPORTED_MODULE_11__.RouterModule],
+          exports: [_angular_router__WEBPACK_IMPORTED_MODULE_11__.RouterModule]
         });
       })();
       /***/
@@ -8021,6 +7953,12 @@
       var angular_feather__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! angular-feather */
       35411);
+      /* harmony import */
+
+
+      var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! @angular/router */
+      39895);
 
       function FooterComponent_div_0_div_1_Template(rf, ctx) {
         if (rf & 1) {
@@ -8316,7 +8254,7 @@
         },
         decls: 11,
         vars: 2,
-        consts: [[4, "ngIf"], [1, "footer", "footer-bar"], [1, "container", "text-center"], [1, "row", "align-items-center"], [1, "col-sm-6"], [1, "text-sm-start"], [1, "mb-0"], [1, "mdi", "mdi-heart", "text-danger"], [4, "ngIf", "ngIfElse"], ["execute_block", ""], [1, "footer", "bg-light"], [1, "container"], [1, "row"], [1, "col-lg-4", "col-12", "mb-0", "mb-md-4", "pb-0", "pb-md-2"], ["href", "#", 1, "logo-footer"], [1, "mt-4", "text-muted"], [1, "list-unstyled", "social-icon", "social", "mb-0", "mt-4"], [1, "list-inline-item"], ["href", "javascript:void(0)", 1, "rounded"], ["name", "facebook", 1, "fea", "icon-sm", "fea-social"], [1, "list-inline-item", "ms-1"], ["name", "instagram", 1, "fea", "icon-sm", "fea-social"], ["name", "twitter", 1, "fea", "icon-sm", "fea-social"], ["name", "linkedin", 1, "fea", "icon-sm", "fea-social"], [1, "footer"], [1, "col-lg-6", "col-12", "mb-0", "mb-md-4", "pb-0", "pb-md-2"], [1, "mt-4"], [1, "text-primary", "fw-bold"], [1, "list-unstyled", "social-icon", "foot-social-icon", "mb-0", "mt-4"], ["href", "https://www.facebook.com/", "target", "_blank", 1, "rounded"], ["href", "https://www.instagram.com/", "target", "_blank", 1, "rounded"], [1, "col-lg-3", "col-md-4", "col-12", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0"], [1, "list-unstyled", "footer-list", "mt-6"], ["href", "/nosotros", 1, "text-foot"], [1, "uil", "uil-angle-right-b", "me-1"], ["href", "/gestion", 1, "text-foot"], ["href", "/noticias", 1, "text-foot"], ["href", "/aliados", 1, "text-foot"], ["href", "/innovacion", 1, "text-foot"], ["href", "/normatividades", 1, "text-foot"], [1, "col-lg-3", "col-md-4", "col-12", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0", 2, "text-align", "end"], ["src", "../../../assets/images/mundo/logoSinFondo.png", "alt", "", 1, "col-lg-8", "col-md-12", "col-6", 2, "margin-top", "0px"]],
+        consts: [[4, "ngIf"], [1, "footer", "footer-bar"], [1, "container", "text-center"], [1, "row", "align-items-center"], [1, "col-sm-6"], [1, "text-sm-start"], [1, "mb-0"], [1, "mdi", "mdi-heart", "text-danger"], [4, "ngIf", "ngIfElse"], ["execute_block", ""], [1, "footer", "bg-light"], [1, "container"], [1, "row"], [1, "col-lg-4", "col-12", "mb-0", "mb-md-4", "pb-0", "pb-md-2"], ["href", "#", 1, "logo-footer"], [1, "mt-4", "text-muted"], [1, "list-unstyled", "social-icon", "social", "mb-0", "mt-4"], [1, "list-inline-item"], ["href", "javascript:void(0)", 1, "rounded"], ["name", "facebook", 1, "fea", "icon-sm", "fea-social"], [1, "list-inline-item", "ms-1"], ["name", "instagram", 1, "fea", "icon-sm", "fea-social"], ["name", "twitter", 1, "fea", "icon-sm", "fea-social"], ["name", "linkedin", 1, "fea", "icon-sm", "fea-social"], [1, "footer"], [1, "col-lg-6", "col-12", "mb-0", "mb-md-4", "pb-0", "pb-md-2"], [1, "mt-4"], [1, "text-primary", "fw-bold"], [1, "list-unstyled", "social-icon", "foot-social-icon", "mb-0", "mt-4"], ["href", "https://www.facebook.com/", "target", "_blank", 1, "rounded"], ["href", "https://www.instagram.com/", "target", "_blank", 1, "rounded"], [1, "col-lg-3", "col-md-4", "col-12", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0"], [1, "list-unstyled", "footer-list", "mt-6"], ["routerLink", "nosotros", 1, "text-foot"], [1, "uil", "uil-angle-right-b", "me-1"], ["routerLink", "gestion", 1, "text-foot"], ["routerLink", "noticias", 1, "text-foot"], ["routerLink", "aliados", 1, "text-foot"], ["routerLink", "innovacion", 1, "text-foot"], ["routerLink", "normatividades", 1, "text-foot"], [1, "col-lg-3", "col-md-4", "col-12", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0", 2, "text-align", "end"], ["src", "../../../assets/images/mundo/logoSinFondo.png", "alt", "", 1, "col-lg-8", "col-md-12", "col-6", 2, "margin-top", "0px"]],
         template: function FooterComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, FooterComponent_div_0_Template, 4, 2, "div", 0);
@@ -8362,7 +8300,7 @@
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.year, " Dise\xF1ado con ");
           }
         },
-        directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.NgIf, angular_feather__WEBPACK_IMPORTED_MODULE_2__.FeatherComponent],
+        directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.NgIf, angular_feather__WEBPACK_IMPORTED_MODULE_2__.FeatherComponent, _angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterLinkWithHref],
         encapsulation: 2
       });
       /***/
