@@ -24,7 +24,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReservaInicioComponent } from './reserva-inicio/reserva-inicio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlatpickrModule } from 'angularx-flatpickr';
-import { ComentariosComponent } from './comentarios/comentarios.component';
 import { RoomListComponent } from './room-list/room-list.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ReservaDetalleComponent } from './reserva-detalle/reserva-detalle.component';
@@ -41,7 +40,6 @@ import { BrowserModule } from '@angular/platform-browser';
     RoomCardComponent,
     CartillasComponent,
     ReservaInicioComponent,
-    ComentariosComponent,
     RoomListComponent,
     ReservaDetalleComponent,
     CalendarioComponent,
@@ -67,7 +65,6 @@ import { BrowserModule } from '@angular/platform-browser';
     RoomCardComponent,
     CartillasComponent,
     ReservaInicioComponent,
-    ComentariosComponent,
     RoomListComponent,
     ReservaDetalleComponent,
     CalendarioComponent,

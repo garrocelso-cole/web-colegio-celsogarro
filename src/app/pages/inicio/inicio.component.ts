@@ -3,14 +3,10 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Router } from '@angular/router';
 import { InicioService } from 'src/app/services/inicio.service';
-import { environment } from 'src/environments/environment';
-import { HttpClient } from '@angular/common/http';
 import { SwiperOptions } from 'swiper';
-// import { ReservaService } from 'src/app/services/reserva.service';
 import { _Habitacion } from 'src/app/interfaces/habitacion.interface';
 import { FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2'
-const url_base_backend = environment.url_base_backend
 
 interface _prereserva {
   habitaciones: _Habitacion[],
@@ -32,11 +28,18 @@ interface _contatenosForm {
 //Hotel Component
 export class InicioComponent implements OnInit {
 
+  addclass: string;
+  buttonShow: boolean;
+  TopbarShow: boolean;
+  footerClass: string;
+  developerPage: boolean;
+  hideFooter: boolean;
+  shopPages: boolean;
+
   constructor(
     private modalService: NgbModal,
     private router: Router,
     private inicioService: InicioService,
-    private http: HttpClient,
     private fb: FormBuilder
   ) { }
 
@@ -44,11 +47,9 @@ export class InicioComponent implements OnInit {
   showNavigationIndicators = false;
   navClass = 'bg-white';
   servicesData = []
-  blogData = []
   cartillaData = []
   customOptions: OwlOptions = {};
   carruselData = []
-  comentariosData = {}
   roomData: _Habitacion[] = []
   habitaciones: _Habitacion[] = []
   primaria: _Habitacion[] = []
@@ -66,19 +67,12 @@ export class InicioComponent implements OnInit {
   columns: any[] = []
 
   ngOnInit() {
-    this.rows = [
-      { name: 'Austin', gender: 'Male', company: 'Swimlane' },
-      { name: 'Dany', gender: 'Male', company: 'KFC' },
-      { name: 'Molly', gender: 'Female', company: 'Burger King' }
-    ];
+    
     this.columns = [{ prop: 'name' }, { name: 'Gender' }, { name: 'Company' }];
     this.servicesData = this.inicioService.servicesData
-    this.blogData = this.inicioService.blogData
     this.cartillaData = this.inicioService.cartillaData
     this.customOptions = this.inicioService.customOptions
     this.carruselData = this.inicioService.carruselData
-
-    this.comentariosData = this.inicioService.comentariosData
     this.config = this.inicioService.swiperOptions
   }
   enviarContacto() {
@@ -138,5 +132,16 @@ export class InicioComponent implements OnInit {
   }
   openModal(content) {
     this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg', centered: true });
+  }
+
+  onActivate(componentReference: any) {
+
+    this.addclass = componentReference.navClass;
+    this.buttonShow = componentReference.buttonList;
+    this.TopbarShow = componentReference.sliderTopbar;
+    this.footerClass = componentReference.footerVariant;
+    this.developerPage = componentReference.isdeveloper;
+    this.hideFooter = componentReference.hideFooter;
+    this.shopPages = componentReference.shopPages;
   }
 }

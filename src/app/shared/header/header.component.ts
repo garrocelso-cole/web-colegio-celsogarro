@@ -54,6 +54,15 @@ export class HeaderComponent implements OnInit {
             if (parent4) {
               const parent5 = parent4.parentElement;
               parent5.classList.remove("active");
+              if (parent5) {
+                const parent6 = parent5.parentElement;
+                parent6.classList.remove("active");
+                if (parent6) {
+                  const parent7 = parent6.parentElement;
+                  parent7.classList.remove("active");
+    
+                }
+              }
 
             }
           }
@@ -69,6 +78,9 @@ export class HeaderComponent implements OnInit {
     }
 
     for (let i = 0; i < links.length; i++) {
+      console.log('**********')
+        console.log(links[i])
+        console.log('//**********')
       if (window.location.pathname === links[i]["pathname"]) {
         matchingMenuItem = links[i];
         break;
@@ -91,9 +103,17 @@ export class HeaderComponent implements OnInit {
             if (parent4) {
               const parent5 = parent4.parentElement;
               parent5.classList.add("active");
-
-              document.getElementById("navigation").style.display = "none";
-              this.isCondensed = false;
+              if (parent5) {
+                const parent6 = parent5.parentElement;
+                parent6.classList.add("active");
+                if (parent6) {
+                  const parent7 = parent6.parentElement;
+                  parent7.classList.add("active");
+    
+                  document.getElementById("navigation").style.display = "none";
+                  this.isCondensed = false;
+                }
+              }
             }
           }
         }

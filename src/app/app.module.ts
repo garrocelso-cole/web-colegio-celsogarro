@@ -6,7 +6,6 @@ import { LightboxModule } from 'ngx-lightbox';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -37,11 +36,6 @@ import { PaginaerrorComponent } from './paginaerror/paginaerror.component';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptorService } from './auth-interceptor.service';
-import { TerminosComponent } from './adicional/terminos/terminos.component';
-import { PoliticasComponent } from './adicional/politicas/politicas.component';
-import { DerechosComponent } from './adicional/derechos/derechos.component';
-import { RegistrosComponent } from './adicional/registros/registros.component';
-import { PreguntasComponent } from './adicional/preguntas/preguntas.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -51,17 +45,12 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
 @NgModule({
   declarations: [
     AppComponent,
-    PaginaerrorComponent,
-    TerminosComponent,
-    PoliticasComponent,
-    DerechosComponent,
-    RegistrosComponent,
-    PreguntasComponent,
+    PaginaerrorComponent
+    
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
-    AppRoutingModule,
     RouterModule,
     CarouselModule,
     FeatherModule.pick(allIcons),
@@ -99,10 +88,6 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptorService,
       multi: true
-    },
-    {
-      provide: LocationStrategy, 
-      useClass: HashLocationStrategy
     }
   ],
   bootstrap: [AppComponent]

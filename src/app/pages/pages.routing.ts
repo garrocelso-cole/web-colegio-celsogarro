@@ -1,7 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { PagesComponent } from './pages.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 
@@ -17,12 +16,9 @@ import { DetalleComponent } from './detalle/detalle.component';
 import { GestionComponent } from './gestion/gestion.component';
 
 const routes: Routes = [
-
-  {
-    path: 'inicio',
-    component: PagesComponent,
-    children: [
-      { path: '', component: InicioComponent },
+  
+      { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+      { path: 'inicio', component: InicioComponent },
       { path: 'nosotros', component: NosotrosComponent },
       { path: 'gestion', component: GestionComponent },
       { path: 'noticias', component: NoticiasComponent },
@@ -30,9 +26,7 @@ const routes: Routes = [
       { path: 'innovacion', component: InnovacionComponent },
       { path: 'normatividades', component: NormatividadesComponent },
       { path: 'detalle', component: DetalleComponent },
-      { path: '', redirectTo: '/inicio', pathMatch: 'full' },
-    ]
-  },
+    
 ];
 
 @NgModule({

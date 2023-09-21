@@ -1,17 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { PagesComponent } from './pages.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
-import { habitacionesComponent } from './habitaciones/habitaciones.component';
-import { EventosComponent } from './eventos/eventos.component';
-import { ContactoComponent } from './contacto/contacto.component';
 import { DetalleComponent } from './detalle/detalle.component';
 
 
 import { SharedModule } from '../shared/shared.module';
-import { AppRoutingModule } from '../app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -38,12 +33,8 @@ import { InnovacionComponent } from './innovacion/innovacion.component';
 
 @NgModule({
   declarations: [
-    PagesComponent,
     InicioComponent,
     NosotrosComponent,
-    habitacionesComponent,
-    EventosComponent,
-    ContactoComponent,
     DetalleComponent,
     NoticiasComponent,
     AliadosComponent,
@@ -52,12 +43,8 @@ import { InnovacionComponent } from './innovacion/innovacion.component';
     InnovacionComponent,
   ],
   exports: [
-    PagesComponent,
     InicioComponent,
     NosotrosComponent,
-    habitacionesComponent,
-    EventosComponent,
-    ContactoComponent,
     DetalleComponent,
   ],
   imports: [
@@ -65,7 +52,6 @@ import { InnovacionComponent } from './innovacion/innovacion.component';
     SharedModule,
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
     RouterModule,
     CarouselModule,
     FeatherModule.pick(allIcons),

@@ -1,3 +1,9 @@
+<app-header [navClass]="addclass" [buttonList]="buttonShow" [sliderTopbar]="TopbarShow" [isdeveloper]="developerPage"
+    [shopPages]="shopPages">
+</app-header>
+
+<router-outlet (activate)="onActivate($event)"></router-outlet>
+
 <section class="bg-half d-table w-100" id="home"
     style="background: url('assets/images/company/normatividadesPortada.png'); background-size: 100% 100%;height: 1000px;">
     <div class="bg-overlay"></div>
@@ -49,9 +55,7 @@
                                 </div>
                             </ng-template>
                             <ng-template ngbPanelContent>
-                                <p style="font-size: large;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Dignissimos, omnis excepturi, ducimus animi alias at non qui nostrum quidem esse
-                                    quos enim saepe iure debitis ipsa porro voluptatem quaerat? Quibusdam.</p>
+                                <p style="font-size: large;">En Proceso...</p>
                             </ng-template>
                         </ngb-panel>
                         <ngb-panel cardClass="border-0 rounded shadow mb-2">
@@ -62,9 +66,7 @@
                                 </div>
                             </ng-template>
                             <ng-template ngbPanelContent>
-                                <p style="font-size: large;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Soluta ex hic voluptate qui ipsa temporibus dolor modi corrupti exercitationem
-                                    tempora ut quia, totam repudiandae quo enim vitae labore pariatur itaque!
+                                <p style="font-size: large;">En Proceso...
                                 </p>
                             </ng-template>
                         </ngb-panel>
@@ -76,10 +78,7 @@
                                 </div>
                             </ng-template>
                             <ng-template ngbPanelContent>
-                                <p style="font-size: large;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Doloribus rem porro veniam, aperiam aspernatur vero quaerat ipsa expedita animi
-                                    earum temporibus doloremque sed tenetur accusantium dignissimos eaque recusandae hic
-                                    et..</p>
+                                <p style="font-size: large;">En Proceso...</p>
                             </ng-template>
                         </ngb-panel>
                         <ngb-panel cardClass="border-0 rounded shadow mb-2">
@@ -90,10 +89,7 @@
                                 </div>
                             </ng-template>
                             <ng-template ngbPanelContent>
-                                <p style="font-size: large;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Doloribus deleniti omnis, reprehenderit iste quae, perspiciatis consequatur libero,
-                                    distinctio ipsa dolore voluptatem fugit quia odit accusantium. Ratione nulla
-                                    laudantium in maxime!.</p>
+                                <p style="font-size: large;">En Proceso...</p>
                             </ng-template>
                         </ngb-panel>
                         <ngb-panel cardClass="border-0 rounded shadow mb-2">
@@ -104,10 +100,7 @@
                                 </div>
                             </ng-template>
                             <ng-template ngbPanelContent>
-                                <p style="font-size: large;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Doloribus deleniti omnis, reprehenderit iste quae, perspiciatis consequatur libero,
-                                    distinctio ipsa dolore voluptatem fugit quia odit accusantium. Ratione nulla
-                                    laudantium in maxime!.</p>
+                                <p style="font-size: large;">En Proceso...</p>
                             </ng-template>
                         </ngb-panel>
                     </ngb-accordion>
@@ -136,3 +129,5 @@
 <a href="javascript: void(0);" class="btn btn-icon btn-primary back-to-top" id="back-to-top" [ngxScrollTo]="'#home'">
     <i-feather name="arrow-up" class="icons"></i-feather>
 </a>
+<app-footer [footerVariant]="footerClass" [hideFooter]="hideFooter">
+</app-footer>

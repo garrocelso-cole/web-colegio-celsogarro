@@ -1,9 +1,14 @@
+<app-header [navClass]="addclass" [buttonList]="buttonShow"  [isdeveloper]="developerPage"
+    [shopPages]="shopPages">
+</app-header>
+
+<router-outlet (activate)="onActivate($event)"></router-outlet>
 <section class="main-slider" id="home">
     <ngb-carousel class="slides" [showNavigationArrows]="showNavigationArrows"
-        [showNavigationIndicators]="showNavigationIndicators">
+    [showNavigationIndicators]="showNavigationIndicators">
         <ng-template ngbSlide>
             <li class="bg-home bg-animation-left d-flex align-items-center"
-                style="background-image:url('{{ carruselData[0].urlImage }}'); ">
+                style="background-image:url('{{ carruselData[0].urlImage }}'); margin-top: -25px;">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-7 col-md-7">
@@ -43,8 +48,8 @@
             </li>
         </ng-template>
         <ng-template ngbSlide>
-            <li class="bg-home  d-flex align-items-center"
-                style="background-image:url('{{ carruselData[1].urlImage }}');">
+            <li class="bg-home bg-animation-left d-flex align-items-center"
+                style="background-image:url('{{ carruselData[1].urlImage }}'); margin-top: -25px;">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-7 col-md-7">
@@ -64,7 +69,7 @@
         </ng-template>
         <ng-template ngbSlide>
             <li class="bg-home bg-animation-left d-flex align-items-center"
-                style="background-image:url('{{ carruselData[2].urlImage }}')">
+                style="background-image:url('{{ carruselData[2].urlImage }}'); margin-top: -25px;">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-7 col-md-7">
@@ -72,9 +77,7 @@
                                 <h1 class="heading mb-3 display-4 title-dark fw-bold title-dark">{{ carruselData[2].h1
                                     }} <br>{{ carruselData[2].h1Parrafo }}</h1>
                                 <h2 class="para-desc">{{ carruselData[2].h4 }}</h2>
-                                <!-- <div class="mt-4 pt-2">
-                                    <a [ngxScrollTo]="'#bookroom'" class="btn btn-primary"><i class="uil uil-home fw-bold"></i> Reservar</a>
-                                </div> -->
+                                
                             </div>
                         </div>
                     </div>
@@ -83,10 +86,6 @@
         </ng-template>
     </ngb-carousel>
 </section>
-<!--end section-->
-<!-- Hero End -->
-
-<!-- Reserva Start -->
 <section class="section-two bg-light" id="bookroom">
     <div class="container">
         <div class="row justify-content-center">
@@ -497,7 +496,6 @@
     </div>
 </section>
 
-<!-- CTA Start -->
 <section class="section bg-cta"
     style="background: url('assets/images/colegio/foto-panoramica.png') center center; background-size: 100% 200%;"
     id="cta">
@@ -621,3 +619,5 @@
 <a href="javascript: void(0);" class="btn btn-icon btn-primary back-to-top" id="back-to-top" [ngxScrollTo]="'#home'">
     <i-feather name="arrow-up" class="icons"></i-feather>
 </a>
+<app-footer [footerVariant]="footerClass" [hideFooter]="hideFooter">
+</app-footer>

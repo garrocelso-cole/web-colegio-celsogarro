@@ -1,3 +1,10 @@
+<app-header [navClass]="addclass" [buttonList]="buttonShow" [sliderTopbar]="TopbarShow" [isdeveloper]="developerPage"
+    [shopPages]="shopPages">
+</app-header>
+
+<router-outlet (activate)="onActivate($event)"></router-outlet>
+
+
 <section class="bg-half d-table w-100" id="home"
     style="background: url('assets/images/company/nosotrosPortada.jpg'); background-size: 100% 100%;">
     <div class="bg-overlay"></div>
@@ -163,3 +170,5 @@
 <a href="javascript: void(0);" class="btn btn-icon btn-primary back-to-top" id="back-to-top" [ngxScrollTo]="'#home'">
     <i-feather name="arrow-up" class="icons"></i-feather>
 </a>
+<app-footer [footerVariant]="footerClass" [hideFooter]="hideFooter">
+</app-footer>

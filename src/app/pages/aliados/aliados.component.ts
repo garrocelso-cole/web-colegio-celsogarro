@@ -10,6 +10,13 @@ import { map } from 'rxjs/internal/operators';
 export class AliadosComponent implements OnInit {
 
   constructor(private modalService: NgbModal) { }
+  addclass: string;
+  buttonShow: boolean;
+  TopbarShow: boolean;
+  footerClass: string;
+  developerPage: boolean;
+  hideFooter: boolean;
+  shopPages: boolean;
   navClass = 'nav-light';
 
   cartillaData = [
@@ -93,33 +100,6 @@ export class AliadosComponent implements OnInit {
     }
   ];
 
-  blogData = [
-    {
-      image: "assets/images/event/b01.jpg",
-      title: "Design your apps in your own way",
-      like: "33",
-      message: "08",
-      name: "Calvin Carlo",
-      date: "13th August, 2019"
-    },
-    {
-      image: "assets/images/event/b02.jpg",
-      title: "How apps is changing the IT world",
-      like: "33",
-      message: "08",
-      name: "Calvin Carlo",
-      date: "13th August, 2019"
-    },
-    {
-      image: "assets/images/event/b03.jpg",
-      title: "Smartest Applications for Business",
-      like: "33",
-      message: "08",
-      name: "Calvin Carlo",
-      date: "13th August, 2019"
-    }
-  ];
-
   private _diff: number | undefined;
   _days: number | undefined;
   _hours: number | undefined;
@@ -163,5 +143,14 @@ export class AliadosComponent implements OnInit {
   getSeconds(t: any) {
     return Math.floor((t / 1000) % 60);
   }
+  onActivate(componentReference: any) {
 
+    this.addclass = componentReference.navClass;
+    this.buttonShow = componentReference.buttonList;
+    this.TopbarShow = componentReference.sliderTopbar;
+    this.footerClass = componentReference.footerVariant;
+    this.developerPage = componentReference.isdeveloper;
+    this.hideFooter = componentReference.hideFooter;
+    this.shopPages = componentReference.shopPages;
+  }
 }

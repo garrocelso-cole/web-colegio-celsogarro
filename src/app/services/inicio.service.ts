@@ -11,12 +11,12 @@ export class InicioService {
 
   servicesData = [
     {
-      icon: "uil uil-wifi h1 text-primary",
+      icon: "uil uil-game-structure h1 text-primary",
       title: "Responsabilidad",
       description: "La enseñanza de respetar los tiempos de los deberes casa a la perfección con la rutina para ayudar en las tareas del hogar. De esta forma, el pequeño se convertirá en un adulto responsable el día de mañana; ya que aprenderá a diferenciar los actos buenos y los no tan buenos, y a asumir las consecuencias de cada uno."
     },
     {
-      icon: "uil uil-utensils h1 text-primary",
+      icon: "uil uil-book-reader h1 text-primary",
       title: "Educación para la Igualdad de Oportunidades de Ambos Sexos, uno de los valores más importante en la escuela",
       description: "Una educación orientada a contemplar la diferencia como realidad enriquecedora y no como una forma de discriminación. Distinguiendo entre identidad sexual e identidad de género, y distinguiendo entre las diferencias biológicas y las funciones y los roles sociales relacionados con el género."
     },
@@ -26,63 +26,37 @@ export class InicioService {
       description: " De esta forma, conseguirá fortalecer los objetivos y los proyectos, proponiéndose cualquier cosa y siendo capaz de llegar hasta donde él quiera."
     },
     {
-      icon: "uil uil-car h1 text-primary",
+      icon: "uil uil-bolt-alt h1 text-primary",
       title: "Tolerancia",
       description: "Como ya te podrás suponer, la tolerancia es uno de los principales valores que se deben enseñar en la escuela. En este sentido, el centro educativo es el espacio cotidiano donde se relacionan diferentes niños, cada uno con sus costumbres, culturas y de padres y madres diferentes."
     },
     {
-      icon: "uil uil-utensils h1 text-primary",
+      icon: "uil uil-thumbs-up h1 text-primary",
       title: "Gratitud",
       description: "“Gracias” es una de las palabras más importantes que el pequeño debe aprender y seguir descubriendo a lo largo de su vida, junto a “te quiero” y “perdón”. Desde la infancia, se debe procurar que los niños sean agradecidos, sobre todo con las pequeñas cosas que da la vida."
     },
     {
-      icon: "uil uil-utensils h1 text-primary",
+      icon: "uil uil-users-alt h1 text-primary",
       title: "Generosidad",
       description: "Además, hay que asegurarse de convertir la generosidad en un placer que les haga sentir bien haciendo lo correcto por los demás desde el corazón."
     },
     {
-      icon: "uil uil-utensils h1 text-primary",
+      icon: "uil uil-user-check h1 text-primary",
       title: "Honestidad",
       description: "Entender que hay que ser honestos hasta cuando se ha cometido un error es una clara muestra de madurez y responsabilidad. Por eso, en clase y en casa hay que darle a los niños la suficiente confianza para que ellos sepan y entiendan que lo mejor es decir siempre la verdad. "
     },
     {
-      icon: "uil uil-utensils h1 text-primary",
+      icon: "uil uil-sun h1 text-primary",
       title: "Educación Moral y Cívica",
       description: "Educación relacionada con el concepto de ‘Democracia’ y el fomento de sus valores. Una educación moral y cívica debe partir del conocimiento del sistema social en que se basa, de los derechos y deberes de los ciudadanos, y del mismo concepto de ciudadanía."
     },
     {
-      icon: "uil uil-utensils h1 text-primary",
+      icon: "uil uil-mountains-sun h1 text-primary",
       title: "Humildad",
       description: "En hermandad con la honestidad, se practicará también la humildad con los demás porque el ser humano habita en un mundo plural, multicultural y diferente. Por ende, es importante educar al niño para que no crea que es superior a los demás, ni se crea tener más derechos que el resto."
     }
   ];
 
-  blogData = [
-    {
-      image: "assets/images/hotel/portada1xx.jfif",
-      title: "Piscina a metros del mar",
-      like: "33",
-      message: "08",
-      name: "",
-      date: ""
-    },
-    {
-      image: "assets/images/hotel/portada2.jpg",
-      title: "Mágicos atardeceres",
-      like: "33",
-      message: "08",
-      name: "",
-      date: ""
-    },
-    {
-      image: "assets/images/hotel/portada3.jpg",
-      title: "Lindas instalaciones",
-      like: "33",
-      message: "08",
-      name: "",
-      date: ""
-    }
-  ];
 
   roomData = [
     {
@@ -181,17 +155,7 @@ export class InicioService {
       urlImage: 'assets/images/colegio/portada1xx.jfif',
       iframe: '',
       link: '',
-    },
-    {
-      h1: 'Bienvenidos, Colegio 86253  ',
-      h1Parrafo: '"ESTUDIO PARA TRASCENDER"',
-      h4: 'Launch your campaign and benefit from our expertise on designing.',
-      span: '',
-      src: '',
-      urlImage: 'assets/images/hotel/portada3.jpg',
-      iframe: '',
-      link: '',
-    },
+    }
   ];
 
   customOptions: OwlOptions = {
@@ -215,27 +179,6 @@ export class InicioService {
     },
     nav: false
   };
-
-  comentariosData = {
-    url: 'assets/images/hotel/comentariosInicio.jpg',
-    data: [
-      {
-        parrafo: "Muy recomendado por la gran vista frente al mar y la cercania al centro de Mancora",
-        nombre: "Ronald Chavez",
-        imgUrl: "assets/images/client/01.jpg",
-      },
-      {
-        parrafo: "El hotel posee gran variedad de servicios de muy buena calidad, con una piscina que esta frente al mar, una gran experiencia en Mancora",
-        nombre: "Alex Ramos",
-        imgUrl: "assets/images/client/04.jpg",
-      },
-      {
-        parrafo: "Super recomendado para compartir unas vacaciones con amigos en los lindos ambientes que posee el hotel",
-        nombre: "Jorge Eugenio",
-        imgUrl: "assets/images/client/06.jpg",
-      }
-    ]
-  }
 
   swiperOptions: SwiperOptions = {
     a11y: { enabled: true },

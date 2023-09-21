@@ -1250,7 +1250,7 @@ button:not(:disabled) {
   left: 0;
   top: 0;
   z-index: 1030;
-  background-color: transparent;
+  background-color: #fdc302 !important;
   border: 0;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -1289,7 +1289,7 @@ button:not(:disabled) {
 #topnav .navbar-toggle span {
   height: 2px;
   width: 100%;
-  background-color: #3c4858;
+  background-color: #58433c;
   display: block;
   margin-bottom: 5px;
   -webkit-transition: -webkit-transform .5s ease;
