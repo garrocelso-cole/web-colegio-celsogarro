@@ -439,7 +439,7 @@ AliadosComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4_
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](39, "b");
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](40, "Alcalde distrital de Huasta:");
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](41, " EDISON RUDNER PEREZ VALDEZ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](41, " DONALD CALLUPE MARQUEZ ");
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](42, "div", 18);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](43, "a", 19);

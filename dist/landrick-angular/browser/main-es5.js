@@ -739,7 +739,7 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](41, " EDISON RUDNER PEREZ VALDEZ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](41, " DONALD CALLUPE MARQUEZ ");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 
