@@ -2253,7 +2253,7 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "h4");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](59, "RESULTADOS DE GESTI\xD3N 2019- 2020- 2021");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](59, "RESULTADOS DE GESTI\xD3N 2020- 2021- 2022");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 

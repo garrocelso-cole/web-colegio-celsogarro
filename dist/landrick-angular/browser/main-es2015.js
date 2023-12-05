@@ -1201,7 +1201,7 @@ GestionComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0_
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](57, " EL CONEI es un \u00F3rgano de participaci\u00F3n, concertaci\u00F3n y vigilancia ciudadana, cuyos miembros fueron elegidos para una vigencia de dos a\u00F1os (2021- 2022), reconocido mediante Resoluci\u00F3n Directoral N\u00B0 005- 2021.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "h4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](59, "RESULTADOS DE GESTI\u00D3N 2019- 2020- 2021");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](59, "RESULTADOS DE GESTI\u00D3N 2020- 2021- 2022");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "h5");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "NIVEL PRIMARIA:");
