@@ -3749,7 +3749,7 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](8, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](9, "DOCENTES PRIMARIA.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](9, "ACTIVIDADES DE APRENDIZAJE NIVEL PRIMARIA.");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -3789,17 +3789,13 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](19, "div", 90);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](20, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](20, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](21, "TUTORA : Fabian Antaurco.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](21, "div", 91);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](22, "div", 92);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](22, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](23, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](24, "img", 95);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](23, "img", 95);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -3807,19 +3803,15 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](25, "div", 90);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](24, "div", 90);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](26, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](25, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](27, "1ro y 2do de PRIMARIA - Actividades de aprendizaje.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](26, "div", 91);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](27, "div", 92);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](28, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](29, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](30, "img", 96);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](28, "img", 96);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -3831,23 +3823,19 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](31, "div", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](29, "div", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](32, "div", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](30, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](33, "div", 90);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](31, "div", 90);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](34, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](32, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](35, "TUTORA : Luz Valderrama.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](33, "div", 91);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](34, "div", 92);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](36, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](37, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](38, "img", 97);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](35, "img", 97);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -3855,19 +3843,15 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](39, "div", 90);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](36, "div", 90);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](40, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](37, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](41, "3ro de PRIMARIA - Actividades de aprendizaje.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](38, "div", 91);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](39, "div", 92);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](42, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](43, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](44, "img", 98);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](40, "img", 98);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -3879,43 +3863,35 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](45, "div", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](41, "div", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](46, "div", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](42, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](47, "div", 90);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](43, "div", 90);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](48, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](44, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](49, "TUTORA : Nelsy Zulema.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](45, "div", 91);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](46, "div", 92);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](47, "img", 99);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](48, "div", 90);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](49, "h4");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](50, "div", 91);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](51, "div", 92);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](52, "img", 99);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](53, "div", 90);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](54, "h4");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](55, "4to de PRIMARIA - Actividades de aprendizaje.");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](56, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](57, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](58, "img", 100);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](52, "img", 100);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -3927,43 +3903,59 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](59, "div", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](53, "div", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](60, "div", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](54, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](61, "div", 90);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](55, "div", 90);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](62, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](56, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](63, "TUTORA : Yoysy Rosas.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](57, "div", 91);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](58, "div", 92);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](64, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](65, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](66, "img", 101);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](59, "img", 101);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](60, "div", 90);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](61, "h4");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](62, "div", 91);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](63, "div", 92);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](64, "img", 102);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](65, "div", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](66, "div", 14);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](67, "div", 90);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](68, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](68, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](69, "5to de PRIMARIA - Actividades de aprendizaje.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](69, "div", 91);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](70, "div", 92);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](70, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](71, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](72, "img", 102);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](71, "img", 103);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -3971,47 +3963,15 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](72, "div", 90);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](73, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](73, "div", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](74, "div", 91);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](74, "div", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](75, "div", 92);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](75, "div", 90);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](76, "h4");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](77, "TUTOR : Rober Velasquez.");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](78, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](79, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](80, "img", 103);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](81, "div", 90);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](82, "h4");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](83, "6to de PRIMARIA - Actividades de aprendizaje.");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](84, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](85, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](86, "img", 104);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](76, "img", 104);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -4051,7 +4011,7 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](8, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](9, "DOCENTES SECUNDARIA.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](9, "ACTIVIDADES DE APRENDIZAJE NIVEL SECUNDARIA.");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -4095,17 +4055,13 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](21, "div", 90);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](22, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](22, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](23, "GRADO : 1ro DE SECUNDARIA.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](23, "div", 91);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](24, "div", 92);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](24, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](25, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](26, "img", 109);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](25, "img", 109);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -4113,19 +4069,15 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](27, "div", 90);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](26, "div", 90);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](28, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](27, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](29, "GRADO : 2do DE SECUNDARIA.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](28, "div", 91);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](29, "div", 92);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](30, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](31, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](32, "img", 110);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](30, "img", 110);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -4137,23 +4089,19 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](33, "div", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](31, "div", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](34, "div", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](32, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](35, "div", 90);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](33, "div", 90);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](36, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](34, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](37, "GRADO : 3ro DE SECUNDARIA.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](35, "div", 91);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](36, "div", 92);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](38, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](39, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](40, "img", 111);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](37, "img", 111);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -4161,19 +4109,15 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](41, "div", 90);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](38, "div", 90);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](42, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](39, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](43, "GRADO : 4to DE SECUNDARIA");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](40, "div", 91);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](41, "div", 92);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](44, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](45, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](46, "img", 112);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](42, "img", 112);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -4185,23 +4129,19 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](47, "div", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](43, "div", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](48, "div", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](44, "div", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](49, "div", 90);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](45, "div", 90);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](50, "h4");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](46, "h4");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](51, "GRADO : 5to DE SECUNDARIA.");
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](47, "div", 91);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](48, "div", 92);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](52, "div", 91);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](53, "div", 92);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](54, "img", 113);
+          _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](49, "img", 113);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -4449,13 +4389,13 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](22, "br");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](23, " El lanzamiento de esta plataforma se realiza en el marco de haber ganado el II y IV Concurso Nacional de Proyectos de Innovaci\xF3n Pedag\xF3gica organizado por el FONDEP, el a\xF1o 2020 con el Proyecto \u201CGestionando las condiciones digitales logramos aprendizajes a distancia\u201D, y; el a\xF1o 2022 con el Proyecto \u201CComunidad Educativa L\xEDder, hac\xEDa una gesti\xF3n de aprendizajes\u201D.");
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](23, " El lanzamiento de esta plataforma se realiza en el marco de haber ganado el II, IV y V Concurso Nacional de Proyectos de Innovaci\xF3n Pedag\xF3gica organizado por el FONDEP, el a\xF1o 2020 con el Proyecto \u201CGestionando las condiciones digitales logramos aprendizajes a distancia\u201D, y; el a\xF1o 2022 con el Proyecto \u201CComunidad Educativa L\xEDder, hac\xEDa una gesti\xF3n de aprendizajes\u201D; el a\xF1o 2023 con el Proyecto \"Comunidad Educativa Lider en Gesti\xF3n Dimnesional, Comprometidos con los Aprendizajes hacia una Ciudadan\xEDa Plena\".");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](24, "br");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](25, "br");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](26, " Dichos proyectos tienen el objetivo de mejorar las buenas pr\xE1cticas docentes, el primero promueve el uso de las principales herramientas digitales al servicio de los prop\xF3sitos de aprendizajes de nuestros estudiantes especialmente en un escenario de aprendizaje h\xEDbrido, y; el segundo promueve el acceso de la comunidad educativa l\xEDder y su presencia hacia el logro de una gesti\xF3n de aprendizajes a favor de nuestros estudiantes.");
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](26, " Los proyectos mencionados tienen el objetivo de mejorar las buenas pr\xE1cticas docentes, el primero promueve el uso de las principales herramientas digitales al servicio de los prop\xF3sitos de aprendizajes de nuestros estudiantes especialmente en un escenario de aprendizaje h\xEDbrido, y; el segundo promueve el acceso de la comunidad educativa l\xEDder y su presencia hacia el logro de una gesti\xF3n de aprendizajes a favor de nuestros estudiantes, el tercero promueve el liderazgo de las tres dimnesiones de gesti\xF3n: Pedagogica, Administrativa y Comunal con la finalidad de lograr aprendizajes rumbo a una ciudadania plena");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](27, "br");
 
@@ -4503,11 +4443,11 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](42, "h3", 12);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](43, "En ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](43, "En la I.E.N\xB0 86253 ");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](44, "span", 13);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](45, "Celso Garro Valderrama");
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](45, " \"Celso Garro Valderrama\"");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -4543,7 +4483,7 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](56, InicioComponent_ng_template_56_Template, 87, 0, "ng-template", 22);
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](56, InicioComponent_ng_template_56_Template, 77, 0, "ng-template", 22);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -4563,7 +4503,7 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](62, InicioComponent_ng_template_62_Template, 55, 0, "ng-template", 22);
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](62, InicioComponent_ng_template_62_Template, 50, 0, "ng-template", 22);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -4593,7 +4533,7 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](70, "h1", 27);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](71, "En Celso Garro Valderrama");
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](71, "En La I.E.N\xB0 86253 \"Celso Garro Valderrama\"");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
 
@@ -4922,7 +4862,7 @@
         selectors: [["app-innovacion"]],
         decls: 37,
         vars: 1,
-        consts: [["id", "home", 1, "bg-half", "d-table", "w-100", 2, "background", "url('assets/images/company/innovacionPortada.jpg')", "background-size", "100% 160%"], [1, "bg-overlay"], [1, "container"], [1, "row", "justify-content-center"], [1, "col-lg-10", "text-center"], [1, "title-heading", 2, "height", "250px"], [1, "display-4", "title-dark", "text-white", "fw-bold", "mb-3"], [1, "para-desc", "title-dark", "mx-auto", "text-light", 2, "font-size", "x-large"], [1, "section", "border-top"], [1, "card", "rounded", "shadow", "border-0", "bg-light", "overflow-hidden"], [1, "row", "no-gutters", "align-items-center"], [1, "col-lg-6"], ["src", "assets/images/company/innovacionPortada.jpg", "alt", "", 1, "img-fluid"], [1, "card-body", "section-title", "p-md-5"], [1, "mb-4"], [2, "font-size", "large"], [1, "mt-4", "pt-2"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-light"], ["viewBox", "0 0 2880 48", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z", "fill", "currentColor"], [1, "shape", "overflow-hidden", "text-white"], ["href", "javascript: void(0);", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"]],
+        consts: [["id", "home", 1, "bg-half", "d-table", "w-100", 2, "background", "url('assets/images/company/innovacionPortada.jpg')", "background-size", "100% 160%"], [1, "bg-overlay"], [1, "container"], [1, "row", "justify-content-center"], [1, "col-lg-10", "text-center"], [1, "title-heading", 2, "height", "250px"], [1, "display-4", "title-dark", "text-white", "fw-bold", "mb-3"], [1, "para-desc", "title-dark", "mx-auto", "text-light", 2, "font-size", "x-large"], [1, "section", "border-top"], [1, "card", "rounded", "shadow", "border-0", "bg-light", "overflow-hidden"], [1, "row", "no-gutters", "align-items-center"], [1, "col-lg-6"], ["src", "assets/images/company/diploma.jpg", "alt", "", 1, "img-fluid"], [1, "card-body", "section-title", "p-md-5"], [1, "mb-4"], [2, "font-size", "large"], [1, "mt-4", "pt-2"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-light"], ["viewBox", "0 0 2880 48", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z", "fill", "currentColor"], [1, "shape", "overflow-hidden", "text-white"], ["href", "javascript: void(0);", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"]],
         template: function InnovacionComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section", 0);
